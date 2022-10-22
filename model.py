@@ -14,6 +14,7 @@ class Character(db.Model):
   biography = db.Column(db.varChar)
   gender = db.Column(db.String)
   archetype = db.Column(db.String)
+  power = db.Column(db.String)
   media_type = db.Column(db.Integer, db.ForeignKey(""))
   earth_name = db.Column(db.Integer, db.ForeignKey("")) 
 

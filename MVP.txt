@@ -1,0 +1,55 @@
+Goal:
+I will build a site that allows users to navigate character histories
+within the DC Universe. They can see what media appearances characters have,
+the different biographies from different eras and earths,
+just collecting information that offers all the information a DC fan
+would need right at their fingertips in one platform.
+
+The site will offer users to either enter a query
+OR select from different categories
+
+data/APIs
+
+I will need to collect data from different sources as DC does not have an API.
+
+CHARACTERS - I will build a local database to store all characters: 
+  SUPERHEROS:
+  To get all superhero characters, using the following site to gather a list of all DC
+  superheros
+  https://www.superheroapi.com/
+
+  VILLIANS/ANTIHEROS
+  There is a github repo containing all DC villians and anti-heros
+  https://github.com/thatfiredev/dc-villains-api
+
+Media Apperances - I will use a variety of resources to collect all the data I will
+need to be able to pair comics, movies, tv shows to the proper characters
+
+  COMICS: goodReads https://www.goodreads.com/api; Metron (comic book db) https://metron.cloud/ ; shortboxed https://api.shortboxed.com/ ; google books https://developers.google.com/books
+  MOVIES: IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes
+  TV SHOWS: IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes;
+
+Earth/Eras:
+ Possibly Wikipedia? https://www.mediawiki.org/wiki/API:Main_page , https://en.wikipedia.org/api/rest_v1/#/ ;
+ possibly webscraping?
+
+
+
+MVP 1.0
+- populate databases 
+- use db data to create character profiles
+- allow for queries that will also catch typos and list any with unfinished 
+  queries, e.g., "bat" --> batman, batgirl, batwoman, etc.; "green lantern" -->
+  john stewart, hal jordan, kyle raynor, etc.
+- simple, centered forms, displays, nothing fancy just yet
+
+MVP 2.0
+- Have show all option and be able to narrow down results through filters
+- have drop down menu to take user to page with only filter they want to see (like characters only, or heros only)
+- simple character profile, will have similar stats/details like dossier (see below)
+
+MVP 3.0
+- interactive UI/UX
+- get real dossier kind of aesthetic
+  https://tinadubinsky.com/character/
+  also see img file for examples
