@@ -7,7 +7,9 @@ import requests
 # api_key = "YOUR_ACCESS_TOKEN" #Obtain through https://www.superheroapi.com/, requires Facebook account however
 api_key = 1075529179813027
 
-def import_superheroAPI(API_KEY):
+def import_SuperHeroAPI(API_KEY):
+  """Gets all available DC Comic characters from SuperHero API."""
+
   # dictionary for JSON file
   dc_characters = {}
 
@@ -42,7 +44,18 @@ def import_superheroAPI(API_KEY):
     outfile.write(json_object)
 
 
-import_superheroAPI()
+# import_SuperHeroAPI()
+
+url = 'https://comicvine.gamespot.com/api/'
+
+
+# ComicVine API very confusing to use
+# username: milkis420, APIKEY: 6028f8ab23892d424a31b9845b1c36ed4f737523
+
+# https://api.themoviedb.org/3/movie/76341?api_key=<<api_key>>
+# api_key: d0c8ed23f9287cc230bd6045c8fb4985
+
+# https://comicvine.gamespot.com/api/search/?api_key= api_key&format=json&limit=1&offset=0&field_list=id,name,deck,volume&sort=name:asc&resources=issue&query=Feynman
 
 
 

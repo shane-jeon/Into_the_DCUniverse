@@ -21,14 +21,20 @@ CHARACTERS - I will build a local database to store all characters:
   VILLIANS/ANTIHEROS
   There is a github repo containing all DC villians and anti-heros
   https://github.com/thatfiredev/dc-villains-api
+  ** 10/25/2022, appears this API is not only just NOT working, but has obviously gathered the same info from SuperHero API
+  **** attempting to find alternatives, but in the meantime, villians list is not complete
 
 Media Apperances - I will use a variety of resources to collect all the data I will
 need to be able to pair comics, movies, tv shows to the proper characters
 
-  COMICS: goodReads https://www.goodreads.com/api; Metron (comic book db) https://metron.cloud/ ; shortboxed https://api.shortboxed.com/ ; google books https://developers.google.com/books
+  COMICS: goodReads https://www.goodreads.com/api; Metron (comic book db) https://metron.cloud/ ; shortboxed https://api.shortboxed.com/ ; google books https://developers.google.com/books ; comic vine https://comicvine.gamespot.com/api/
   MOVIES: IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes
+    ** TMDB (the movie db), alternative to imdb
   TV SHOWS: IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes;
 
+  ******10/25/2022 Major Interferences: IMDB is apparently owned by Amazon now! Fee is $150,000 for API access,
+  goodreads no longer offers public API access; Metron seems to be a viable option, however they have disabled the sign up button,
+  just e-mailed admin to see if I can sign up.
 Earth/Eras:
  Possibly Wikipedia? https://www.mediawiki.org/wiki/API:Main_page , https://en.wikipedia.org/api/rest_v1/#/ ;
  possibly webscraping?
