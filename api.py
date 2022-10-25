@@ -44,57 +44,7 @@ def import_SuperHeroAPI(API_KEY):
     outfile.write(json_object)
 
 
-# import_SuperHeroAPI()
-
-# url = 'https://comicvine.gamespot.com/api/'
-# RAPIDAPI
-
-
-# url = "https://advanced-movie-search.p.rapidapi.com/genre/movie/list"
-
-# headers = {
-# 	"X-RapidAPI-Key": "9cac440147mshfad4f28d042e400p18fa5fjsn5fd81cd960d3",
-# 	"X-RapidAPI-Host": "advanced-movie-search.p.rapidapi.com"
-# }
-
-# res = requests.request("GET", url, headers=headers)
-
-# movie_genres = res.json()
-
-# json_object = json.dumps(movie_genres, indent=4)
-
-# with open('movie_genres.json', 'w') as outfile:
-#   outfile.write(json_object)
-# print(response.text)
-
-
-# SUPERHERO SEARCH
-
-url = "https://superhero-search.p.rapidapi.com/api/"
-
-querystring = {"hero":"batman"}
-
-headers = {
-	"X-RapidAPI-Key": "9cac440147mshfad4f28d042e400p18fa5fjsn5fd81cd960d3",
-	"X-RapidAPI-Host": "superhero-search.p.rapidapi.com"
-}
-
-response = requests.request("GET", url, headers=headers, params=querystring)
-
-batman = response.json()
-json_object = json.dumps(batman, indent=3)
-
-with open('batman.json', 'w') as outfile:
-  outfile.write(json_object)
-# print(response.text)
-
-# ComicVine API very confusing to use
-# username: milkis420, APIKEY: 6028f8ab23892d424a31b9845b1c36ed4f737523
-
-# https://api.themoviedb.org/3/movie/76341?api_key=<<api_key>>
-# api_key: d0c8ed23f9287cc230bd6045c8fb4985
-
-# https://comicvine.gamespot.com/api/search/?api_key= api_key&format=json&limit=1&offset=0&field_list=id,name,deck,volume&sort=name:asc&resources=issue&query=Feynman
+import_SuperHeroAPI()
 
 
 
