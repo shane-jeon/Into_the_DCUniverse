@@ -39,7 +39,9 @@ Earth/Eras:
  Possibly Wikipedia? https://www.mediawiki.org/wiki/API:Main_page , https://en.wikipedia.org/api/rest_v1/#/ ;
  possibly webscraping?
 
-
+How to get data ideas:
+ - somehow get a list of movie titles (dc), iterate through list in one of the movie DBs to obtain
+   the info 
 
 MVP 1.0
 - populate databases 
