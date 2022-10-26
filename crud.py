@@ -32,7 +32,11 @@ def get_char_by_id(char_id):
 
   return char
 
-# IDs appear to be not consecutive...create a function to get IDs by name... 
+# IDs appear to be not consecutive...create a function to get IDs by name... //RESOLVED 10/25/2022
+
+def get_charID_by_name(name):
+
+  return Character.query.filter_by(name=name)
 
 
 if __name__ == '__main__':

@@ -38,7 +38,12 @@ class Character(db.Model):
   # media_type = db.relationship('MediaType', backref='characters')
   # era = db.relationship('Era', backref='characters')
   def __repr__(self):
-    return f'<Character char_id={self.char_id} name={self.name} biography={self.biography}>'
+    return f'''<
+    Character char_id={self.char_id} 
+    print()
+    NAME={self.name}
+    print() 
+    BIOGRAPHY={self.biography}>'''
 
 
 #########################
