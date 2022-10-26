@@ -2,14 +2,20 @@
 
 from model import db, Character, connect_to_db
 
-def create_char(char_id, name, alignment):
+def create_char(char_id, name, alignment, biography):
   """Create and return a new character."""
   char = Character(char_id=char_id,
                    name=name,
-                   alignment=alignment
+                   alignment=alignment,
+                   biography=biography
   )
 
+  # db.session used for database transactions (nothing to do with Flask 'session')
+  # db.session stores modifications made to database
+
+  # to add new object
   db.session.add(char)
+  # database will not actually be modified unless following call included
   db.session.commit()
 
   return char

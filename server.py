@@ -26,4 +26,5 @@ def characterpage():
 # condition block, Python will execute code when conditional statement evaluates to True
 # Implies
 if __name__ == '__main__':
+  connect_to_db(app)
   app.run(debug=True, host='0.0.0.0')

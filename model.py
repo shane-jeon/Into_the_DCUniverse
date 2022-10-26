@@ -1,11 +1,11 @@
 """Models for DC Universe Untitled Project."""
 
-from xml.dom.minidom import AttributeList
+# from xml.dom.minidom import AttributeList
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+# from datetime import datetime
 
+# Gives a db OBJECT, representing database
 db = SQLAlchemy()
-
 
 # holding off on "nullables" until I can make sure I can get all data needed for db tables
 
@@ -14,11 +14,15 @@ db = SQLAlchemy()
 #######CHARACTERs########
 #########################
 
+# All models needs to subclass "db.Model"
 class Character(db.Model):
   """A character's dossier."""
 
+  # to specify tablename
   __tablename__ = 'characters'
 
+  # Specify type of column
+  # Parameters: "nullable=False", default, unique, primary_key, autoincrement
   # char_id = db.Column(db.Integer, primary_key=True)
   char_id = db.Column(db.Integer, primary_key=True)
   name = db.Column(db.String)
@@ -34,7 +38,7 @@ class Character(db.Model):
   # media_type = db.relationship('MediaType', backref='characters')
   # era = db.relationship('Era', backref='characters')
   def __repr__(self):
-    return f'<Character char_id={self.char_id} name={self.name}>'
+    return f'<Character char_id={self.char_id} name={self.name} biography={self.biography}>'
 
 
 #########################
@@ -175,19 +179,29 @@ class Character(db.Model):
 #   def __repr__(self):
 #     return f'<Television tv_id={self.tv_id} tv_title={self.tv_title}>'
 
+def connect_to_db(flask_app, db_uri='postgresql:///characters', echo=True):
+  """Connect to database."""
 
-def connect_to_db(flask_app, db_uri="postgresql:///characters", echo=True):
-    flask_app.config["SQLALCHEMY_DATABASE_URI"] = db_uri
-    flask_app.config["SQLALCHEMY_ECHO"] = echo
-    flask_app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+  # Location of the database
+  flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
+  # Will output raw SQL, executed by SQLAlchemy (so that's why I see the SQL query in the terminal)
+  flask_app.config['SQLALCHEMY_ECHO'] = echo
+  flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    db.app = flask_app
-    db.init_app(flask_app)
+  # connects databse with Flask app
+  db.app = flask_app
+  db.init_app(flask_app)
 
-    print("Connected to the db!")
+  print("Connected to DB (model.py)")
+
 
 if __name__ == "__main__":
   from server import app
 
+  # connection call
+  # Any errors about db connection that will arise, check connect_to_db(app) is called before app.run() 
   connect_to_db(app)
 
+  # use 'db.create_all()' to create all tables using db connection
+    # only needs to be done once unless changes have been made to table's schema
+      # in that case, dropdb ____ and createdb ______
