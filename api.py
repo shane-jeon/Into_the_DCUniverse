@@ -5,7 +5,7 @@ import json
 import requests
 
 # api_key = "YOUR_ACCESS_TOKEN" #Obtain through https://www.superheroapi.com/, requires Facebook account however
-api_key = 1075529179813027
+superhero_API_KEY = 1075529179813027
 
 def import_SuperHeroAPI(API_KEY):
   """Gets all available DC Comic characters from SuperHero API."""
@@ -43,8 +43,101 @@ def import_SuperHeroAPI(API_KEY):
   with open('example.json', 'w') as outfile:
     outfile.write(json_object)
 
+# cleans up postman downloaded JSON file*
+def format_conversion(filename, new_filename):
+  """ Transforms incoherent Postman JSON file to readable JSON file.
+  Use when terminal GET request keeps returning with 403,
+  but Postman GET reqest returns 200 and thus have to download file from Postman."""
 
-import_SuperHeroAPI()
+  with open(filename) as data_file:
+    data = json.load(data_file)
+
+  json_object = json.dumps(data, indent=4)
+
+  with open(new_filename, 'w') as outfile:
+    outfile.write(json_object)
+
+# * please note that while the code below is logically functional, it keeps returning response 403. For some reason POSTMAN GET requests work just fine. Should you run into this error, comment out the following function (as of 10/26/2022 I have not completed the function, will return to it later. ) and use def format_conversion instead. Will make a how-to follow up in how a user can get access to said file.
+
+# *****RETURN TO THIS (had enough of API and coding stuff for today. )
+
+
+#  ****************************************************************
+# API FUNCTION CALLS
+# import_SuperHeroAPI(superheroAPI_KEY)
+# format_conversion('postman/data/POSTMAN_comicvine.json', 'data/comicvineAPI_DC.json')
+#  ****************************************************************
+
+
+
+
+
+
+
+# ***** 10/26/2022 HAD TO SCRAP THIS API CODE....FOR SOME REASON I KEPT GETTING BACK RESPONSE 403 BUT WHEN I RAN THE GET REQUEST ON POSTMAN IT WORKED JUST FINE. JUST CLEANED UP DOWNLOADED JSON FILE FROM POSTMAN AND LEAVING IT AT THAT.
+
+
+# comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
+
+# def import_comicvineAPI(API_KEY):
+#   """Retrieve all comic book issues/volumes from publisher DC Comics. Also getting characters not listed in SuperHeroAPI. """
+#   #  the issue with trying to import both.....is I might get duplicates....so should I just use comic vine API?? In the mean time, I'll just make the REST API call to create the JSON file and will review and decide from there
+
+
+#   payload = { 'api_key': API_KEY,
+#               'format': 'json',
+#               'field_list': 'characters'}
+
+#   # URL for publisher
+#   pub_URL = 'https://comicvine.gamespot.com/api/publisher/4010-10/'
+
+#   # API GET request
+#   res = requests.get(pub_URL, params=payload)
+#   print()
+#   print('************************')
+#   print('res.url',res.url)
+#   print('************************')
+#   print()
+
+
+#   # dc_characters = {}
+
+#   # for i in range(len(character_list)):
+#   #   print(f'at character num {i}')
+
+
+#   #   # gets results into json()
+#   #   PUB_data = res.json()
+
+#   #   print(f'at superhero #{i}')
+
+#   #   name = dc_characters['name'] 
+
+#   #   print()
+#   #   print("*****", name, "*****")
+#   #   print()
+
+#   #   # gets JSON dictionary
+#   #   json_object = json.dumps(dc_characters, indent=4)
+
+#   # writes dictionary to JSON file
+#   with open('comicvineAPI_DC.json', 'w') as outfile:
+#     outfile.write(json_object)
+
+# import_comicvineAPI(comicvine_API_KEY)
+
+
+
+
+
+
+
+
+#  *************************************************************************  #
+                            # API FUNCTION CALLS
+# import_SuperHeroAPI(superheroAPI_KEY)
+
+#  *************************************************************************  #
 
 
 

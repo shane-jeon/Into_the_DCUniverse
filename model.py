@@ -24,7 +24,10 @@ class Character(db.Model):
   # Specify type of column
   # Parameters: "nullable=False", default, unique, primary_key, autoincrement
   # char_id = db.Column(db.Integer, primary_key=True)
+  # char_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
   char_id = db.Column(db.Integer, primary_key=True)
+  # superHero_id = db.Column(db.Integer)
+  # comicVine_id = db.Column(db.Integer)
   name = db.Column(db.String)
   alignment = db.Column(db.String, nullable=False)
   biography = db.Column(db.String)
