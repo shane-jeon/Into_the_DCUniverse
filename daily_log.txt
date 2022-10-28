@@ -1,0 +1,29 @@
+10/26/2022 Wednesday:
+
+- I cleaned up the characters table a bit. Included a function so that I can include a character's bio. Used formatting to just pop in the right values in the right spaces (e.g., f'{name}')
+
+- Have been trying to figure out how to use different APIs, especially ones with vague documentation (or perhaps it's just vague to me because I am still new to using REST APIs. Should've paid better attention during lectures but ah well.)
+
+- figured out comicvine API, just stuck in a dilemma about character duplicates....just going to get that JSON file first and figure it out when I can compare the lists.
+
+- Looking into why APIs have request limits.
+
+
+10/27/2022 Thursday:
+
+found solution to why field_list wasn't working in my API calls. it's because the URL format was
+wrong, found example in API developer forum. now working on code to collect all character names in a list to iterate through to get character info from API.
+
+I've been using postman to make the API calls for easier access, to test if my methods are working as opposed to using VSCODE saves a lot of time.
+
+also DC id is 4010-10 i think
+
+ok lesson learned (5:54pm)
+don't fiddle around with code untill you start troubleshooting from the source. I fiddled around with my loops and conditionals
+when turns out the problem was that the URL wasn't being sent in the right format. figured it out by comparing successful
+request in console v. code
+
+6:11pm 
+used jsonpickle to solved my serialization problem
+CODE IS SUCCESSFUL and FUNCTIONING ...HOWEVER....comicvine has an api request limit of 100 per hour...
+need to add code so that will trigger 100 requests every hour but thats for another day
