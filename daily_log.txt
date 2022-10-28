@@ -27,3 +27,39 @@ request in console v. code
 used jsonpickle to solved my serialization problem
 CODE IS SUCCESSFUL and FUNCTIONING ...HOWEVER....comicvine has an api request limit of 100 per hour...
 need to add code so that will trigger 100 requests every hour but thats for another day
+
+
+10/28/2022 Friday:
+
+Going to make my logs a little more coherent. Logs will now include goals made at the start of the day (or whenever I start working on my project), the day's blockers, the day's successes, any new ideas to include in MVP (then update MVP), general progress update, general thoughts about project, and concluding comments EOD (or after last project updates for the day).
+
+Start 12:00PM-ish Goals:
+- add code so I can automate function that will make 100 API requests per hour to respect comic vine's request limit (which is 100 requests per hour). 
+- finish progress bar function, include in comicvine api call 
+- add code to track how much more time is left
+- turn this txt into an md
+- update/clean up MVP
+- start a README.md
+
+Blockers: 
+- comicvine api request limit, but that's not something I can control. Did the math, there are 19709-ish total number of DC characters to go through so with the 100 request per hour limit, it will take about 8.5 days to get all the data I need but that's fine as long as my computer can stay running for that amount of time straight. 
+- again, just time limits. Only thought about including progress bar after successfully running 99 requests. Will have to wait about 12 more minutes (right now is 1:53PM) to run the code again but this time with a progress bar to see visual progress (which will be important in the long run I believe.)
+- Can't include progress bar in for loop as it won't stop until timer does... going to leave out progress bar and time tracker for now, 
+
+Successes:
+- Figured out how to make timed requests
+- Figured out how the progress bar code works (sorta) and incorporate it to show an accurate value with my request status
+
+New Ideas:
+- API is constantly being updated by developers, create a way to periodically check thet API to make sure my database is up to date...but I think this is something that is not needed until I can actually publish this web app live (deployment, that's the word I'm looking for).
+
+General progress:
+- Moving at a snail's pace but that's okay, I am actually learning a lot about how to work with APIs, especially ones that don't really have good documentation. Which speaking of, I should jot down everything I've learned using comic vine's API and how to use it for when I return to it or for the eventual README. Progress will definitely take quite some time because of data retrieval but it gives me time to clean up the database and figuring out how to siphon specific and required data from JSON files to the same table and such.
+- had to remove progress bar, but included "days remaining", not much but I can at least check daily 
+- note to self, line 107 should be before line 106, it's not printing "paused at #__" because it's after sleep() but print statement in terminal tells me what request count I'm at as well as the character ID so oh well.
+
+
+General thoughts:
+- comicvine really is a life saver. I thought I was at a loss when I was having trouble looking for the APIs needed to seed my database. Just looking forward to working on this on a almost daily basis, reminds me of how much I do enjoy programming and is helping me create my own style of it without anxieties about judgement from others (like supervisors, co-workers, instructors, peers, etc.)
+
+EOD comments:

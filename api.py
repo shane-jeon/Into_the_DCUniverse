@@ -5,6 +5,8 @@ import json
 import requests
 import jsonpickle
 import time
+import math
+# from progressBarTemp import progress_bar, track_remaining_time
 
 # api_key = "YOUR_ACCESS_TOKEN" #Obtain through https://www.superheroapi.com/, requires Facebook account however
 superhero_API_KEY = 1075529179813027
@@ -85,21 +87,23 @@ def get_comicvine_API(filename, API_KEY, your_header, new_filename):
 
   # to track number of get requests made
   req_count = 0
+  hourly_maximum = 100
+  daily_maximum = 2400
+  num_ids = len(char_ids)
+  # results = []
 
-  for char_id in char_ids:
+  for i, char_id in enumerate(char_ids):
     # URL = f'https://www.comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name,real_name,deck,description,powers,movies,issue_credits,issues_died_in,id,volume_credits'
 
-    # *
     # increment req_count
     req_count += 1
-    # *
+
     # will only make 100 API get requests per hour and 5 seconds (to wait until request limit resets for the hour)
-    if req_count % 100 == 0:
+    if req_count % hourly_maximum == 0:
       current_id = char_id
       time.sleep(3605)
       print("Paused at: ", current_id)
       continue
-    # *
 
     # check your comicvine Current API Usage:
     # https://comicvine.gamespot.com/api/
@@ -108,15 +112,16 @@ def get_comicvine_API(filename, API_KEY, your_header, new_filename):
 
     response = requests.get(URL, headers=headers)
 
-    # # increment req_count
-    # req_count += 1
-
     # visual progress
     print()
     print('*'*20)
-    print("at req_count: ", req_count)
-    # ensure url has correct char_id
-    print(response.url)
+    print()
+    print(f"""Current request count at: {req_count},
+            At character: {character},
+            Character ID: {char_id},
+            Response URL: {response.url},
+            Days remaining: {num_ids // daily_maximum}""")
+    print()
     print('*'*20)
     print()
 
@@ -132,6 +137,7 @@ def get_comicvine_API(filename, API_KEY, your_header, new_filename):
     with open(new_filename, 'w') as outfile:
     # with open('comicvineChar_API.json', 'w') as outfile:
       outfile.write(json_object)
+
 
 
 
