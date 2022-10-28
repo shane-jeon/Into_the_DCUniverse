@@ -4,6 +4,7 @@
 import json
 import requests
 import jsonpickle
+import time
 
 # api_key = "YOUR_ACCESS_TOKEN" #Obtain through https://www.superheroapi.com/, requires Facebook account however
 superhero_API_KEY = 1075529179813027
@@ -79,26 +80,41 @@ def get_comicvine_API(filename, API_KEY, your_header, new_filename):
   for i, character in enumerate(characters):
     char_ids.append(characters[i]['id'])
 
-  headers = {your_header}
+  headers = { 'User-Agent' : your_header}
   # headers = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'}
 
   # to track number of get requests made
-  counter = 0
+  req_count = 0
 
   for char_id in char_ids:
     # URL = f'https://www.comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name,real_name,deck,description,powers,movies,issue_credits,issues_died_in,id,volume_credits'
+
+    # *
+    # increment req_count
+    req_count += 1
+    # *
+    # will only make 100 API get requests per hour and 5 seconds (to wait until request limit resets for the hour)
+    if req_count % 100 == 0:
+      current_id = char_id
+      time.sleep(3605)
+      print("Paused at: ", current_id)
+      continue
+    # *
+
+    # check your comicvine Current API Usage:
+    # https://comicvine.gamespot.com/api/
 
     URL = f'https://www.comicvine.com/api/character/4005-{char_id}/?api_key={API_KEY}&format=json&field_list=name,real_name,deck,description,powers,movies,issue_credits,issues_died_in,id,volume_credits'
 
     response = requests.get(URL, headers=headers)
 
-    # increment counter
-    counter += 1
+    # # increment req_count
+    # req_count += 1
 
     # visual progress
     print()
     print('*'*20)
-    print("at counter: ", counter)
+    print("at req_count: ", req_count)
     # ensure url has correct char_id
     print(response.url)
     print('*'*20)
@@ -124,11 +140,16 @@ def get_comicvine_API(filename, API_KEY, your_header, new_filename):
 # ******FIGURED OUT API REQUEST ISSUE W/BROWSER V. POSTMAN 10/27/2022, FIX CODE LATER
 # *****RETURN TO THIS (had enough of API and coding stuff for today. )
 
+# API_KEYS
+comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
 
+# other parameter variables
+my_header = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'
 #  ****************************************************************
 # API FUNCTION CALLS
 # import_SuperHeroAPI(superheroAPI_KEY)
 # format_conversion('postman/data/POSTMAN_comicvine.json', 'data/comicvineAPI_DC.json')
+get_comicvine_API('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header, 'comicvine_characters.json')
 #  ****************************************************************
 
 
