@@ -3,6 +3,7 @@
 # Translates JSON to a python dictionary (and can convert a dictionary to JSON)
 import json
 import requests
+import jsonpickle
 
 # api_key = "YOUR_ACCESS_TOKEN" #Obtain through https://www.superheroapi.com/, requires Facebook account however
 superhero_API_KEY = 1075529179813027
@@ -59,6 +60,7 @@ def format_conversion(filename, new_filename):
 
 # * please note that while the code below is logically functional, it keeps returning response 403. For some reason POSTMAN GET requests work just fine. Should you run into this error, comment out the following function (as of 10/26/2022 I have not completed the function, will return to it later. ) and use def format_conversion instead. Will make a how-to follow up in how a user can get access to said file.
 
+# ******FIGURED OUT API REQUEST ISSUE W/BROWSER V. POSTMAN 10/27/2022, FIX CODE LATER
 # *****RETURN TO THIS (had enough of API and coding stuff for today. )
 
 

@@ -60,6 +60,10 @@ for char in char_data:
   db_char = crud.create_char(char_id, name, alignment, biography)
   chars_in_db.append(db_char)
 
+# 
+
+
+
 
 # TROUBLESHOOTING 10/25/2022
   # iterate through all values in json file 
