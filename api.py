@@ -58,6 +58,67 @@ def format_conversion(filename, new_filename):
   with open(new_filename, 'w') as outfile:
     outfile.write(json_object)
 
+
+
+def get_comicvine_API(filename, API_KEY, your_header, new_filename):
+  """Uses data from JSON file obtained from 'format_conversion()' function to make individual API get requests to comicvine API.
+  HOWEVER, comicvine has request limit of 100 per hour. ****need to add code to alleviate/automate that."""
+
+  with open(filename) as openfile:
+  # with open('data/comicvineAPI_DC.json') as openfile:
+  # read as dictionary
+    char_dict = json.loads(openfile.read())
+  
+  # Access character list within 'characters' dictionary
+  characters = char_dict['results']['characters']
+
+  # list to hold all character ids that will eventually iterate through
+  char_ids = []
+
+  # extract 'id' from every character in comicvineAPI_DC.json and append to char_ids list
+  for i, character in enumerate(characters):
+    char_ids.append(characters[i]['id'])
+
+  headers = {your_header}
+  # headers = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'}
+
+  # to track number of get requests made
+  counter = 0
+
+  for char_id in char_ids:
+    # URL = f'https://www.comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name,real_name,deck,description,powers,movies,issue_credits,issues_died_in,id,volume_credits'
+
+    URL = f'https://www.comicvine.com/api/character/4005-{char_id}/?api_key={API_KEY}&format=json&field_list=name,real_name,deck,description,powers,movies,issue_credits,issues_died_in,id,volume_credits'
+
+    response = requests.get(URL, headers=headers)
+
+    # increment counter
+    counter += 1
+
+    # visual progress
+    print()
+    print('*'*20)
+    print("at counter: ", counter)
+    # ensure url has correct char_id
+    print(response.url)
+    print('*'*20)
+    print()
+
+    # encodes object so response can be serialized
+    json_pickle = jsonpickle.encode(response)
+    
+    # creates dictionary
+    json_object = json.dumps(json_pickle, indent=4)
+    # # json_object = json.loads(response.json)
+    # # json_object = response.json()
+
+    # create JSON file to store all imported data
+    with open(new_filename, 'w') as outfile:
+    # with open('comicvineChar_API.json', 'w') as outfile:
+      outfile.write(json_object)
+
+
+
 # * please note that while the code below is logically functional, it keeps returning response 403. For some reason POSTMAN GET requests work just fine. Should you run into this error, comment out the following function (as of 10/26/2022 I have not completed the function, will return to it later. ) and use def format_conversion instead. Will make a how-to follow up in how a user can get access to said file.
 
 # ******FIGURED OUT API REQUEST ISSUE W/BROWSER V. POSTMAN 10/27/2022, FIX CODE LATER
