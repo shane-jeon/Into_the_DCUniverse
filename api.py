@@ -62,10 +62,116 @@ def format_conversion(filename, new_filename):
     outfile.write(json_object)
 
 
+# #####################################################
+# #####################################################
+# ##################################################### 
+# DEVELOPMENT FUNCTIONS, GETS SAMPLE DATA
+# #####################################################
+# #####################################################
+# ##################################################### 
 
+
+def get_info_from_charID_DEV(filename, API_KEY, your_header, new_filename):
+  """Gets 99 character IDs from JSON file generated from API get request to 'publisher' endpoint, retrieving detailed character information"""
+
+  with open(filename) as openfile:
+  # with open('data/comicvineAPI_DC.json') as openfile:
+  # read as dictionary
+    char_dict = json.loads(openfile.read())
+
+  # Access character list within 'characters' dictionary
+  characters = char_dict['results']['characters']
+
+  # list to hold all character ids that will eventually iterate through
+  char_ids = []
+
+  # extract 'id' from every character in comicvineAPI_DC.json and append to char_ids list
+  for i, character in enumerate(characters):
+    char_ids.append(characters[i]['id'])
+
+  headers = { 'User-Agent' : your_header}
+  # headers = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'}
+
+  payload = { 'api_key' : API_KEY,
+              'field_list' : 'name,real_name,id,deck,description,gender,origin,powers,teams,creators,first_appeared_in_issue,count_of_issue_apperances,issue_credits,volume_credits,issues_died_in,movies,story_arc_credits,api_detail_url'
+
+  }
+  # to track number of get requests made
+  req_count = 0
+  # hourly_maximum = 100
+  # daily_maximum = 2400
+  # num_ids = len(char_ids)
+  # results = []
+
+  limited_charIDs = char_ids[0:20]
+
+  for i, limited_charID in enumerate(limited_charIDs):
+    # URL = f'https://www.comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name,real_name,deck,description,powers,movies,issue_credits,issues_died_in,id,volume_credits'
+
+    # increment req_count
+    req_count += 1
+
+    # will only make 100 API get requests per hour and 5 seconds (to wait until request limit resets for the hour)
+    # if req_count % hourly_maximum == 0:
+    #   current_id = char_id
+    #   time.sleep(3605)
+    #   print("Paused at: ", current_id)
+    #   continue
+
+    # check your comicvine Current API Usage:
+    # https://comicvine.gamespot.com/api/
+
+    URL = f'https://www.comicvine.com/api/character/4005-{limited_charID}/'
+
+    # URL = f'https://www.comicvine.com/api/character/4005-{char_id}/?api_key={API_KEY}&format=json&field_list=name,real_name,deck,description,powers,movies,issue_credits,issues_died_in,id,volume_credits'
+
+    response = requests.get(URL, params=payload, headers=headers)
+
+    # visual progress
+    print()
+    print('*'*20)
+    print()
+    print(f"""Current request count at: {req_count},
+            At character: {character},
+            Character ID: {limited_charID},
+            Response URL: {response.url}""")
+    print()
+    print('*'*20)
+    print()
+
+    # encodes object so response can be serialized
+    json_pickle = jsonpickle.encode(response)
+    
+    # creates dictionary
+    json_object = json.dumps(json_pickle, indent=4)
+    # # json_object = json.loads(response.json)
+    # # json_object = response.json()
+
+    # create JSON file to store all imported data
+    with open(new_filename, 'w') as outfile:
+    # with open('comicvineChar_API.json', 'w') as outfile:
+      outfile.write(json_object)
+
+comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
+my_header = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'
+
+get_info_from_charID_DEV('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header, 'comicvine_characters.json')
+
+# #####################################################
+# #####################################################
+# ##################################################### 
+# DEVELOPMENT FUNCTIONS, GETS SAMPLE DATA
+# #####################################################
+# #####################################################
+# ##################################################### 
+
+# ***** ROOM FOR IMPROVEMENT HERE, CAN MAKE IT MORE GENERALIZED AND MORE BROADLY APPLICABLE
+# ***** get to after I get all data needed in 8 days (today is 10/28/2022)
+# ********* Just realized I really don't need 19709 worth of character information if I'm still creating the project and only need some test data...
+# also learned as of 4:00pm that my request isn't returning a proper JSON file!!!! wait do I need to create a new json file for each character....???? (its 4:18PM right now)
 def get_comicvine_API(filename, API_KEY, your_header, new_filename):
   """Uses data from JSON file obtained from 'format_conversion()' function to make individual API get requests to comicvine API.
-  HOWEVER, comicvine has request limit of 100 per hour. ****need to add code to alleviate/automate that."""
+  HOWEVER, comicvine has request limit of 100 per hour. So a timer has been included to cycle through 100 requests per hour. Total time should take 8 days to retrieve all information."""
 
   with open(filename) as openfile:
   # with open('data/comicvineAPI_DC.json') as openfile:
@@ -155,8 +261,8 @@ my_header = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100
 # API FUNCTION CALLS
 # import_SuperHeroAPI(superheroAPI_KEY)
 # format_conversion('postman/data/POSTMAN_comicvine.json', 'data/comicvineAPI_DC.json')
-get_comicvine_API('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header, 'comicvine_characters.json')
-#  ****************************************************************
+# get_comicvine_API('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header, 'comicvine_characters.json')
+# #  ****************************************************************
 
 
 
@@ -169,7 +275,7 @@ get_comicvine_API('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header, 'co
 
 # comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
 
-# def import_comicvineAPI(API_KEY):
+# def get_publisher_characters(API_KEY):
 #   """Retrieve all comic book issues/volumes from publisher DC Comics. Also getting characters not listed in SuperHeroAPI. """
 #   #  the issue with trying to import both.....is I might get duplicates....so should I just use comic vine API?? In the mean time, I'll just make the REST API call to create the JSON file and will review and decide from there
 

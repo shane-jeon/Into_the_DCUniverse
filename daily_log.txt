@@ -45,6 +45,8 @@ Blockers:
 - comicvine api request limit, but that's not something I can control. Did the math, there are 19709-ish total number of DC characters to go through so with the 100 request per hour limit, it will take about 8.5 days to get all the data I need but that's fine as long as my computer can stay running for that amount of time straight. 
 - again, just time limits. Only thought about including progress bar after successfully running 99 requests. Will have to wait about 12 more minutes (right now is 1:53PM) to run the code again but this time with a progress bar to see visual progress (which will be important in the long run I believe.)
 - Can't include progress bar in for loop as it won't stop until timer does... going to leave out progress bar and time tracker for now, 
+- NEVERMIND, it appears that picklejson may be serializing my response into JSON but it is NOT returning any information. For now my priority is getting usable data, so I'll have to stick with POSTMAN and using the formatting function I created
+ ---> wait but I need to iterate through a list ugh....return to pickle later for now I'll just manually have to retrieve some data
 
 Successes:
 - Figured out how to make timed requests
@@ -61,5 +63,7 @@ General progress:
 
 General thoughts:
 - comicvine really is a life saver. I thought I was at a loss when I was having trouble looking for the APIs needed to seed my database. Just looking forward to working on this on a almost daily basis, reminds me of how much I do enjoy programming and is helping me create my own style of it without anxieties about judgement from others (like supervisors, co-workers, instructors, peers, etc.)
+- ONE STEP FORWARD TWO STEPS BACK --> my API get request isn't returning a readable JSON file, figure out what the difference is from my calls to POSTMAN calls
+- I will just have to work with a smaller amount of data for now with specifically selected characters
 
 EOD comments:
