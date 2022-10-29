@@ -51,6 +51,8 @@ Blockers:
 Successes:
 - Figured out how to make timed requests
 - Figured out how the progress bar code works (sorta) and incorporate it to show an accurate value with my request status
+- Fixed comic vine API call function. Turns out I was trying to put all character data in 1 JSON file and that is why the returning data was not serializable or readable (after using jsonpickle). Got sample files saved in data. Only just need to make a better name for the function.
+
 
 New Ideas:
 - API is constantly being updated by developers, create a way to periodically check thet API to make sure my database is up to date...but I think this is something that is not needed until I can actually publish this web app live (deployment, that's the word I'm looking for).
@@ -65,5 +67,11 @@ General thoughts:
 - comicvine really is a life saver. I thought I was at a loss when I was having trouble looking for the APIs needed to seed my database. Just looking forward to working on this on a almost daily basis, reminds me of how much I do enjoy programming and is helping me create my own style of it without anxieties about judgement from others (like supervisors, co-workers, instructors, peers, etc.)
 - ONE STEP FORWARD TWO STEPS BACK --> my API get request isn't returning a readable JSON file, figure out what the difference is from my calls to POSTMAN calls
 - I will just have to work with a smaller amount of data for now with specifically selected characters
+- downloaded files for specific DC characters, but also ended up fixing my API function
+
+to-do:
+ - continue README.md
+ - fix up, update MVP.txt
 
 EOD comments:
+Spent all week working on getting data from API calls. Relatively confident in working with APIs but seems like I'll be doing this repeatedly with different APIs so I should get a better grasp of how to work with them soon enough. --end log 5:27PM
