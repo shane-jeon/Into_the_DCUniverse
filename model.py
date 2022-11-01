@@ -154,6 +154,7 @@ class Character(db.Model):
 
 #   film_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
 #   film_title = db.Column(db.String)
+  # film_summary = db.Column(db.String)
 #   director = db.Column(db.String)
 #   media_medium = db.Column(db.String)
 #   overview = db.Column(db.String)
@@ -187,6 +188,11 @@ class Character(db.Model):
 #   def __repr__(self):
 #     return f'<Television tv_id={self.tv_id} tv_title={self.tv_title}>'
 
+
+class Concepts(db.Model):
+  """List of 'concepts' within the dc-universe."""
+  concept_id = db.Column(db.Integer, primary_key=True)
+  concept_name = db.Column(db.String)
 def connect_to_db(flask_app, db_uri='postgresql:///characters', echo=True):
   """Connect to database."""
 
