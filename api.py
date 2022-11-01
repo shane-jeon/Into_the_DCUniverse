@@ -62,6 +62,27 @@ def format_conversion(filename, new_filename):
     outfile.write(json_object)
 
 
+
+
+def comicvine_get_request(your_UA, API_KEY, resource, fields, new_filename):
+  """A general get request for comic vine."""
+
+  headers = { 'User-Agent' : your_UA}
+
+  payload = { 'api_key' : API_KEY,
+              'format' : 'json',
+              'field_list' : fields
+  }
+
+  URL = f'https://comicvine.com/api/{resource}/4010-10/'
+
+  response = requests.get(URL, params=payload, headers=headers)
+
+  json_object = json.dumps(response.json(), indent=3)
+
+  with open(f'{new_filename}.json', 'w') as outfile:
+    outfile.write(json_object)
+    
 # #####################################################
 # #####################################################
 # ##################################################### 
