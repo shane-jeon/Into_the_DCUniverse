@@ -62,7 +62,7 @@ def format_conversion(filename, new_filename):
     outfile.write(json_object)
 
 
-
+format_conversion('data/character_JSON/requires_reformatting/zatanna.json', 'data/character_JSON/zatanna.json')
 
 def comicvine_get_request(your_UA, API_KEY, resource, fields, new_filename):
   """A general get request for comic vine."""
