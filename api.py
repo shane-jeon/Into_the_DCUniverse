@@ -82,7 +82,30 @@ def comicvine_get_request(your_UA, API_KEY, resource, fields, new_filename):
 
   with open(f'{new_filename}.json', 'w') as outfile:
     outfile.write(json_object)
-    
+
+
+def alphabetize_JSON_dict(filename):
+  """Retrieves dictionary from JSON file. Alphabetizes data."""
+
+  story_arcs = []
+
+  with open(filename) as openfile:
+    JSON_dict = json.loads(openfile.read())
+
+  access_arcs = JSON_dict['results']['story_arcs']
+
+  for arc in access_arcs:
+    arc_id = arc['id']
+    arc_name = arc['name']
+
+    story_arcs.append(arc_id, arc_name)
+  
+  
+
+  
+
+  print(story_arcs[:10])
+
 # #####################################################
 # #####################################################
 # ##################################################### 
@@ -178,7 +201,7 @@ def get_info_from_charID(filename, API_KEY, your_header):
 comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
 my_header = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'
 
-get_info_from_charID('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header)
+# get_info_from_charID('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header)
 
 # #####################################################
 # #####################################################
