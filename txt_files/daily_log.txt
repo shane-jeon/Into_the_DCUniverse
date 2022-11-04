@@ -83,8 +83,14 @@ SOD Goals (though I am "starting" at 8:55PM)
 - Finish the function that will alphabetize DC comments
 - Clean up "api.py" file. Figure out where to put these functions
 Today's blockers
+- Tired, not enough time to do much
 Today's successes
+- reformatted some JSON files
 New ideas for MVP
+- add new table for user data, bookmarks, and middle data table for user bookmarks
 General progress update
+- not much but did a bit
 General thoughts about project
+- Going to have to really sit down and draw out a plan instead of popping out code straight from my fingers
 EOD comments
+- Project needs more structure, organization, and planning in order to finish MVP 1.0
