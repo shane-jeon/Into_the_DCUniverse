@@ -100,11 +100,17 @@ def alphabetize_JSON_dict(filename):
 
     story_arcs.append(arc_id, arc_name)
   
-  
-
-  
-
   print(story_arcs[:10])
+
+  # create list to store tuples containing concept id and name
+  # open JSON file
+  # access the list of story arcs
+  # itereate through list of story arcs, to store the arc_id and arc_name in the tuple
+  # append the tuple to the list created to store them
+  # iterate through list of tuples, accessing index 1 of each tuple
+
+  # OR
+  # 
 
 # #####################################################
 # #####################################################

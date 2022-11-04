@@ -75,3 +75,16 @@ to-do:
 
 EOD comments:
 Spent all week working on getting data from API calls. Relatively confident in working with APIs but seems like I'll be doing this repeatedly with different APIs so I should get a better grasp of how to work with them soon enough. --end log 5:27PM
+
+
+11/3/2022 Thursday
+
+SOD Goals (though I am "starting" at 8:55PM)
+- Finish the function that will alphabetize DC comments
+- Clean up "api.py" file. Figure out where to put these functions
+Today's blockers
+Today's successes
+New ideas for MVP
+General progress update
+General thoughts about project
+EOD comments

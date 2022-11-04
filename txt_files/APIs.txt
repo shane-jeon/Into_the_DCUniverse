@@ -1,0 +1,124 @@
+url = 'https://comicvine.gamespot.com/api/'
+
+troubleshooting resources:
+[ https://comicvine.gamespot.com/forums/api-developers-2334/query-options-2226634/ ;
+https://comicvine.gamespot.com/forums/api-developers-2334/cant-work-out-the-character-request-1755284/]
+
+https://comicvine.gamespot.com/api/{resources}/?api_key={api_key}}&format=json&limit={#}&field_list=id,name,publisher, first_appeared_in_issue, count_of_issue_appearances&sort=name:asc&filter=publisher:marvel
+
+10/26/2022 Wednesday,
+
+FOr some reason comic vine isn't filtering out publishers...why could that be?
+Is it because the name of the publisher is nested within a dictionary?
+
+-api call comes with api_detail_url....going to use that to create a list of attributing resources
+
+- for some reason any API get request made in VSCode keeps returning with 403 but perfectly fine with postman
+I think I may just need to parse through the json file downloaded from postman for readable format ugh
+
+- created function in api.py to clean up postman JSON file. works nicely. Future users may have to try both methods
+
+- took a while to figure out character API, what I will need to do is format as follows
+
+f'https://comicvine.gamespot.com/api/character/4005-{resource_ID}}/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json'
+--> iterate through all characters
+
+comicvine API is EXTREMELY annoying to work with. Now I'm having trouble getting a field list.....but at least I know I have the main resource I need to populate my db
+-starting to think I'm going to have to make many API calls by iterate through existing character list in order to scrape all the data i need ughhhhh
+
+
+not working
+www.comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name, creator
+working
+www.comicvine.com/api/person/4040-5614/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=birth,death,name
+
+
+figured out why my response wasn't returning 200, it's because the request required a HEADER, a 
+header is one of the parameters you put into the get request. 
+need user-agent in header specifically. to get your user-agent go to: 
+https://www.whatsmybrowser.org/
+
+if you can't find it ctrl + f " your full user agent string is:"
+
+troubleshoot links
+https://stackoverflow.com/questions/10606133/sending-user-agent-using-requests-library-in-python
+https://comicvine.gamespot.com/forums/api-developers-2334/403-forbidden-from-c-1788136/
+
+url to get DC comics only, query stuff: 
+https://comicvine.gamespot.com/forums/api-developers-2334/query-options-2226634/
+
+how to use comic vine part 1
+https://josephephillips.com/blog/how-to-use-comic-vine-api-part1
+
+
+ran into another road block, type error can't serialize into json. used json pickle. 
+https://www.codegrepper.com/code-examples/python/object+of+type+response+is+not+json+serializable+django
+
+CODE IS SUCCESSFUL and FUNCTIONING ...HOWEVER....comicvine has an api request limit of 100 per hour...
+need to add code so that will trigger 100 requests every hour but thats for another day
+
+RAPIDAPI
+
+
+url = "https://advanced-movie-search.p.rapidapi.com/genre/movie/list"
+
+headers = {
+	"X-RapidAPI-Key": "9cac440147mshfad4f28d042e400p18fa5fjsn5fd81cd960d3",
+	"X-RapidAPI-Host": "advanced-movie-search.p.rapidapi.com"
+}
+
+res = requests.request("GET", url, headers=headers)
+
+movie_genres = res.json()
+
+json_object = json.dumps(movie_genres, indent=4)
+
+with open('movie_genres.json', 'w') as outfile:
+  outfile.write(json_object)
+print(response.text)
+
+
+SUPERHERO SEARCH
+
+url = "https://superhero-search.p.rapidapi.com/api/"
+
+querystring = {"hero":"batman"}
+
+headers = {
+	"X-RapidAPI-Key": "9cac440147mshfad4f28d042e400p18fa5fjsn5fd81cd960d3",
+	"X-RapidAPI-Host": "superhero-search.p.rapidapi.com"
+}
+
+response = requests.request("GET", url, headers=headers, params=querystring)
+
+batman = response.json()
+json_object = json.dumps(batman, indent=3)
+
+with open('batman.json', 'w') as outfile:
+  outfile.write(json_object)
+print(response.text)
+
+ComicVine API very confusing to use
+username: milkis420, APIKEY: 6028f8ab23892d424a31b9845b1c36ed4f737523
+
+https://api.themoviedb.org/3/movie/76341?api_key=<<api_key>>
+api_key: d0c8ed23f9287cc230bd6045c8fb4985
+
+https://comicvine.gamespot.com/api/search/?api_key= api_key&format=json&limit=1&offset=0&field_list=id,name,deck,volume&sort=name:asc&resources=issue&query=Feynman
+
+
+How to make a GET request
+
+- instantiate payload dictionary
+- get request w/params=payload 
+- turn json into python dct, assign to variable
+res = requests.get({URL})
+
+res >> <Response [200]>
+
+search_results = res.json()
+
+search_results >> all JSON information in form of python dict.
+
+req = requests.get({URL}, params)
+req.url >> will return URL
