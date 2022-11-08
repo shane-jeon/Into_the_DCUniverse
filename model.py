@@ -19,22 +19,20 @@ class Character(db.Model):
   """A character's dossier."""
 
   # to specify tablename
-  __tablename__ = 'characters'
+  __tablename__ = 'character'
 
   # Specify type of column
   # Parameters: "nullable=False", default, unique, primary_key, autoincrement
   # char_id = db.Column(db.Integer, primary_key=True)
-  # char_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-  char_id = db.Column(db.Integer, primary_key=True)
-  # superHero_id = db.Column(db.Integer)
-  # comicVine_id = db.Column(db.Integer)
-  name = db.Column(db.String)
+  id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+  char_name = db.Column(db.String)
   alignment = db.Column(db.String, nullable=False)
   biography = db.Column(db.String)
   earth_name = db.Column(db.Integer) 
-  # era_id = db.Column(db.Integer, db.ForeignKey(""))
+  # FOREIGN KEY
+  era_id = db.Column(db.Integer, db.ForeignKey(""))
   gender = db.Column(db.String)
-  # media_type = db.Column(db.Integer, db.ForeignKey(""))
+  media_type = db.Column(db.Integer, db.ForeignKey(""))
   power = db.Column(db.String)  
 
   # establish relationships, backpopulate

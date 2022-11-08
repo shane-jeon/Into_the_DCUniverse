@@ -1,0 +1,52 @@
+The four ages of DC Comics (formerly known as National Allied Publications)
+
+Publications broken down to TWO large sections
+1. Pre-Crisis on Infinite Earths (AKA 'Pre-Crisis')
+2. Post-Crisis on Infinite Earths (AKA 'Post-Crisis')
+
+Ages refer to grouping of years that DC was publishing comics:
+(Ages akin to "reboots")
+
+PRE-CRISIS 
+Ages:
+
+- The Golden Age (1938 - mid-1950s)
+  - ID: 60743
+- The Silver Age (1956 - 1970's-ish)
+  - ID: 56684
+- The Bronze Age (1970's-ish - 1985)
+  - ID: N/A
+  - Will need to extract this data elsewhere
+
+CRISIS (on Infinite Earths)
+- A comic series
+- ID: 40764
+
+POST-CRISIS (1986)
+Ages:
+- Zero Hour (1994) --> soft reboots
+  - ID: 40782
+- Infinite Crisis (2005)
+  - ID: 40765
+  - Also see:
+    - "Countdown to Infinite Crisis"
+      - ID: 40800
+    - "Countdown to Final Crisis"
+      - ID: 56194
+- Flashpoint (2011)
+  - ID: 56280
+- The New 52 (2011)
+  - ID: N/A 
+  - Need to find all comics under New 52 elsewhere
+- Rebirth (2016)
+  - ID: 57595, 58217
+
+
+Comic Vine Story Arc Resources:
+- count_of_issue_appearances
+- deck
+- description
+- first_appeared_in_issue
+- id
+- image 
+- name

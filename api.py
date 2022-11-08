@@ -62,7 +62,7 @@ def format_conversion(filename, new_filename):
     outfile.write(json_object)
 
 
-format_conversion('data/character_JSON/requires_reformatting/zatanna.json', 'data/character_JSON/zatanna.json')
+# format_conversion('data/character_JSON/requires_reformatting/zatanna.json', 'data/character_JSON/zatanna.json')
 
 def comicvine_get_request(your_UA, API_KEY, resource, fields, new_filename):
   """A general get request for comic vine."""
@@ -84,10 +84,11 @@ def comicvine_get_request(your_UA, API_KEY, resource, fields, new_filename):
     outfile.write(json_object)
 
 
-def alphabetize_JSON_dict(filename):
+def alphabetize_JSON_dict(filename, new_filename):
   """Retrieves dictionary from JSON file. Alphabetizes data."""
 
-  story_arcs = []
+  # story_arcs = []
+  story_arcs = {}
 
   with open(filename) as openfile:
     JSON_dict = json.loads(openfile.read())
@@ -98,9 +99,20 @@ def alphabetize_JSON_dict(filename):
     arc_id = arc['id']
     arc_name = arc['name']
 
-    story_arcs.append(arc_id, arc_name)
-  
-  print(story_arcs[:10])
+    story_arcs[arc_id] = arc_name
+
+    # story_arcs.append(arc_id, arc_name)
+
+    # sort by value
+    sort_by_value = dict(sorted(story_arcs.items(), key=lambda item: item[1]))
+  # print(story_arcs)
+  print(sort_by_value)
+
+  # serialize JSON from dictionary
+  json_object = json.dumps(sort_by_value, indent = 4)
+
+  with open(f'{new_filename}.json', 'w') as outfile:
+    outfile.write(json_object)
 
   # create list to store tuples containing concept id and name
   # open JSON file
@@ -111,7 +123,7 @@ def alphabetize_JSON_dict(filename):
 
   # OR
   # 
-
+alphabetize_JSON_dict('data/DC_story_arcs.json', 'data/alphabetized_DC_story_arcs.json')
 # #####################################################
 # #####################################################
 # ##################################################### 

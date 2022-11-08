@@ -63,6 +63,9 @@ MVP 3.0
   also see img file for examples
   - also look into dossier examples from JLU animated universe/young justice/mayyybbe liveaction? (not likely)
 
+MVP 4.0
+- add basic DC history in an "about" like page 
+
 MVP 3000 (aka after web app is deployed)
 - periodicallly check APIs to make sure db data is up to date 
 
