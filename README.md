@@ -1,3 +1,15 @@
+# Into the DCUniverse
+
+*Into the DCUniverse*, a web application that allows any DC Comics fan to navigate through the complicated narratives, eras, ages, and multiverse apeparances of any character that has ever been created by DC Comics. The user has the option to create an account should they want to bookmark their favorite characters or the user can simply use the web application without registration. Characters can either be found through an alphabetical list or search query. Say a user seeks the full history of one John Constantine. By looking at the anti-social, formidable anti-hero's profile (for all intents and purposes, his dossier), the user can find John Constantine's first comic appearance, his general biography, his appearances in various forms of media (say, television or film), and how his background has (or has not) changed with each new DC comic age (e.g, Post-Crisis--The New 52, DC Rebirth) or different multiverses (e.g., The Sandman Universe). 
+
+How this project came to be? I was drawn into the DC Franchise through the DC Animated Universe. Soon the animated television shows drew me to animated film, live action film, and finally the comics themselves. However, as a new DC Comics fan, I was incredibly confused with all the multiverses, "Pre & Post" Crisis, different Earths, the reboots that came from new ages...I eventually was able to piece everything together albeit through an arduous process of investigation through wikipedia, fandom wiki, and my own personal media consumption. How wonderful would it have been to go to one website and to have all DC Comics characters with all detailed information at the disposal of my fingertips?
+
+I don't anticipate the completion of this project anytime soon, though the MVP most likely should be completed by Spring 2023. My definition of "completion" would include a fully interactive, user friendly, and aesthetically pleasing deployed web app. 
+
+Stay tuned!
+
+
+
 model.py
 
 To create the tables needed for my postgreSQL relational database, I required the use of 3 libraries:
