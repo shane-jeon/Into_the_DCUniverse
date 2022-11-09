@@ -10,9 +10,15 @@ os.system("createdb characters")
 model.connect_to_db(server.app)
 model.db.create_all()
 
-with open('data/superHeroAPI_DC.json') as f:
-  char_data = json.loads(f.read())
-  len_test = print('length of list: ', len(char_data))
+# iterate through data/character_JSON folder files
+# for file in ''
+# with open('data/superHeroAPI_DC.json') as f:
+#   char_data = json.loads(f.read())
+#   len_test = print('length of list: ', len(char_data))
+
+with open('data/character_JSON') as files:
+  for file in files:
+    char_data = json.loads(file.read())
 
 def create_biography(char_data, char):
   """Create a character's biography summary."""
