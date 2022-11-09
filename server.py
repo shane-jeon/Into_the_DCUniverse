@@ -2,9 +2,9 @@
 
 from flask import Flask, render_template, request, flash, session, redirect
 from jinja2 import StrictUndefined
-from model import connect_to_db
+from model import connect_to_db, db
 
-# Flask application needs to know what module to scan for, e.g., routes; required 
+# create the app
 app = Flask(__name__)
 
 app.secret_key = "ashen_dev"

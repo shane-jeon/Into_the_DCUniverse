@@ -4,197 +4,235 @@
 from flask_sqlalchemy import SQLAlchemy
 # from datetime import datetime
 
-# Gives a db OBJECT, representing database
+# db object gives access to db.Model class to define models and db.session to execute queries
+
 db = SQLAlchemy()
 
-# holding off on "nullables" until I can make sure I can get all data needed for db tables
+#########################
+######USER_ACCOUNT#######
+#########################
+class User_Account(db.Model):
+  """A user's account."""
+  __tablename__ = 'user_account'
+
+  id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+  username = db.Column(db.String, unique=True, nullable=False)
+  email = db.Column(db.String, unique=True, nullable=False)
+  password = db.Column(db.String, nullable=False)
+  avatar = db.Column(db.String)
+  bookmark_id = db.Column(db.Integer, db.ForeignKey('bookmark.id'))
+
+#########################
+#####USER_BOOKMARK#######
+#########################
+# association table
+user_bookmark= db.Table('user_bookmark',
+  # db.Model.metadata,
+  db.Column('user_id', db.ForeignKey('user.id'), primary_key=True),
+  db.Column('bookmark_id', db.ForeignKey('bookmark.id'), primary_key=True),
+
+  # Relationships with:
+      # user Model
+      # bookmark Model
+)
+
+#########################
+########BOOKMARK#########
+#########################
+class Bookmark(db.Model):
+  """A user's account."""
+  __tablename__ = 'bookmark'
+
+  id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+  user_id = db.Column(db.Integer, db.ForeignKey('user_account.id'))
+  char_id = db.Column(db.Integer, db.ForeignKey('character.id'))
+
+  # relationship with User, Character Model
 
 
 #########################
-#######CHARACTERs########
+########CHARACTER########
 #########################
 
-# All models needs to subclass "db.Model"
+# subclass 'db.Model' defines model class
 class Character(db.Model):
-  """A character's dossier."""
-
-  # to specify tablename
+  """A character profile."""
   __tablename__ = 'character'
 
-  # Specify type of column
-  # Parameters: "nullable=False", default, unique, primary_key, autoincrement
-  # char_id = db.Column(db.Integer, primary_key=True)
   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-  char_name = db.Column(db.String)
-  alignment = db.Column(db.String, nullable=False)
-  biography = db.Column(db.String)
-  earth_name = db.Column(db.Integer) 
-  # FOREIGN KEY
-  era_id = db.Column(db.Integer, db.ForeignKey(""))
-  gender = db.Column(db.String)
-  media_type = db.Column(db.Integer, db.ForeignKey(""))
-  power = db.Column(db.String)  
+  name = db.Column(db.String(50), nullable=False)
+  alignment = db.Column(db.String(15), nullable=False)
+  gender = db.Column(db.String(15), nullable=False)
+  biography = db.Column(db.String, nullable=False)
+  earth_id = db.Column(db.String, db.ForeignKey('earth.id')) 
+  era_id = db.Column(db.Integer, db.ForeignKey('era.id'))
+  media_id = db.Column(db.Integer, db.ForeignKey('media.id'))
+  power = db.Column(db.String)
+  creator = db.Column(db.String)  
 
-  # establish relationships, backpopulate
-  # media_type = db.relationship('MediaType', backref='characters')
-  # era = db.relationship('Era', backref='characters')
+  # relationship w/media_association table
+
   def __repr__(self):
     return f'''<
-    Character char_id={self.char_id} 
+    Character id={self.id} 
     print()
-    NAME={self.name}
+    name={self.name}
     print() 
-    BIOGRAPHY={self.biography}>'''
+    alignment={self.alignment}>'''
 
 
 #########################
-##########ERAS###########
-#########################
-
-# class Era(db.Model):
-#   """Lists all comic book eras with corresponding dates."""
-
-#   __tablename__ = 'eras'
-
-#   era_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-#   era_name = db.Column(db.String)
-#   era_timeline = db.Column(db.DateTime)
-
-#   # Backref relationship w/Characters table
-#   comicEra = db.relationship('ComicEra', back_ref="eras")
-
-#   def __repr__(self):
-#     return f'<Era era_id={self.era_id} era_name={self.era_name}>'
-
-
-
-#########################
-#########MEDIAs##########
+##########MEDIA##########
 #########################
 
 # class Media(db.Model):
-#   """All types of media for character appearances, or all types of DC media."""
+#   """Association table to access comics, film, and television."""
 
-#   __tablename__ = 'medias'
+#   __tablename__ = 'media'
 
-#   media_type = db.column(db.String, primary_key=True)
-#   comic_issue = db.column(db.Integer)
-#   film_id = db.column(db.Integer)
-#   tv_id = db.column(db.Integer)
-#   film_id = db.column(db.Integer)
-#   char_id = db.column(db.Integer, db.ForeignKey('characters.char_id'))
+#   id = db.column(db.String, primary_key=True)
+#   comic_id = db.column(db.Integer, db.ForeignKey('comic.id'))
+#   film_id = db.column(db.Integer, db.ForeignKey('film.id'))
+#   tv_id = db.column(db.Integer, db.ForeignKey('television.id'))
+#   char_id = db.column(db.Integer, db.ForeignKey('character.id'))
 
-#   #Backref relationship w/Characters table
+media_association= db.Table('media_association',
+  # db.Model.metadata,
+  db.Column('char_id', db.ForeignKey('character.id'), primary_key=True),
+  db.Column('comic_id', db.ForeignKey('comic.id'), primary_key=True),
+  db.Column('film_id', db.ForeignKey('film.id'), primary_key=True),
+  db.Column('tv_id', db.ForeignKey('television.id'), primary_key=True)
 
-#   # comic = db.Relationship('Comic', back_ref='medias')
-#   # film = db.Relationship('Film', back_ref='medias')
-#   # tv = db.Relationship('Television', back_ref='medias')
-#   comic = db.Relationship('Comic', back_populate='medias')
-#   film = db.Relationship('Film', back_populate='medias')
-#   tv = db.Relationship('Television', back_populate='medias')
+  # Relationships with:
+      # character Model
+      # comic Model
+      # film Model
+      # television Model
+)
 
-#   def __repr__(self):
-#     return f'<Media media_type={self.media_type}>'
+#########################
+##########EARTH##########
+#########################
+
+class Earth(db.Model):
+  """List of DC comics."""
+
+  __tablename__ = 'earth'
+
+  id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+  earth_name = db.Column(db.String)
+  deceased_chars = db.Column(db.String)
+  char_id = db.Column(db.Integer, db.ForeignKey('character.id'))
+  comic_id = db.Column(db.Integer, db.ForeignKey('comic.id'))
+  film_id = db.Column(db.Integer, db.ForeignKey('film.id'))
+  tv_id = db.Column(db.Integer, db.ForeignKey('television.id'))
+
+  # relationship to character, comic, film, and tv Model
+
+  def __repr__(self):
+    return f'<Earth id={self.id} earth_name={self.earth_name}>'
+
+#########################
+#########COMIC###########
+#########################
+
+class Comic(db.Model):
+  """List of DC comics."""
+
+  __tablename__ = 'comic'
+
+  id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+  comic_issue = db.Column(db.Integer)
+  comic_title = db.Column(db.String)
+  author = db.Column(db.String)
+  artist = db.Column(db.String)
+  overview = db.Column(db.String)
+  comic_type = db.Column(db.String)
+  pub_date = db.Column(db.DateTime)
+  # era is either pre, mid, post crisis
+  era = db.Column(db.String)
+  # age is what has it's own table
+  age_id = db.Column(db.Integer, db.ForeignKey('age.id'))
+
+  # relationship w/media table
+
+  def __repr__(self):
+    return f'<Comic id={self.id} comic_issue={self.comic_issue} comic_title={self.comic_title}>'
+
+ 
+
+#########################
+##########AGE############
+#########################
+
+class Age(db.Model):
+  """Lists all comic book ages with corresponding dates."""
+
+  __tablename__ = 'age'
+
+  id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+  age = db.Column(db.String)
+  time_period = db.Column(db.DateTime)
+
+  # relationship to comic table
+
+
+  def __repr__(self):
+    return f'<age id={self.id} age={self.age}>'
+
 
 
 # #########################
-# #########COMICs##########
+# ##########FILM###########
 # #########################
 
-# class Comic(db.Model):
-#   """List of DC comics, or display specific Character's appearance.."""
+class Film(db.Model):
+  """Lists all DC films."""
 
-#   __tablename__ = 'comics'
+  __tablename__ = 'film'
 
-#   comic_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-#   comic_issue = db.Column(db.Integer)
-#   comic_title = db.Column(db.String)
-#   artist = db.Column(db.String)
-#   author = db.Column(db.String)
-#   comic_overview = db.Column(db.String)
-#   comic_type = db.Column(db.String)
-#   pub_date = db.Column(db.DateTime)
+  id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+  title = db.Column(db.String, nullable=False)
+  summary = db.Column(db.String)
+  director = db.Column(db.String)
+  media_medium = db.Column(db.String)
+  release_date = db.Column(db.DateTime, nullable=False)
+  act_talent = db.Column(db.String)
+  char_id = db.Column(db.Integer, db.ForeignKey('character.id'))
 
-#   # db.Relationship w/Media table (back_ref)
-#   comicEra = db.relationship('ComicEra', back_ref="comics")
+  #relationship w/media, character table
 
-#   def __repr__(self):
-#     return f'<Comic comic_issue={self.comic_issue} comic_title={self.comic_title}>'
-
-
-# #########################
-# ######COMIC-ERAs#########
-# #########################
-
-# class ComicEra(db.Model):
-#   "Association table for Comics and Eras."
-
-#   __tablename__ = 'comicEras'
-
-#   comEra_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-#   comic_issue = db.Column(db.Integer)
-#   era_id = db.Column(db.Integer)
-
-#   #Back ref relationship w/comics table
-#   #Back ref relationship w/eras table
-
-#   def __repr__(self):
-#     return f'<Comic Era comEra_id={self.comEra_id} comic_issue={self.comic_issue} era_id={self.era_id}>'
-
-# #########################
-# ##########FILMs##########
-# #########################
-
-# class Film(db.Model):
-#   """Lists all DC films, or display specific Character's appearance."""
-
-#   __tablename__ = 'films'
-
-#   film_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-#   film_title = db.Column(db.String)
-  # film_summary = db.Column(db.String)
-#   director = db.Column(db.String)
-#   media_medium = db.Column(db.String)
-#   overview = db.Column(db.String)
-#   release_date = db.Column(db.DateTime)
-#   actor_s = db.Column(db.String)
-
-#   #db.Relationship w/Media table. (back_ref)
-
-#   def __repr__(self):
-#     return f'<Film film_id={self.film_id} film_title={self.film_title}>'
+  def __repr__(self):
+    return f'<Film id={self.id} film_title={self.title}>'
   
 
 # #########################
-# #######TELEVISIONs########
+# #######TELEVISION#########
 # #########################
 
-# class Television(db.Model):
-#   """List of all DC television shows, or display a specific Character's appearance."""
+class Television(db.Model):
+  """List of all DC television shows."""
 
-#   __tablename__ = 'tv_shows'
+  __tablename__ = 'television'
 
-#   tv_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-#   tv_title = db.Column(db.String)
-#   air_date = db.Column(db.DateTime)
-#   media_medium = db.Column(db.String)
-#   showrunner = db.Column(db.String)
-#   tv_overview = db.Column(db.String)
+  id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+  title = db.Column(db.String)
+  air_date = db.Column(db.DateTime)
+  media_medium = db.Column(db.String)
+  showrunner = db.Column(db.String)
+  summary = db.Column(db.String)
+  char_id = db.Column(db.Integer, db.ForeignKey('character.id'))
 
-#   #db.Relationship w/Media table (back_ref)
+  #db.Relationship w/Media, character tables
 
-#   def __repr__(self):
-#     return f'<Television tv_id={self.tv_id} tv_title={self.tv_title}>'
+  def __repr__(self):
+    return f'<Television id={self.id} title={self.title}>'
 
 
-class Concepts(db.Model):
-  """List of 'concepts' within the dc-universe."""
-  concept_id = db.Column(db.Integer, primary_key=True)
-  concept_name = db.Column(db.String)
 def connect_to_db(flask_app, db_uri='postgresql:///characters', echo=True):
   """Connect to database."""
 
-  # Location of the database
+  # Tells SQLAlchemy what database to connect to
   flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
   # Will output raw SQL, executed by SQLAlchemy (so that's why I see the SQL query in the terminal)
   flask_app.config['SQLALCHEMY_ECHO'] = echo
@@ -202,6 +240,7 @@ def connect_to_db(flask_app, db_uri='postgresql:///characters', echo=True):
 
   # connects databse with Flask app
   db.app = flask_app
+  # call initializes SQLAlchemy extension class with the application
   db.init_app(flask_app)
 
   print("Connected to DB (model.py)")
@@ -213,7 +252,3 @@ if __name__ == "__main__":
   # connection call
   # Any errors about db connection that will arise, check connect_to_db(app) is called before app.run() 
   connect_to_db(app)
-
-  # use 'db.create_all()' to create all tables using db connection
-    # only needs to be done once unless changes have been made to table's schema
-      # in that case, dropdb ____ and createdb ______
