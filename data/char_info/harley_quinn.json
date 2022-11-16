@@ -1,0 +1,101 @@
+{
+   "error": "OK",
+   "limit": 1,
+   "offset": 0,
+   "number_of_page_results": 1,
+   "number_of_total_results": 1,
+   "status_code": 1,
+   "results": {
+      "creators": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-7365/",
+            "id": 7365,
+            "name": "Bruce Timm",
+            "site_detail_url": "https://comicvine.gamespot.com/bruce-timm/4040-7365/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-42061/",
+            "id": 42061,
+            "name": "Paul Dini",
+            "site_detail_url": "https://comicvine.gamespot.com/paul-dini/4040-42061/"
+         }
+      ],
+      "deck": "Harleen Quinzel was a psychiatric resident at Arkham Asylum, where she met the incarcerated Joker. Falling in love with her patient, she conspired to break him out of prison and eventually became his lover and loyal sidekick, Harley Quinn. She eventually left him to be her own woman, and has been and enemy and ally of Batman, and various other heroes.",
+      "gender": 2,
+      "id": 1696,
+      "name": "Harley Quinn",
+      "powers": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+            "id": 2,
+            "name": "Super Strength"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+            "id": 4,
+            "name": "Agility"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+            "id": 5,
+            "name": "Stamina"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+            "id": 9,
+            "name": "Intellect"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+            "id": 15,
+            "name": "Healing"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+            "id": 17,
+            "name": "Weapon Master"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+            "id": 34,
+            "name": "Unarmed Combat"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-35/",
+            "id": 35,
+            "name": "Gadgets"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-58/",
+            "id": 58,
+            "name": "Escape Artist"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-59/",
+            "id": 59,
+            "name": "Tracking"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-78/",
+            "id": 78,
+            "name": "Swordsmanship"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-108/",
+            "id": 108,
+            "name": "Marksmanship"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-132/",
+            "id": 132,
+            "name": "Stealth"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+            "id": 135,
+            "name": "Leadership"
+         }
+      ]
+   },
+   "version": "1.0"
+}

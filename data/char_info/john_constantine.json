@@ -1,0 +1,192 @@
+{
+   "error": "OK",
+   "limit": 1,
+   "offset": 0,
+   "number_of_page_results": 1,
+   "number_of_total_results": 1,
+   "status_code": 1,
+   "results": {
+      "creators": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-40382/",
+            "id": 40382,
+            "name": "Alan Moore",
+            "site_detail_url": "https://comicvine.gamespot.com/alan-moore/4040-40382/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-8293/",
+            "id": 8293,
+            "name": "John Totleben",
+            "site_detail_url": "https://comicvine.gamespot.com/john-totleben/4040-8293/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-11477/",
+            "id": 11477,
+            "name": "Steve Bissette",
+            "site_detail_url": "https://comicvine.gamespot.com/steve-bissette/4040-11477/"
+         }
+      ],
+      "deck": "John Constantine, the Hellblazer, is a working-class magician, occult detective and a golden-tongued con man. He is well-known for his scathing wit, endless cynicism, ruthless cunning and constant chain smoking. A roguish counterculture anti-hero, Constantine is also a strident humanist driven by a heartfelt desire to defend mankind from the forces of evil.",
+      "gender": 1,
+      "id": 3329,
+      "name": "John Constantine",
+      "powers": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+            "id": 4,
+            "name": "Agility"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-8/",
+            "id": 8,
+            "name": "Telekinesis"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+            "id": 9,
+            "name": "Intellect"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-10/",
+            "id": 10,
+            "name": "Teleport"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-12/",
+            "id": 12,
+            "name": "Psychic"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-14/",
+            "id": 14,
+            "name": "Blast Power"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+            "id": 15,
+            "name": "Healing"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-16/",
+            "id": 16,
+            "name": "Magic"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-21/",
+            "id": 21,
+            "name": "Invisibility"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-26/",
+            "id": 26,
+            "name": "Fire Control"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-37/",
+            "id": 37,
+            "name": "Divine Powers"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-40/",
+            "id": 40,
+            "name": "Immortal"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-49/",
+            "id": 49,
+            "name": "Necromancy"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-58/",
+            "id": 58,
+            "name": "Escape Artist"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-60/",
+            "id": 60,
+            "name": "Astral Projection"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-61/",
+            "id": 61,
+            "name": "Danger Sense"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-66/",
+            "id": 66,
+            "name": "Adaptive"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-69/",
+            "id": 69,
+            "name": "Probability Manipulation"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-75/",
+            "id": 75,
+            "name": "Light Projection"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-77/",
+            "id": 77,
+            "name": "Reality Manpulation"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-93/",
+            "id": 93,
+            "name": "Time Travel"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-101/",
+            "id": 101,
+            "name": "Darkness Manipulation"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-102/",
+            "id": 102,
+            "name": "Illusion Casting"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-105/",
+            "id": 105,
+            "name": "Wind Bursts"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-115/",
+            "id": 115,
+            "name": "Hypnosis"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-124/",
+            "id": 124,
+            "name": "Cosmic Awareness"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-128/",
+            "id": 128,
+            "name": "Energy Based Constructs"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-130/",
+            "id": 130,
+            "name": "Voice-induced Manipulation"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+            "id": 135,
+            "name": "Leadership"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-136/",
+            "id": 136,
+            "name": "Longevity"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-141/",
+            "id": 141,
+            "name": "Hellfire Control"
+         }
+      ]
+   },
+   "version": "1.0"
+}

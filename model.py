@@ -61,7 +61,7 @@ class Character(db.Model):
 
   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
   name = db.Column(db.String(50), nullable=False)
-  alignment = db.Column(db.String(15), nullable=False)
+  # alignment = db.Column(db.String(15), nullable=False)
   gender = db.Column(db.String(15), nullable=False)
   biography = db.Column(db.String, nullable=False)
   earth_id = db.Column(db.String, db.ForeignKey('earth.id')) 

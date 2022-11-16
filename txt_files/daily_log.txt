@@ -1,33 +1,26 @@
-10/26/2022 Wednesday:
+11/15/2022 Tuesday:
+- Needed to take a break from the project for a bit. JSON files doesn't have the information ordered like I need it to not sure why. For example, name should be first item in results but I don't see it. JSON files are a mix of files from POSTMAN as well as my own API request. Rerunning API function to get correct format
+- Today's goal: get proper JSON file formatting so I can finally create CRUD functions to seed db. Also better organize my "api.py" file
 
-- I cleaned up the characters table a bit. Included a function so that I can include a character's bio. Used formatting to just pop in the right values in the right spaces (e.g., f'{name}')
+- created function to get character information. limited to only need information to create character in DB. alignment is not available....not sure how to find it--maybe from different API. still need to organize functions in 'api.py' and give them better more detailed descriptions so its easier to pick up where I stopped. It was confusing to go through functions.
 
-- Have been trying to figure out how to use different APIs, especially ones with vague documentation (or perhaps it's just vague to me because I am still new to using REST APIs. Should've paid better attention during lectures but ah well.)
+11/3/2022 Thursday
 
-- figured out comicvine API, just stuck in a dilemma about character duplicates....just going to get that JSON file first and figure it out when I can compare the lists.
-
-- Looking into why APIs have request limits.
-
-
-10/27/2022 Thursday:
-
-found solution to why field_list wasn't working in my API calls. it's because the URL format was
-wrong, found example in API developer forum. now working on code to collect all character names in a list to iterate through to get character info from API.
-
-I've been using postman to make the API calls for easier access, to test if my methods are working as opposed to using VSCODE saves a lot of time.
-
-also DC id is 4010-10 i think
-
-ok lesson learned (5:54pm)
-don't fiddle around with code untill you start troubleshooting from the source. I fiddled around with my loops and conditionals
-when turns out the problem was that the URL wasn't being sent in the right format. figured it out by comparing successful
-request in console v. code
-
-6:11pm 
-used jsonpickle to solved my serialization problem
-CODE IS SUCCESSFUL and FUNCTIONING ...HOWEVER....comicvine has an api request limit of 100 per hour...
-need to add code so that will trigger 100 requests every hour but thats for another day
-
+SOD Goals (though I am "starting" at 8:55PM)
+- Finish the function that will alphabetize DC comments
+- Clean up "api.py" file. Figure out where to put these functions
+Today's blockers
+- Tired, not enough time to do much
+Today's successes
+- reformatted some JSON files
+New ideas for MVP
+- add new table for user data, bookmarks, and middle data table for user bookmarks
+General progress update
+- not much but did a bit
+General thoughts about project
+- Going to have to really sit down and draw out a plan instead of popping out code straight from my fingers
+EOD comments
+- Project needs more structure, organization, and planning in order to finish MVP 1.0
 
 10/28/2022 Friday:
 
@@ -76,21 +69,39 @@ to-do:
 EOD comments:
 Spent all week working on getting data from API calls. Relatively confident in working with APIs but seems like I'll be doing this repeatedly with different APIs so I should get a better grasp of how to work with them soon enough. --end log 5:27PM
 
+10/27/2022 Thursday:
 
-11/3/2022 Thursday
+found solution to why field_list wasn't working in my API calls. it's because the URL format was
+wrong, found example in API developer forum. now working on code to collect all character names in a list to iterate through to get character info from API.
 
-SOD Goals (though I am "starting" at 8:55PM)
-- Finish the function that will alphabetize DC comments
-- Clean up "api.py" file. Figure out where to put these functions
-Today's blockers
-- Tired, not enough time to do much
-Today's successes
-- reformatted some JSON files
-New ideas for MVP
-- add new table for user data, bookmarks, and middle data table for user bookmarks
-General progress update
-- not much but did a bit
-General thoughts about project
-- Going to have to really sit down and draw out a plan instead of popping out code straight from my fingers
-EOD comments
-- Project needs more structure, organization, and planning in order to finish MVP 1.0
+I've been using postman to make the API calls for easier access, to test if my methods are working as opposed to using VSCODE saves a lot of time.
+
+also DC id is 4010-10 i think
+
+ok lesson learned (5:54pm)
+don't fiddle around with code untill you start troubleshooting from the source. I fiddled around with my loops and conditionals
+when turns out the problem was that the URL wasn't being sent in the right format. figured it out by comparing successful
+request in console v. code
+
+6:11pm 
+used jsonpickle to solved my serialization problem
+CODE IS SUCCESSFUL and FUNCTIONING ...HOWEVER....comicvine has an api request limit of 100 per hour...
+need to add code so that will trigger 100 requests every hour but thats for another day
+
+10/26/2022 Wednesday:
+
+- I cleaned up the characters table a bit. Included a function so that I can include a character's bio. Used formatting to just pop in the right values in the right spaces (e.g., f'{name}')
+
+- Have been trying to figure out how to use different APIs, especially ones with vague documentation (or perhaps it's just vague to me because I am still new to using REST APIs. Should've paid better attention during lectures but ah well.)
+
+- figured out comicvine API, just stuck in a dilemma about character duplicates....just going to get that JSON file first and figure it out when I can compare the lists.
+
+- Looking into why APIs have request limits.
+
+
+
+
+
+
+
+

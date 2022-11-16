@@ -10,6 +10,8 @@ import math
 
 # api_key = "YOUR_ACCESS_TOKEN" #Obtain through https://www.superheroapi.com/, requires Facebook account however
 superhero_API_KEY = 1075529179813027
+comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
+user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'
 
 def import_SuperHeroAPI(API_KEY):
   """Gets all available DC Comic characters from SuperHero API."""
@@ -65,23 +67,69 @@ def format_conversion(filename, new_filename):
 # format_conversion('data/character_JSON/requires_reformatting/zatanna.json', 'data/character_JSON/zatanna.json')
 
 def comicvine_get_request(your_UA, API_KEY, resource, fields, new_filename):
-  """A general get request for comic vine."""
+  """A general get request for comic vine. 
+  
+  Parameters explained respectively, your user_agent information, your API key, resource: what information you are requesting (character, publisher, etc.), fields: what information you want to get back, new_filename: name of JSON file"""
 
+  # needed to get response 200 from API request
   headers = { 'User-Agent' : your_UA}
 
+  # required information needed
   payload = { 'api_key' : API_KEY,
               'format' : 'json',
               'field_list' : fields
   }
 
+  # URL for API request
   URL = f'https://comicvine.com/api/{resource}/4010-10/'
 
+  # holds information from get request
   response = requests.get(URL, params=payload, headers=headers)
 
+  # converts to JSON dictionary I think
   json_object = json.dumps(response.json(), indent=3)
 
   with open(f'{new_filename}.json', 'w') as outfile:
     outfile.write(json_object)
+
+def character_JSON_request(your_UA, API_KEY, char_id, new_filename):
+  """A general get request for comic vine. 
+  
+  Parameters explained respectively, your user_agent information, your API key, resource: what information you are requesting (character, publisher, etc.), fields: what information you want to get back, new_filename: name of JSON file"""
+
+  # needed to get response 200 from API request
+  headers = { 'User-Agent' : your_UA}
+
+  # required information needed
+  payload = { 'api_key' : API_KEY,
+              'format' : 'json',
+              'field_list' : 'id,name,gender,deck,powers,creators'
+  }
+
+  # URL for API request
+  URL = f'https://comicvine.com/api/character/4005-{char_id}/'
+
+  # holds information from get request
+  response = requests.get(URL, params=payload, headers=headers)
+
+  # converts to JSON dictionary I think
+  json_object = json.dumps(response.json(), indent=3)
+
+  with open(f'data/char_create_info/{new_filename}.json', 'w') as outfile:
+    outfile.write(json_object)
+
+
+
+# fields requested in POSTMAN: real_name,id,deck,description,gender,origin,powers,teams,creators,first_appeared_in_issue,count_of_issue_apperances,issue_credits,volume_credits,issues_died_in,movies,story_arc_credits,api_detail_url
+
+# new field list created because API files did not contain information I needed for CRUD functions and and seed_db: 
+  # id, name, gender, deck, description, powers, creators
+# char_fields = 'id,name,gender,deck,powers,creators'
+
+# JOHN CONSTANTINE
+# character_JSON_request(user_agent, comicvine_API_KEY, 3329,'john_constantine')
+# HARLEY QUINN
+character_JSON_request(user_agent, comicvine_API_KEY, 1696,'harley_quinn')
 
 
 def alphabetize_JSON_dict(filename, new_filename):
@@ -123,7 +171,7 @@ def alphabetize_JSON_dict(filename, new_filename):
 
   # OR
   # 
-alphabetize_JSON_dict('data/DC_story_arcs.json', 'data/alphabetized_DC_story_arcs.json')
+# alphabetize_JSON_dict('data/DC_story_arcs.json', 'data/alphabetized_DC_story_arcs.json')
 # #####################################################
 # #####################################################
 # ##################################################### 
@@ -216,8 +264,6 @@ def get_info_from_charID(filename, API_KEY, your_header):
     with open(f'{char_name}.json', 'w') as outfile:
       outfile.write(json_object)
 
-comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
-my_header = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'
 
 # get_info_from_charID('data/comicvineAPI_DC.json', comicvine_API_KEY, my_header)
 
