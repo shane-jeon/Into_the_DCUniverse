@@ -1,3 +1,8 @@
+12/29/2022 Thursday:
+
+Made reassessments to my MVP goals. Reminded self that I need a MINIMAL VIABLE PRODUCT.
+Worked out API request, got data I need for now. Need to reassess database tables, but for now just focusing on successfully seeding database (which for now consists of ONE table, characters). I want to make sure that I know how to seed db before re-doing DB tables
+
 12/16/2022 Friday:
 It's been a while. Being stuck in the backend, well hardly even the backend. I'm still struggling with my API calls...
 But! Taking a break was probably the best. Time to reassess and organize my code before it gets unmanageable!
