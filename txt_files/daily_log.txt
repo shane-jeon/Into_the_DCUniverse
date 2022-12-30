@@ -1,3 +1,25 @@
+12/16/2022 Friday:
+It's been a while. Being stuck in the backend, well hardly even the backend. I'm still struggling with my API calls...
+But! Taking a break was probably the best. Time to reassess and organize my code before it gets unmanageable!
+
+Goals:
+- Figure out API situation
+- What information do I want in my database?
+- Establish structure and organization
+
+Notes:
+- Getting information in this order, despite how I ordered the fields in the request
+  - creators
+  - deck
+  - gender
+  - id
+  - image (dictionary of available images)
+  - name
+  - origin 
+  - powers (list of dictionaries) --> [i]["name"]
+
+
+
 11/15/2022 Tuesday:
 - Needed to take a break from the project for a bit. JSON files doesn't have the information ordered like I need it to not sure why. For example, name should be first item in results but I don't see it. JSON files are a mix of files from POSTMAN as well as my own API request. Rerunning API function to get correct format
 - Today's goal: get proper JSON file formatting so I can finally create CRUD functions to seed db. Also better organize my "api.py" file

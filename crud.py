@@ -2,12 +2,17 @@
 
 from model import db, Character, connect_to_db
 
-def create_char(char_id, name, alignment, biography):
+def create_character(id, image, name, gender, species, biography, power, creator):
   """Create and return a new character."""
-  char = Character(char_id=char_id,
+  char = Character(id=id,
+                   image=image,
                    name=name,
-                   alignment=alignment,
-                   biography=biography
+                   gender=gender,
+                   species=species,
+                  #  alignment=alignment,
+                   biography=biography,
+                   power=power,
+                   creator=creator
   )
 
   # db.session used for database transactions (nothing to do with Flask 'session')
@@ -20,23 +25,23 @@ def create_char(char_id, name, alignment, biography):
 
   return char
 
-def return_all():
-  """Return all characters."""
+# def return_all():
+#   """Return all characters."""
 
-  return Character.query.all()
+#   return Character.query.all()
 
-def get_char_by_id(char_id):
-  """Gets character by char_id."""
+# def get_char_by_id(char_id):
+#   """Gets character by char_id."""
 
-  char = Character.query.get(char_id)
+#   char = Character.query.get(char_id)
 
-  return char
+#   return char
 
-# IDs appear to be not consecutive...create a function to get IDs by name... //RESOLVED 10/25/2022
+# # IDs appear to be not consecutive...create a function to get IDs by name... //RESOLVED 10/25/2022
 
-def get_charID_by_name(name):
+# def get_charID_by_name(name):
 
-  return Character.query.filter_by(name=name)
+#   return Character.query.filter_by(name=name)
 
 
 if __name__ == '__main__':
