@@ -5,7 +5,7 @@ from model import db, Character, connect_to_db
 def create_character(id, image, name, gender, biography, power, creator):
   """Create and return a new character."""
   char = Character(
-
+                   id=id,
                    image=image,
                    name=name,
                    gender=gender,

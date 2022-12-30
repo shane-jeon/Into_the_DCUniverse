@@ -39,12 +39,12 @@ for char_file in os.listdir(directory):
   creators = access_creators(char_results)
   biography = access_biography(char_results)
   gender = access_gender(char_results)
-  # id = access_comicvineID(char_results)
+  id = access_comicvineID(char_results)
   name = access_name(char_results)
   powers = access_powers(char_results)
   image = access_image(char_results)
 
-  # character_dictionary['id'] = id
+  character_dictionary['id'] = id
   character_dictionary['image'] = image
   character_dictionary['name'] = name
   character_dictionary['gender'] = gender
@@ -55,16 +55,19 @@ for char_file in os.listdir(directory):
   char_dicts.append(character_dictionary)
   print(f'character_dictionary {character_dictionary}')
 
+print('*'*20)
+print(char_dicts)
+print('*'*20)
 # 12/29/2022 --> will need to create new dictionary to hold results from API request to more easily seed database
 characters_in_db = []
 # for character in char_dict:
 for char in char_dicts:
   # print(character)
-  print(char['name'], char['biography'])
-  image, name, gender, biography, power, creator = (
+  print(char['id'], char['name'], char['biography'])
+  id, image, name, gender, biography, power, creator = (
     # character['creators'][1]['name'],
     # character_creators,
-    # char['id'],
+    char['id'],
     char['image'],
     char['name'],
     char['gender'],
@@ -76,8 +79,8 @@ for char in char_dicts:
   db_character = crud.create_character(id, image, name, gender, biography, power, creator)
   characters_in_db.append(db_character)
 
-# model.db.session.add_all(characters_in_db)
-# model.db.session.commit()
+model.db.session.add_all(characters_in_db)
+model.db.session.commit()
 
 
 
