@@ -1,6 +1,6 @@
 # Into the DCUniverse
 
-Please see txt_files/MVP.md
+**Please see txt_files/MVP.md**
 
 _Into the DCUniverse_, a web application that allows any DC Comics fan to navigate through the complicated narratives, eras, ages, and multiverse apeparances of any character that has ever been created by DC Comics. The user has the option to create an account should they want to bookmark their favorite characters or the user can simply use the web application without registration. Characters can either be found through an alphabetical list or search query. Say a user seeks the full history of one John Constantine. By looking at the anti-social, formidable anti-hero's profile (for all intents and purposes, his dossier), the user can find John Constantine's first comic appearance, his general biography, his appearances in various forms of media (say, television or film), and how his background has (or has not) changed with each new DC comic age (e.g, Post-Crisis--The New 52, DC Rebirth) or different multiverses (e.g., The Sandman Universe).
 
