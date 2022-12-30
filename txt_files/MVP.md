@@ -8,6 +8,8 @@ would need right at their fingertips in one platform.~~
 
 ### 12/27/2022 update, MVP reassessment
 
+**Any text that follows any others that has been crossed out are updates that have been made _12/27/2022 - 12/29/2022_**
+
 A web application that provides "primers" for new and future DC Comics fans to smoothly usher themselves into the complex nature of the DC Universe. Intrigued by Wonder Woman's history after watching Wonder Woman 1984? Well looking up this female crusader's biography isn't as simple as it seems.
 
 Delving into ONE character's history as someone with zero familiarity with the different eras (Golden Age, Silver Age, Bronze Age, Modern Age, New 52, Rebirth) and their publication periods (1938-1956, 1956-1971, 1971-1986, 1986-2011, 2011-2016, 2016-present)--respective dates. During these eras many characters had "reboots" to their origin stories and present timelines (fun fact, one of the few characters whose origin story has remained the same since its inception is Batman. The time old tale of a young boy found in an unfortunate situation in which he witnesses the murders of his mother and father by a petty criminal by the name of Joe Chill).
@@ -41,32 +43,56 @@ SUPERHEROS:
 ~~To get all superhero characters, using the following site to gather a list of all DC
 superheros
 [superheroAPI](https://www.superheroapi.com/)~~
+^^^ superheroAPI is limited to well-known DC characters, more obscure and lesser known characters were not found in this API. Placing this API on the backburner for now.
 
-VILLIANS/ANTIHEROS
+~~VILLIANS/ANTIHEROS
 There is a github repo containing all DC villians and anti-heros
 https://github.com/thatfiredev/dc-villains-api
 ** 10/25/2022, appears this API is not only just NOT working, but has obviously gathered the same info from SuperHero API
-\*\*** attempting to find alternatives, but in the meantime, villians list is not complete
+\*\*** attempting to find alternatives, but in the meantime, villians list is not complete~~
+Not a viable API.
 
 Media Apperances - I will use a variety of resources to collect all the data I will
 need to be able to pair comics, movies, tv shows to the proper characters
 
-COMICS: goodReads https://www.goodreads.com/api; Metron (comic book db) https://metron.cloud/ ; shortboxed https://api.shortboxed.com/ ; google books https://developers.google.com/books ; comic vine https://comicvine.gamespot.com/api/
-MOVIES: IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes
-\*\* TMDB (the movie db), alternative to imdb
-TV SHOWS: IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes;
+COMICS: ~~goodReads https://www.goodreads.com/api; Metron (comic book db) https://metron.cloud/ ; shortboxed https://api.shortboxed.com/ ; google books https://developers.google.com/books ; comic vine https://comicvine.gamespot.com/api/~~
 
-**\*\***10/25/2022 Major Interferences: IMDB is apparently owned by Amazon now! Fee is $150,000 for API access,
+ComicVine has proven to be the only reliable API that contains the data I am seeking.
+Unfortunately:
+
+- Goodreads API is now deprecated and no longer issuing new developer keys as of 12/8/2020. They are "...assessing the value of APIs...". Not too much of a setback, although I do need to find a different source to find information about DC graphic novels (e.g, YA graphic novels, as far as I know ComicVine does not have that information)
+
+  - [Open Library](https://openlibrary.org/developers/api) may contain data I require. Will look into after successfully populating database with data from ComicVine
+  - [Google Books API](https://developers.google.com/books/docs/v1/using) Another possible resource
+  - [Metron]() Backup, may look into to see if this API has information that ComicVine API does not.
+
+  MOVIES: ~~IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes
+  \*\* TMDB (the movie db), alternative to imdb~~
+
+  - [TMDB](https://www.themoviedb.org/documentation/api?language=en-US)
+
+  TV SHOWS: ~~IMDB https://developer.imdb.com/ ; Rotten Tomatoes https://developer.fandango.com/rotten_tomatoes;~~
+
+  - Possibly TMDB? Not sure if data is limited to film.
+    [mediawiki](https://www.mediawiki.org/wiki/API:Main_page)
+
+  General Information:
+
+  - [Wikipedia](https://en.wikipedia.org/api/rest_v1/#/)
+
+**\*\***10/25/2022 Major Interferences: IMDB is apparently owned by Amazon now! Fee is $150,000 for API access, Rotten Tomatoes does not offer a publicly available API.
 goodreads no longer offers public API access; Metron seems to be a viable option, however they have disabled the sign up button,
 just e-mailed admin to see if I can sign up.
-Earth/Eras:
-Possibly Wikipedia? https://www.mediawiki.org/wiki/API:Main_page , https://en.wikipedia.org/api/rest_v1/#/ ;
-possibly webscraping?
+~~Earth/Eras:
+Possibly Wikipedia? [mediawiki](https://www.mediawiki.org/wiki/API:Main_page) , [Wikipedia](https://en.wikipedia.org/api/rest_v1/#/) ;
+possibly webscraping?~~
 
-How to get data ideas:
+May skip Earths/Multiverses entirely...
+
+~~How to get data ideas:
 
 - somehow get a list of movie titles (dc), iterate through list in one of the movie DBs to obtain
-  the info
+  the info~~
 
 MVP 1.0
 
