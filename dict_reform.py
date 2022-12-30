@@ -84,8 +84,6 @@ def access_image(dict_results):
 
   return chosen_image
 
-# print(access_image(char_results))
-
 print('os.listdir(directory)', os.listdir(directory))
 
 char_dicts = []
