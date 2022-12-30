@@ -1,0 +1,163 @@
+{
+   "error": "OK",
+   "limit": 1,
+   "offset": 0,
+   "number_of_page_results": 1,
+   "number_of_total_results": 1,
+   "status_code": 1,
+   "results": {
+      "creators": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-43530/",
+            "id": 43530,
+            "name": "Robert Kanigher",
+            "site_detail_url": "https://comicvine.gamespot.com/robert-kanigher/4040-43530/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-19108/",
+            "id": 19108,
+            "name": "Sheldon Moldoff",
+            "site_detail_url": "https://comicvine.gamespot.com/sheldon-moldoff/4040-19108/"
+         }
+      ],
+      "deck": "A brilliant botanical biochemist, Pamela Isley is a fervent eco-terrorist out to save the world's plant life by any means necessary. She often finds herself at odds with Batman, though they have, on occasion, fought on the same side.",
+      "gender": 2,
+      "id": 1697,
+      "image": {
+         "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "original_url": "https://comicvine.gamespot.com/a/uploads/original/12/124259/8501806-ezgif-5-abdcb0d098.jpg",
+         "image_tags": "All Images"
+      },
+      "name": "Poison Ivy",
+      "origin": {
+         "api_detail_url": "https://comicvine.gamespot.com/api/origin/4030-9/",
+         "id": 9,
+         "name": "Other"
+      },
+      "powers": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+            "id": 2,
+            "name": "Super Strength"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+            "id": 4,
+            "name": "Agility"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+            "id": 5,
+            "name": "Stamina"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+            "id": 9,
+            "name": "Intellect"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-15/",
+            "id": 15,
+            "name": "Healing"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+            "id": 17,
+            "name": "Weapon Master"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+            "id": 34,
+            "name": "Unarmed Combat"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-55/",
+            "id": 55,
+            "name": "Mesmerize"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-59/",
+            "id": 59,
+            "name": "Tracking"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-66/",
+            "id": 66,
+            "name": "Adaptive"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-78/",
+            "id": 78,
+            "name": "Swordsmanship"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-83/",
+            "id": 83,
+            "name": "Emotion Control"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-108/",
+            "id": 108,
+            "name": "Marksmanship"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-109/",
+            "id": 109,
+            "name": "Genetic Manipulation"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-112/",
+            "id": 112,
+            "name": "Plant Control"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-114/",
+            "id": 114,
+            "name": "Death Touch"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-115/",
+            "id": 115,
+            "name": "Hypnosis"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-116/",
+            "id": 116,
+            "name": "Poisonous"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-117/",
+            "id": 117,
+            "name": "Pheromone Control"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-119/",
+            "id": 119,
+            "name": "Chemical Secretion"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-131/",
+            "id": 131,
+            "name": "Chemical Absorbtion"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-132/",
+            "id": 132,
+            "name": "Stealth"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-142/",
+            "id": 142,
+            "name": "Prehensile Hair"
+         }
+      ]
+   },
+   "version": "1.0"
+}

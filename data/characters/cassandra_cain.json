@@ -1,0 +1,125 @@
+{
+   "error": "OK",
+   "limit": 1,
+   "offset": 0,
+   "number_of_page_results": 1,
+   "number_of_total_results": 1,
+   "status_code": 1,
+   "results": {
+      "creators": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-3122/",
+            "id": 3122,
+            "name": "Alex Maleev",
+            "site_detail_url": "https://comicvine.gamespot.com/alex-maleev/4040-3122/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-4891/",
+            "id": 4891,
+            "name": "Damion Scott",
+            "site_detail_url": "https://comicvine.gamespot.com/damion-scott/4040-4891/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-48388/",
+            "id": 48388,
+            "name": "Kelley Puckett",
+            "site_detail_url": "https://comicvine.gamespot.com/kelley-puckett/4040-48388/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-43254/",
+            "id": 43254,
+            "name": "Scott Peterson",
+            "site_detail_url": "https://comicvine.gamespot.com/scott-peterson/4040-43254/"
+         }
+      ],
+      "deck": "The daughter of two notorious assassins, David Cain and Lady Shiva, Cassandra left her father as a child after she killed a man and saw his pain and fear while he died. After saving Commissioner Gordon's life, she became the new Batgirl with Batman and Oracle's blessing, and was later adopted by Bruce Wayne. She would later give the role of Batgirl to her friend Stephanie Brown, and became Black Bat. In the New 52 and Rebirth, she takes the alias of Orphan.",
+      "gender": 2,
+      "id": 65230,
+      "image": {
+         "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg",
+         "original_url": "https://comicvine.gamespot.com/a/uploads/original/11116/111167641/8074849-cassandra-cain_artgerm-art.png",
+         "image_tags": "All Images,Cassandra Cain,Fan Art"
+      },
+      "name": "Cassandra Cain",
+      "origin": {
+         "api_detail_url": "https://comicvine.gamespot.com/api/origin/4030-4/",
+         "id": 4,
+         "name": "Human"
+      },
+      "powers": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+            "id": 4,
+            "name": "Agility"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+            "id": 5,
+            "name": "Stamina"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-9/",
+            "id": 9,
+            "name": "Intellect"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+            "id": 17,
+            "name": "Weapon Master"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+            "id": 34,
+            "name": "Unarmed Combat"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-35/",
+            "id": 35,
+            "name": "Gadgets"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-58/",
+            "id": 58,
+            "name": "Escape Artist"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-59/",
+            "id": 59,
+            "name": "Tracking"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-66/",
+            "id": 66,
+            "name": "Adaptive"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-78/",
+            "id": 78,
+            "name": "Swordsmanship"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-108/",
+            "id": 108,
+            "name": "Marksmanship"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-132/",
+            "id": 132,
+            "name": "Stealth"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+            "id": 135,
+            "name": "Leadership"
+         }
+      ]
+   },
+   "version": "1.0"
+}

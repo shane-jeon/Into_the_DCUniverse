@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block title %}{% endblock %} {% block body %}
+
+<h1 class="page_title">Into the DC Universe</h1>
+
+{% for character in characters %}
+<div class="container">
+  <div class="flexbox-item character-img">
+    <img class="char_avatar" src="{{character.image}}" />
+  </div>
+
+  <div class="flexbox-item character-name">
+    <p>
+      <a class="hyperlink character_redirect" href="/{{character.id}}"
+        >{{ character.name }}</a
+      >
+    </p>
+  </div>
+</div>
+{% endfor %} {% endblock body %}

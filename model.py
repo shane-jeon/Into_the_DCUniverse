@@ -8,48 +8,6 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-# #########################
-# ######USER_ACCOUNT#######
-# #########################
-# class User_Account(db.Model):
-#   """A user's account."""
-#   __tablename__ = 'user_account'
-
-#   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-#   username = db.Column(db.String, unique=True, nullable=False)
-#   email = db.Column(db.String, unique=True, nullable=False)
-#   password = db.Column(db.String, nullable=False)
-#   avatar = db.Column(db.String)
-#   bookmark_id = db.Column(db.Integer, db.ForeignKey('bookmark.id'))
-
-# #########################
-# #####USER_BOOKMARK#######
-# #########################
-# # association table
-# user_bookmark= db.Table('user_bookmark',
-#   # db.Model.metadata,
-#   db.Column('user_id', db.ForeignKey('user.id'), primary_key=True),
-#   db.Column('bookmark_id', db.ForeignKey('bookmark.id'), primary_key=True),
-
-#   # Relationships with:
-#       # user Model
-#       # bookmark Model
-# )
-
-# #########################
-# ########BOOKMARK#########
-# #########################
-# class Bookmark(db.Model):
-#   """A user's account."""
-#   __tablename__ = 'bookmark'
-
-#   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-#   user_id = db.Column(db.Integer, db.ForeignKey('user_account.id'))
-#   char_id = db.Column(db.Integer, db.ForeignKey('character.id'))
-
-#   # relationship with User, Character Model
-
-
 #########################
 ########CHARACTER########
 #########################
@@ -76,12 +34,13 @@ class Character(db.Model):
   # relationship w/media_association table
 
   def __repr__(self):
-    return f'''<
-    Character id={self.id} 
-    print()
-    name={self.name}
-    print() 
-    biography={self.biography}>'''
+    return f'''
+    
+    <CharacterID={self.id} ,
+    name={self.name} ,
+    biography={self.biography} ,
+    img={self.image}>
+    '''
 
 
 # #########################
@@ -255,3 +214,46 @@ if __name__ == "__main__":
   # connection call
   # Any errors about db connection that will arise, check connect_to_db(app) is called before app.run() 
   connect_to_db(app)
+
+
+
+# #########################
+# ######USER_ACCOUNT#######
+# #########################
+# class User_Account(db.Model):
+#   """A user's account."""
+#   __tablename__ = 'user_account'
+
+#   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#   username = db.Column(db.String, unique=True, nullable=False)
+#   email = db.Column(db.String, unique=True, nullable=False)
+#   password = db.Column(db.String, nullable=False)
+#   avatar = db.Column(db.String)
+#   bookmark_id = db.Column(db.Integer, db.ForeignKey('bookmark.id'))
+
+# #########################
+# #####USER_BOOKMARK#######
+# #########################
+# # association table
+# user_bookmark= db.Table('user_bookmark',
+#   # db.Model.metadata,
+#   db.Column('user_id', db.ForeignKey('user.id'), primary_key=True),
+#   db.Column('bookmark_id', db.ForeignKey('bookmark.id'), primary_key=True),
+
+#   # Relationships with:
+#       # user Model
+#       # bookmark Model
+# )
+
+# #########################
+# ########BOOKMARK#########
+# #########################
+# class Bookmark(db.Model):
+#   """A user's account."""
+#   __tablename__ = 'bookmark'
+
+#   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#   user_id = db.Column(db.Integer, db.ForeignKey('user_account.id'))
+#   char_id = db.Column(db.Integer, db.ForeignKey('character.id'))
+
+#   # relationship with User, Character Model

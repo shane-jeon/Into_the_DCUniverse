@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block title %}{% endblock %} {% block body %}
+
+<a class="hyperlink back" href="/">back</a>
+<h1 class="page_title">{{character.name}}</h1>
+
+<img class="char-img" src="{{character.image}}" />
+<p>{{character.biography}}</p>
+{% endblock body %}

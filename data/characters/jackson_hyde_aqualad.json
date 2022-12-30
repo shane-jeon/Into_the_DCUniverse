@@ -1,0 +1,133 @@
+{
+   "error": "OK",
+   "limit": 1,
+   "offset": 0,
+   "number_of_page_results": 1,
+   "number_of_total_results": 1,
+   "status_code": 1,
+   "results": {
+      "creators": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-40439/",
+            "id": 40439,
+            "name": "Geoff Johns",
+            "site_detail_url": "https://comicvine.gamespot.com/geoff-johns/4040-40439/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-55699/",
+            "id": 55699,
+            "name": "Greg Weisman",
+            "site_detail_url": "https://comicvine.gamespot.com/greg-weisman/4040-55699/"
+         }
+      ],
+      "deck": "Jackson Hyde is the son of the infamous villain Black Manta, Aquaman's nemesis. With his Xebel-born mother's hydrokinetic abilities and Atlantean physiology, he fights for justice as a member of the Teen Titans, Young Justice and along with his mentor, Aquaman.",
+      "gender": 1,
+      "id": 71494,
+      "image": {
+         "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "original_url": "https://comicvine.gamespot.com/a/uploads/original/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+         "image_tags": "All Images,Comics "
+      },
+      "name": "Jackson Hyde",
+      "origin": {
+         "api_detail_url": "https://comicvine.gamespot.com/api/origin/4030-9/",
+         "id": 9,
+         "name": "Other"
+      },
+      "powers": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",
+            "id": 2,
+            "name": "Super Strength"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-4/",
+            "id": 4,
+            "name": "Agility"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-5/",
+            "id": 5,
+            "name": "Stamina"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-16/",
+            "id": 16,
+            "name": "Magic"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-17/",
+            "id": 17,
+            "name": "Weapon Master"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-18/",
+            "id": 18,
+            "name": "Super Sight"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-20/",
+            "id": 20,
+            "name": "Super Hearing"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-34/",
+            "id": 34,
+            "name": "Unarmed Combat"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-51/",
+            "id": 51,
+            "name": "Electricity Control"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-53/",
+            "id": 53,
+            "name": "Sub-Mariner"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-66/",
+            "id": 66,
+            "name": "Adaptive"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-72/",
+            "id": 72,
+            "name": "Energy-Enhanced Strike"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-78/",
+            "id": 78,
+            "name": "Swordsmanship"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-118/",
+            "id": 118,
+            "name": "Water Control"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-125/",
+            "id": 125,
+            "name": "Willpower-Based Constructs"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-135/",
+            "id": 135,
+            "name": "Leadership"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-136/",
+            "id": 136,
+            "name": "Longevity"
+         }
+      ]
+   },
+   "version": "1.0"
+}
