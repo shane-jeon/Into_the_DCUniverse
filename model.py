@@ -64,7 +64,7 @@ class Character(db.Model):
   name = db.Column(db.String(50), nullable=False)
   # alignment = db.Column(db.String(15), nullable=False)
   gender = db.Column(db.String(15), nullable=False)
-  species = db.Column(db.String)
+  # species = db.Column(db.String)
   biography = db.Column(db.String, nullable=False)
   # earth_id = db.Column(db.String, db.ForeignKey('earth.id')) 
   # era_id = db.Column(db.Integer, db.ForeignKey('era.id'))
@@ -81,7 +81,7 @@ class Character(db.Model):
     print()
     name={self.name}
     print() 
-    alignment={self.alignment}>'''
+    biography={self.biography}>'''
 
 
 # #########################

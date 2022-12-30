@@ -20,10 +20,27 @@
             "site_detail_url": "https://comicvine.gamespot.com/paul-dini/4040-42061/"
          }
       ],
-      "deck": "Harleen Quinzel was a psychiatric resident at Arkham Asylum, where she met the incarcerated Joker. Falling in love with her patient, she conspired to break him out of prison and eventually became his lover and loyal sidekick, Harley Quinn. She eventually left him to be her own woman, and has been and enemy and ally of Batman, and various other heroes.",
+      "deck": "Harleen Quinzel was a psychiatric resident at Arkham Asylum, where she met the incarcerated Joker. Falling in love with her patient, she conspired to break him out of prison and eventually became his lover and loyal sidekick, Harley Quinn. She eventually left him to be her own woman, and has been enemy and ally of Batman, and various other heroes.",
       "gender": 2,
       "id": 1696,
+      "image": {
+         "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "original_url": "https://comicvine.gamespot.com/a/uploads/original/12/124259/8040181-harley_quinn_vol_4_4_textless_variant.jpg",
+         "image_tags": "All Images,DC Rebirth"
+      },
       "name": "Harley Quinn",
+      "origin": {
+         "api_detail_url": "https://comicvine.gamespot.com/api/origin/4030-4/",
+         "id": 4,
+         "name": "Human"
+      },
       "powers": [
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/power/4035-2/",

@@ -5,6 +5,7 @@ import json
 import crud
 import model
 import server
+from dict_reform import access_creators, access_biography, access_gender, access_comicvineID, access_name, access_powers, access_image
 
 os.system("dropdb characters")
 os.system("createdb characters")
@@ -12,67 +13,71 @@ os.system("createdb characters")
 model.connect_to_db(server.app)
 model.db.create_all()
 
-# iterate through data/character_JSON folder files
-# for file in ''
-# with open('data/superHeroAPI_DC.json') as f:
-#   char_data = json.loads(f.read())
-#   len_test = print('length of list: ', len(char_data))
-
-# with open('data/character_JSON') as files:
-#   for file in files:
-#     char_data = json.loads(file.read())
-
-# with open('data/character_JSON') as files:
-#   for file in files:
-#     char_data = json.loads(file.read())
-
 directory = 'data/characters'
 
-for filename in os.listdir(directory):
-  f = os.path.join(directory, filename)
+char_dicts = []
+
+for char_file in os.listdir(directory):
+  # f is a single file
+  f = os.path.join(directory, char_file)
+  print('f', f)
   if os.path.isfile(f):
+    # reads JSON file for character
     json_string = open(f).read()
+    # print('json_string', json_string)
 
-  # print(characters_dict)
-  # json_dict = json.loads(json_string)
-  char_dict = json.loads(json_string)
-  # char_dict = json_dict['results']
-# print(char_dict)
-# def iterating_through_dicts(dict, field1, field2):
-#   print(char_dict['results']['creators'])
-#   for i in range(len(dict['results'][field1])):
-#     return dict[field1][i][field2]
+  # returns JSON file as python dictionary
+  json_dict = json.loads(json_string)
+  # print('json_dict', json_dict)
 
-# character_creators = iterating_through_dicts(char_dict, 'creators', 'name')
+  # accesses 'results' and returns dictionary containing only relevant information
+  char_results = json_dict['results']
+  # print('char_results', char_results)
+    
+  character_dictionary = {}
 
+  creators = access_creators(char_results)
+  biography = access_biography(char_results)
+  gender = access_gender(char_results)
+  # id = access_comicvineID(char_results)
+  name = access_name(char_results)
+  powers = access_powers(char_results)
+  image = access_image(char_results)
+
+  # character_dictionary['id'] = id
+  character_dictionary['image'] = image
+  character_dictionary['name'] = name
+  character_dictionary['gender'] = gender
+  character_dictionary['biography'] = biography
+  character_dictionary['powers'] = powers
+  character_dictionary['creators'] = creators
+
+  char_dicts.append(character_dictionary)
+  print(f'character_dictionary {character_dictionary}')
+
+# 12/29/2022 --> will need to create new dictionary to hold results from API request to more easily seed database
 characters_in_db = []
 # for character in char_dict:
-for i in range(len(char_dict)):
+for char in char_dicts:
   # print(character)
-  creators, biography, gender, id, image, name, species, powers = (
+  print(char['name'], char['biography'])
+  image, name, gender, biography, power, creator = (
     # character['creators'][1]['name'],
     # character_creators,
-    char_dict['creator'],
-    char_dict['deck'],
-    char_dict['gender'],
-    char_dict['id'],
-    char_dict['image']['medium_url'],
-    char_dict['name'],
-    char_dict['origin'],
-    char_dict['powers'][0]['name']
-    # character['gender'],
-    # character['id'],
-    # character['image']['medium_url'],
-    # character['name'],
-    # character['origin'],
-    # character['powers'][0]['name']
+    # char['id'],
+    char['image'],
+    char['name'],
+    char['gender'],
+    char['biography'],
+    char['powers'],
+    char['creators'],
   )
 
-  db_character = crud.create_character()
+  db_character = crud.create_character(id, image, name, gender, biography, power, creator)
   characters_in_db.append(db_character)
 
-model.db.session.add_all(characters_in_db)
-model.db.session.commit()
+# model.db.session.add_all(characters_in_db)
+# model.db.session.commit()
 
 
 

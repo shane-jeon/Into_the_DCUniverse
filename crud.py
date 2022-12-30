@@ -2,13 +2,14 @@
 
 from model import db, Character, connect_to_db
 
-def create_character(id, image, name, gender, species, biography, power, creator):
+def create_character(id, image, name, gender, biography, power, creator):
   """Create and return a new character."""
-  char = Character(id=id,
+  char = Character(
+
                    image=image,
                    name=name,
                    gender=gender,
-                   species=species,
+                  #  species=species,
                   #  alignment=alignment,
                    biography=biography,
                    power=power,
@@ -25,10 +26,10 @@ def create_character(id, image, name, gender, species, biography, power, creator
 
   return char
 
-# def return_all():
-#   """Return all characters."""
+def return_all():
+  """Return all characters."""
 
-#   return Character.query.all()
+  return Character.query.all()
 
 # def get_char_by_id(char_id):
 #   """Gets character by char_id."""

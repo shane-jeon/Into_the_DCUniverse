@@ -117,7 +117,7 @@ def character_JSON_request(your_UA, API_KEY, char_id, new_filename):
   # converts to JSON dictionary I think
   json_object = json.dumps(response.json(), indent=3)
 
-  with open(f'data/char_info/{new_filename}.json', 'w') as outfile:
+  with open(f'data/characters/{new_filename}.json', 'w') as outfile:
     outfile.write(json_object)
 
 
@@ -129,10 +129,11 @@ def character_JSON_request(your_UA, API_KEY, char_id, new_filename):
 # char_fields = 'id,name,gender,deck,powers,creators'
 
 # JOHN CONSTANTINE
-# character_JSON_request(user_agent, comicvine_API_KEY, 3329,'john_constantine')
+character_JSON_request(user_agent, comicvine_API_KEY, 3329,'john_constantine')
 # HARLEY QUINN
-# character_JSON_request(user_agent, comicvine_API_KEY, 1696,'harley_quinn')
-character_JSON_request(user_agent, comicvine_API_KEY, 5691, 'zatanna')
+character_JSON_request(user_agent, comicvine_API_KEY, 1696,'harley_quinn')
+# ZATANNA
+# character_JSON_request(user_agent, comicvine_API_KEY, 5691, 'zatanna')
 
 
 def alphabetize_JSON_dict(filename, new_filename):
