@@ -124,6 +124,7 @@ MVP 2.0
 - Allow search bar queries to find characters based on partial entries. E.g, query: "bat", result: "batman, batwoman, batgirl, etc."
 - Find and include character "alignment" ("Good", "Evil", "AntiHero")
 - Expand information beyond character profiles. Create profiles for aliances, groups, leagues (e.g, "Justice League", "Bat Family", "Green Lantern Corps", "Justice Society of America")
+- create quizzes with python to help a user find where they want to start in learning more about DC characters and the various storylines tied together through the different eras and multiverses.
 - Add more style to HTML
 
 MVP 3.0
