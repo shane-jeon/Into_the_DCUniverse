@@ -13,61 +13,6 @@ superhero_API_KEY = 1075529179813027
 comicvine_API_KEY = '6028f8ab23892d424a31b9845b1c36ed4f737523'
 user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0'
 
-# SUPERHERO API
-def import_SuperHeroAPI(API_KEY):
-  """Gets all available DC Comic characters from SuperHero API."""
-
-  # dictionary for JSON file
-  dc_characters = {}
-
-  # loops through all character IDs in SuperHero API
-  for i in range(1, 732):
-    url = f'https://superheroapi.com/api/{API_KEY}/{i}'
-    res = requests.get(url)
-    # Displays response success/failure
-    print('res:', res)
-    # print(res.url)
-    superhero_data = res.json()
-
-    # to track progress of API request
-    print(f'at superhero ID #{i}')
-    # Access returned JSON dictionary with 2 key values to filter out non-DC Comics characters
-    if superhero_data['biography']['publisher'] == 'DC Comics':
-      # displays as function runs
-      name = superhero_data['name']
-      print()
-      print("*****", name, "*****")
-      print()
-      if name in dc_characters:
-        continue
-      else:
-        dc_characters[name] = superhero_data
-
-  # gets JSON dictionary
-  json_object = json.dumps(dc_characters, indent=4)
-
-  # writes dictionary to JSON file
-  with open('example.json', 'w') as outfile:
-    outfile.write(json_object)
-
-
-# cleans up postman downloaded JSON file*
-def format_conversion(filename, new_filename):
-  """ Transforms incoherent Postman JSON file to readable JSON file.
-  Use when terminal GET request keeps returning with 403,
-  but Postman GET reqest returns 200 and thus have to download file from Postman."""
-
-  with open(filename) as data_file:
-    data = json.load(data_file)
-
-  json_object = json.dumps(data, indent=4)
-
-  with open(new_filename, 'w') as outfile:
-    outfile.write(json_object)
-
-
-# format_conversion('data/character_JSON/requires_reformatting/zatanna.json', 'data/character_JSON/zatanna.json')
-
 def comicvine_get_request(your_UA, API_KEY, resource, fields, new_filename):
   """A general get request for comic vine. 
   
@@ -105,7 +50,7 @@ def character_JSON_request(your_UA, API_KEY, char_id, new_filename):
   # hard coding fields
   payload = { 'api_key' : API_KEY,
               'format' : 'json',
-              'field_list' : 'id,image,name,gender,origin,deck,powers,creators'
+              'field_list' : 'id,image,name,real_name,aliases,gender,origin,deck,powers,character_friends,character_enemies,teams,first_appeared_in_issue,count_of_issue_appearances,issue_credits,creators'
   }
 
   # URL for API request
@@ -129,24 +74,26 @@ def character_JSON_request(your_UA, API_KEY, char_id, new_filename):
 # char_fields = 'id,name,gender,deck,powers,creators'
 
 # JOHN CONSTANTINE
-# character_JSON_request(user_agent, comicvine_API_KEY, 3329,'john_constantine')
+character_JSON_request(user_agent, comicvine_API_KEY, 3329,'john_constantine')
 # HARLEY QUINN
-# character_JSON_request(user_agent, comicvine_API_KEY, 1696,'harley_quinn')
+character_JSON_request(user_agent, comicvine_API_KEY, 1696,'harley_quinn')
 # ZATANNA
-# character_JSON_request(user_agent, comicvine_API_KEY, 5691, 'zatanna')
+character_JSON_request(user_agent, comicvine_API_KEY, 5691, 'zatanna')
 
-# # ORPHAN (Cassandra Cain)
+# ORPHAN (Cassandra Cain)
 character_JSON_request(user_agent, comicvine_API_KEY, 65230, 'cassandra_cain')
 
-# # BLACK CANARY
-# character_JSON_request(user_agent, comicvine_API_KEY, 1689, 'black_canary')
+# BLACK CANARY
+character_JSON_request(user_agent, comicvine_API_KEY, 1689, 'black_canary')
 
-# # Jackson Hyde (AQUALAD)
-# character_JSON_request(user_agent, comicvine_API_KEY, 71494, 'jackson_hyde_aqualad')
+# Jackson Hyde (AQUALAD)
+character_JSON_request(user_agent, comicvine_API_KEY, 71494, 'jackson_hyde_aqualad')
 
-# # POISON IVY
-# character_JSON_request(user_agent, comicvine_API_KEY, 1697, 'poison_ivy')
+# POISON IVY
+character_JSON_request(user_agent, comicvine_API_KEY, 1697, 'poison_ivy')
 
+# RAVEN
+# character_JSON_request(user_agent, comicvine_API_KEY, 3584, 'raven')
 
 def alphabetize_JSON_dict(filename, new_filename):
   """Retrieves dictionary from JSON file. Alphabetizes data."""
@@ -523,3 +470,57 @@ my_header = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100
 # *However this method will return dictionary as one long string, no indentation*
 
 
+# SUPERHERO API
+def import_SuperHeroAPI(API_KEY):
+  """Gets all available DC Comic characters from SuperHero API."""
+
+  # dictionary for JSON file
+  dc_characters = {}
+
+  # loops through all character IDs in SuperHero API
+  for i in range(1, 732):
+    url = f'https://superheroapi.com/api/{API_KEY}/{i}'
+    res = requests.get(url)
+    # Displays response success/failure
+    print('res:', res)
+    # print(res.url)
+    superhero_data = res.json()
+
+    # to track progress of API request
+    print(f'at superhero ID #{i}')
+    # Access returned JSON dictionary with 2 key values to filter out non-DC Comics characters
+    if superhero_data['biography']['publisher'] == 'DC Comics':
+      # displays as function runs
+      name = superhero_data['name']
+      print()
+      print("*****", name, "*****")
+      print()
+      if name in dc_characters:
+        continue
+      else:
+        dc_characters[name] = superhero_data
+
+  # gets JSON dictionary
+  json_object = json.dumps(dc_characters, indent=4)
+
+  # writes dictionary to JSON file
+  with open('example.json', 'w') as outfile:
+    outfile.write(json_object)
+
+
+# cleans up postman downloaded JSON file*
+def format_conversion(filename, new_filename):
+  """ Transforms incoherent Postman JSON file to readable JSON file.
+  Use when terminal GET request keeps returning with 403,
+  but Postman GET reqest returns 200 and thus have to download file from Postman."""
+
+  with open(filename) as data_file:
+    data = json.load(data_file)
+
+  json_object = json.dumps(data, indent=4)
+
+  with open(new_filename, 'w') as outfile:
+    outfile.write(json_object)
+
+
+# format_conversion('data/character_JSON/requires_reformatting/zatanna.json', 'data/character_JSON/zatanna.json')

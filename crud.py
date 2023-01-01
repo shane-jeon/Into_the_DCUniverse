@@ -2,17 +2,25 @@
 
 from model import db, Character, connect_to_db
 
-def create_character(id, image, name, gender, biography, power, creator):
+def create_character(id, image, name, real_name, alias, gender, species, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator):
   """Create and return a new character."""
   char = Character(
                    id=id,
                    image=image,
                    name=name,
+                   real_name=real_name,
+                   alias=alias
                    gender=gender,
-                  #  species=species,
+                   species=species,
                   #  alignment=alignment,
                    biography=biography,
                    power=power,
+                   friend=friend,
+                   enemy=enemy, 
+                   team=team,
+                   first_appearance=first_appearance,
+                   appearance_count=appearance_count,
+                   issue_credit=issue_credit,
                    creator=creator
   )
 

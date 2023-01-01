@@ -11,6 +11,7 @@ app = Flask(__name__)
 app.secret_key = "ashen_dev"
 app.jinja_env.undefined = StrictUndefined
 
+### VIEW ###
 # routing request (Telling Flask which URL should correspond with which function)
 @app.route('/')
 def homepage():
