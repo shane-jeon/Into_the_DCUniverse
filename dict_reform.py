@@ -126,11 +126,24 @@ def access_friend(dict_results):
 
   return friends_list
 
-print(f'{access_friend(char_results)}')
+# print(f'{access_friend(char_results)}')
 
 ####ACCESS_ENEMIES####
 # returns list of dictionaries. Dictionary access key "name" (possibly need ID?)
+def access_enemy(dict_results):
+  """Returns a list of tuples containing character's enemies and respective IDs."""
+  enemies = dict_results['character_enemies']
+  enemies_list = []
+  for enemy in enemies:
+    # print(enemy)
+    enemy_name = enemy['name']
+    enemy_id = enemy['id']
+    enemy_char = (enemy_name, enemy_id)
+    enemies_list.append(enemy_char)
 
+  return enemies_list
+
+# print(f'{access_enemy(char_results)}')
 ####ACCESS_TEAMS####
 # returns list of dictionaries. Dictionary access key name "name", (possibly need ID?)
 
@@ -199,5 +212,5 @@ for char_file in os.listdir(directory):
 
 
 
-for char in char_dicts:
-  print(f'charid: {char["id"]}')
+# for char in char_dicts:
+#   print(f'charid: {char["id"]}')
