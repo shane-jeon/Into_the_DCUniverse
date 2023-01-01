@@ -66,7 +66,7 @@ def access_alias(dict_results):
 
   return alias
 
-print(f'{access_alias(char_results)}')
+# print(f'{access_alias(char_results)}')
 
 ####GENDER####
 # gender: returns as int, assumptions conclude that 1 = male, and 2 = female *eye roll*
@@ -113,6 +113,20 @@ def access_powers(dict_results):
 
 ####ACCESS_FRIENDS####
 # returns list of dictionaries. Dictionary access key "name" (possibly need ID?)
+def access_friend(dict_results):
+  """Returns a list of tuples containing character's friends and respective IDs."""
+  friends = dict_results['character_friends']
+  friends_list = []
+  for friend in friends:
+    # print(friend)
+    friend_name = friend['name']
+    friend_id = friend['id']
+    friend_char = (friend_name, friend_id)
+    friends_list.append(friend_char)
+
+  return friends_list
+
+print(f'{access_friend(char_results)}')
 
 ####ACCESS_ENEMIES####
 # returns list of dictionaries. Dictionary access key "name" (possibly need ID?)
