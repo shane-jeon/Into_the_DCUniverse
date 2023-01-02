@@ -3449,7 +3449,7 @@
             "site_detail_url": "https://comicvine.gamespot.com/zauriel/4005-6902/"
          }
       ],
-      "count_of_issue_appearances": 3050,
+      "count_of_issue_appearances": 3052,
       "creators": [
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-40861/",
@@ -3486,6 +3486,18 @@
          "image_tags": "All Images,Black Canary,rebirth"
       },
       "issue_credits": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-961562/",
+            "id": 961562,
+            "name": "Finale",
+            "site_detail_url": "https://comicvine.gamespot.com/dc-mech-6-finale/4000-961562/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-961561/",
+            "id": 961561,
+            "name": "Dawn",
+            "site_detail_url": "https://comicvine.gamespot.com/dc-vs-vampires-12-dawn/4000-961561/"
+         },
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-961555/",
             "id": 961555,
@@ -7889,6 +7901,12 @@
             "id": 463972,
             "name": "Volume 2",
             "site_detail_url": "https://comicvine.gamespot.com/martian-manhunter-rings-of-saturn-1-volume-2/4000-463972/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-461134/",
+            "id": 461134,
+            "name": "Harbinger",
+            "site_detail_url": "https://comicvine.gamespot.com/smallville-season-eleven-special-5-harbinger/4000-461134/"
          },
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-460266/",

@@ -2081,7 +2081,7 @@
             "site_detail_url": "https://comicvine.gamespot.com/zoe-lawton/4005-56687/"
          }
       ],
-      "count_of_issue_appearances": 2287,
+      "count_of_issue_appearances": 2290,
       "creators": [
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-7365/",
@@ -2118,6 +2118,12 @@
          "image_tags": "All Images,DC Rebirth"
       },
       "issue_credits": [
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-961695/",
+            "id": 961695,
+            "name": "Book Seven",
+            "site_detail_url": "https://comicvine.gamespot.com/batman-beyond-the-white-knight-7-book-seven/4000-961695/"
+         },
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-961560/",
             "id": 961560,
@@ -2195,6 +2201,12 @@
             "id": 952827,
             "name": "War of the Three Kingdoms",
             "site_detail_url": "https://comicvine.gamespot.com/dark-knights-of-steel-8-war-of-the-three-kingdoms/4000-952827/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-962473/",
+            "id": 962473,
+            "name": "HC",
+            "site_detail_url": "https://comicvine.gamespot.com/batman-shadows-of-the-bat-the-tower-1-hc/4000-962473/"
          },
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-962467/",
@@ -14009,6 +14021,12 @@
             "id": 133911,
             "name": "20 Minutes",
             "site_detail_url": "https://comicvine.gamespot.com/the-batman-strikes-47-20-minutes/4000-133911/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-284964/",
+            "id": 284964,
+            "name": "",
+            "site_detail_url": "https://comicvine.gamespot.com/batman-sonderband-16/4000-284964/"
          },
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-131634/",

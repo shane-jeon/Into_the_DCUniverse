@@ -5,7 +5,7 @@ import os
 
 directory = 'data/characters'
 
-# dictionary keys include: creator, deck (biography), gender, id, name, power
+# dictionary keys include: id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator
 
 for char_file in os.listdir(directory):
   # f is a single file
@@ -56,6 +56,12 @@ def access_name(dict_results):
   char_name = dict_results['name']
   return char_name
 
+####REAL NAME####
+def access_realName(dict_results):
+  """Returns character's real name as string."""
+  char_real_name = dict_results['real_name']
+  
+  return char_real_name
 
 ####ACCESS_ALIASES####
 # returns string, change to list using "\n" to denote item individuation
@@ -86,7 +92,7 @@ def access_gender(dict_results):
 ####ACCESS_ORIGIN####
 # returns dictionary, access key "name"
 def access_origin(dict_results):
-  """Access 'name' in origin dictionary to obtain character species."""
+  """Access 'name' in origin dictionary to obtain character origin."""
   origin = dict_results['name']
 
   return origin
@@ -128,20 +134,20 @@ def access_friend(dict_results):
 
 # print(f'{access_friend(char_results)}')
 
-####ACCESS_ENEMIES####
+####ACCESS_ENEMY####
 # returns list of dictionaries. Dictionary access key "name" (possibly need ID?)
 def access_enemy(dict_results):
-  """Returns a list of tuples containing character's enemies and respective IDs."""
-  enemies = dict_results['character_enemies']
-  enemies_list = []
-  for enemy in enemies:
+  """Returns a list of tuples containing character's enemy and respective IDs."""
+  enemy = dict_results['character_enemy']
+  enemy_list = []
+  for enemy in enemy:
     # print(enemy)
     enemy_name = enemy['name']
     enemy_id = enemy['id']
     enemy_char = (enemy_name, enemy_id)
-    enemies_list.append(enemy_char)
+    enemy_list.append(enemy_char)
 
-  return enemies_list
+  return enemy_list
 
 # print(f'{access_enemy(char_results)}')
 ####ACCESS_TEAMS####
@@ -190,18 +196,25 @@ for char_file in os.listdir(directory):
   # print('char_results', char_results)
     
   character_dictionary = {}
-
-  creator = access_creator(char_results)
-  biography = access_biography(char_results)
-  gender = access_gender(char_results)
   id = access_comicvineID(char_results)
-  name = access_name(char_results)
-  power = access_power(char_results)
   image = access_image(char_results)
+  name = access_name(char_results)
+  real_name = access_realName(char_results)
+  gender = access_gender(char_results)
+  biography = access_biography
+  power = access_power(char_results)
+  creator = access_creator(char_results)
+  # biography = access_biography(char_results)
+
+  # id = access_comicvineID(char_results)
+  # name = access_name(char_results)
+
+  # image = access_image(char_results)
 
   character_dictionary['id'] = id
   character_dictionary['image'] = image
   character_dictionary['name'] = name
+  character_dictionary['real_name'] = 'real_name'
   character_dictionary['gender'] = gender
   character_dictionary['biography'] = biography
   character_dictionary['power'] = power

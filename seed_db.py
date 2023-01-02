@@ -42,7 +42,7 @@ for char_file in os.listdir(directory):
   # real_name = access_realName(char_results)
   # alias = access_alias(char_results)
   gender = access_gender(char_results)
-  # species = access_species(char_results)
+  # origin = access_origin(char_results)
   biography = access_biography(char_results)
   # changed power plurality
   power = access_power(char_results)
@@ -62,7 +62,7 @@ for char_file in os.listdir(directory):
   character_dictionary['real_name'] = real_name
   character_dictionary['alias'] = alias 
   character_dictionary['gender'] = gender
-  character_dictionary['species'] = species
+  character_dictionary['origin'] = origin
   character_dictionary['biography'] = biography
   character_dictionary['power'] = power
   character_dictionary['friend'] = friend
@@ -83,7 +83,7 @@ characters_in_db = []
 for char in char_dicts:
   # print(character)
   print(f"ID: {char['id']}, NAME: {char['name']}")
-  id, image, name, real_name, alias, gender, species, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator = (
+  id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator = (
     # character['creator'][1]['name'],
     # character_creator,
     char['id'],
@@ -92,7 +92,7 @@ for char in char_dicts:
     char['real_name'],
     char['alias'],
     char['gender'],
-    char['species'],
+    char['origin'],
     char['biography'],
     char['power'],
     char['friend'],
@@ -105,7 +105,7 @@ for char in char_dicts:
   )
 
   print(f" NAME CHAR {char['name']}")
-  db_character = crud.create_character(id, image, name, real_name, alias, gender, species, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator)
+  db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator)
 
 
 

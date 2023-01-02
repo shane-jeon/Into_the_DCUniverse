@@ -911,7 +911,7 @@
             "site_detail_url": "https://comicvine.gamespot.com/wonder-woman/4005-2048/"
          }
       ],
-      "count_of_issue_appearances": 732,
+      "count_of_issue_appearances": 733,
       "creators": [
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/creator/4040-3122/",
@@ -1025,6 +1025,12 @@
             "id": 953913,
             "name": "Better Living Through Violence",
             "site_detail_url": "https://comicvine.gamespot.com/wildcats-1-better-living-through-violence/4000-953913/"
+         },
+         {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-962473/",
+            "id": 962473,
+            "name": "HC",
+            "site_detail_url": "https://comicvine.gamespot.com/batman-shadows-of-the-bat-the-tower-1-hc/4000-962473/"
          },
          {
             "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-958143/",
