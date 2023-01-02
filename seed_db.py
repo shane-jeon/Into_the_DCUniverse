@@ -46,6 +46,12 @@ for char_file in os.listdir(directory):
   biography = access_biography(char_results)
   # changed power plurality
   power = access_power(char_results)
+  friend = access_friend(char_results)
+  enemy = access_enemy(char_results)
+  # team = access_team(char_results)
+  # first_appearance = access_firstAppearance(char_results)
+  # appearance_count = access_appearanceCount(char_results)
+  # issue_credit = access_issueCredit(char_results)
   # changed creator plurality
   creator = access_creator(char_results)
 
@@ -53,9 +59,18 @@ for char_file in os.listdir(directory):
   character_dictionary['id'] = id
   character_dictionary['image'] = image
   character_dictionary['name'] = name
+  character_dictionary['real_name'] = real_name
+  character_dictionary['alias'] = alias 
   character_dictionary['gender'] = gender
+  character_dictionary['species'] = species
   character_dictionary['biography'] = biography
   character_dictionary['power'] = power
+  character_dictionary['friend'] = friend
+  character_dictionary['enemy'] = enemy
+  character_dictionary['team'] = team
+  character_dictionary['first_appearance'] = first_appearance
+  character_dictionary['appearance_count'] = appearance_count
+  character_dictionary['issue_credit'] = issue_credit
   character_dictionary['creator'] = creator
 
   char_dicts.append(character_dictionary)
@@ -68,7 +83,7 @@ characters_in_db = []
 for char in char_dicts:
   # print(character)
   print(f"ID: {char['id']}, NAME: {char['name']}")
-  id, image, name, gender, biography, power, creator = (
+  id, image, name, real_name, alias, gender, species, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator = (
     # character['creator'][1]['name'],
     # character_creator,
     char['id'],
@@ -90,7 +105,10 @@ for char in char_dicts:
   )
 
   print(f" NAME CHAR {char['name']}")
-  db_character = crud.create_character(id, image, name, gender, biography, power, creator)
+  db_character = crud.create_character(id, image, name, real_name, alias, gender, species, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator)
+
+
+
   characters_in_db.append(db_character)
 
 # model.db.session.add_all(characters_in_db)
