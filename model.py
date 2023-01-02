@@ -36,7 +36,7 @@ class Character(db.Model):
   team = db.Column(db.String)
   first_appearance = db.Column(db.String)
   appearance_count = db.Column(db.String)  
-  issue_credit = db.Column(db.String)
+  comic_issue = db.Column(db.String)
   creator = db.Column(db.String)
 
   # relationship w/media_association table
@@ -44,10 +44,36 @@ class Character(db.Model):
   def __repr__(self):
     return f'''
     
-    <CharacterID={self.id} ,
-    name={self.name} ,
-    biography={self.biography} ,
-    img={self.image}>
+    <CharacterID={self.id},
+
+    img={self.image},
+
+    name={self.name},
+
+    real_name={self.real_name},
+
+    alias={self.alias},
+
+    gender={self.gender},
+
+    origin={self.origin},
+
+    biography={self.biography},
+
+    power={self.power},
+
+    friend={self.friend},
+
+    enemy={self.enemy},
+
+    team={self.team},
+
+    first_appearance={self.first_appearance},
+
+    appearance_count={self.appearance_count},
+    
+    creator={self.creator}
+    >
     '''
 
 # class Character(db.Model):

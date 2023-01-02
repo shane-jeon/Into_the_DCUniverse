@@ -108,7 +108,7 @@ def access_biography(dict_results):
 # returns a list of dictionaries. key to power is "name"
 def access_power(dict_results):
   """Returns list of character's power."""
-  power = dict_results['power']
+  power = dict_results['powers']
   power_list = []
   for power in power:
     char_power = power['name']
@@ -125,7 +125,8 @@ def access_friend(dict_results):
   friend_list = []
   for friend in friends:
     # print(friend)
-    friend_name = friend['name']
+    friend_name = friend['name'].strip('\\')
+    print(f'friend_name {friend_name}')
     friend_id = friend['id']
     friend_type = (friend_name, friend_id)
     friend_list.append(friend_type)
@@ -138,7 +139,7 @@ def access_friend(dict_results):
 # returns list of dictionaries. Dictionary access key "name" (possibly need ID?)
 def access_enemy(dict_results):
   """Returns a list of tuples containing character's enemy and respective IDs."""
-  enemy = dict_results['character_enemy']
+  enemy = dict_results['character_enemies']
   enemy_list = []
   for enemy in enemy:
     # print(enemy)
@@ -167,12 +168,54 @@ def access_team(dict_results):
 
 ####ACCESS_FIRST_APPEARANCE####
 # returns dictionary, access key "name", (possibly need "id", and "issue_number"?)
+def access_firstAppearance(dict_results):
+  """Extracts dictionary key values for 'first_appearance', returns new dictionary consisting of comic issue 'name', 'id', 'issue_number'."""
+  first_appearance = dict_results['first_appeared_in_issue']
+  first_appearance_data = {}
+
+  print(first_appearance)
+
+  first_appearance_issue = first_appearance['name'] 
+  issue_id = first_appearance['id']
+  issue_number = first_appearance['issue_number']
+
+  first_appearance_data['name'] = first_appearance_issue
+  first_appearance_data['issue_id'] = issue_id
+  first_appearance_data['issue_number'] = issue_number
+    
+
+  return first_appearance_data
 
 ####ACCESS_APPEARANCE_COUNT####
 # returns integer
+def access_appearanceCount(dict_results):
+  """Returns number of character comic issue appearances."""
+  appearance_count = dict_results['count_of_issue_appearances']
+
+  return appearance_count
 
 ####ACCESS_ISSUE_CREDITS####
 # returns list of dictionaries. Access key "name" (possibly need "id")
+def access_comicIssues(dict_results):
+  """Returns dictionary containing comic issue information character has been featured in."""
+  comic_issues =  dict_results['issue_credits']
+  comic_issue_data = []
+  for comic_issue in comic_issues:
+    # print(comic_issue)
+    # comic_issue_dict = {}
+
+    # comic_issue_name = comic_issue['issue_name']
+    # comic_issue_id = comic_issue['id']
+
+    # comic_issue_dict['issue_name'] = comic_issue_name
+    # comic_issue_dict['issue_id'] = comic_issue_id
+
+    # comic_issue_data.append(comic_issue_dict)
+    comic_issue_id = comic_issue['id']
+    comic_issue_data.append(comic_issue_id)
+  
+  return comic_issue_data
+
 
 def access_creator(dict_results):
   """Extracts a character's creator name(s) and return as a list."""
@@ -220,6 +263,9 @@ for char_file in os.listdir(directory):
   friend = access_friend(char_results)
   enemy = access_enemy(char_results)
   team = access_team(char_results)
+  first_appearance = access_firstAppearance(char_results)
+  appearance_count = access_appearanceCount(char_results)
+  comic_issue = access_comicIssues(char_results)
   creator = access_creator(char_results)
 
   character_dictionary['id'] = id
@@ -236,13 +282,13 @@ for char_file in os.listdir(directory):
   character_dictionary['team'] = team
   character_dictionary['first_appearance'] = first_appearance
   character_dictionary['appearance_count'] = appearance_count
-  character_dictionary['issue_credit'] = issue_credit
+  character_dictionary['comic_issue'] = comic_issue
   character_dictionary['creator'] = creator
 
   char_dicts.append(character_dictionary)
   # print(f'character_dictionary {character_dictionary}')
 
-
+print(character_dictionary['first_appearance'])
 
 # for char in char_dicts:
 #   print(f'charid: {char["id"]}')
