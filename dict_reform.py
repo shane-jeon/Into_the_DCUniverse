@@ -122,15 +122,15 @@ def access_power(dict_results):
 def access_friend(dict_results):
   """Returns a list of tuples containing character's friends and respective IDs."""
   friends = dict_results['character_friends']
-  friends_list = []
+  friend_list = []
   for friend in friends:
     # print(friend)
     friend_name = friend['name']
     friend_id = friend['id']
-    friend_char = (friend_name, friend_id)
-    friends_list.append(friend_char)
+    friend_type = (friend_name, friend_id)
+    friend_list.append(friend_type)
 
-  return friends_list
+  return friend_list
 
 # print(f'{access_friend(char_results)}')
 
@@ -152,6 +152,18 @@ def access_enemy(dict_results):
 # print(f'{access_enemy(char_results)}')
 ####ACCESS_TEAMS####
 # returns list of dictionaries. Dictionary access key name "name", (possibly need ID?)
+def access_team(dict_results):
+  """Accesses teams character is associated with and returns tuple pair consisting of team name and team ID."""
+  teams = dict_results['teams']
+  team_list = []
+  for team in teams:
+    # print(team)
+    team_name = team['name']
+    team_id = team['id']
+    team_type = (team_name, team_id)
+    team_list.append(team_type)
+
+  return team_list
 
 ####ACCESS_FIRST_APPEARANCE####
 # returns dictionary, access key "name", (possibly need "id", and "issue_number"?)
@@ -200,24 +212,31 @@ for char_file in os.listdir(directory):
   image = access_image(char_results)
   name = access_name(char_results)
   real_name = access_realName(char_results)
+  alias = access_alias(char_results)
+  origin = access_origin(char_results)
   gender = access_gender(char_results)
   biography = access_biography
   power = access_power(char_results)
+  friend = access_friend(char_results)
+  enemy = access_enemy(char_results)
+  team = access_team(char_results)
   creator = access_creator(char_results)
-  # biography = access_biography(char_results)
-
-  # id = access_comicvineID(char_results)
-  # name = access_name(char_results)
-
-  # image = access_image(char_results)
 
   character_dictionary['id'] = id
   character_dictionary['image'] = image
   character_dictionary['name'] = name
-  character_dictionary['real_name'] = 'real_name'
+  character_dictionary['real_name'] = real_name
+  character_dictionary['alias'] = alias 
   character_dictionary['gender'] = gender
+  character_dictionary['origin'] = origin
   character_dictionary['biography'] = biography
   character_dictionary['power'] = power
+  character_dictionary['friend'] = friend
+  character_dictionary['enemy'] = enemy
+  character_dictionary['team'] = team
+  character_dictionary['first_appearance'] = first_appearance
+  character_dictionary['appearance_count'] = appearance_count
+  character_dictionary['issue_credit'] = issue_credit
   character_dictionary['creator'] = creator
 
   char_dicts.append(character_dictionary)
