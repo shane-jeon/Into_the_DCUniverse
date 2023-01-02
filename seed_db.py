@@ -5,8 +5,7 @@ import json
 import crud
 import model
 import server
-from dict_reform import access_creators, access_biography, access_gender, access_comicvineID, access_name, access_powers, access_image
-
+from dict_reform import *
 os.system("dropdb characters")
 os.system("createdb characters")
 
@@ -36,23 +35,28 @@ for char_file in os.listdir(directory):
     
   character_dictionary = {}
 
-  creators = access_creators(char_results)
-  biography = access_biography(char_results)
-  gender = access_gender(char_results)
   id = access_comicvineID(char_results)
   print(f'id:::::: {id}')
-  name = access_name(char_results)
-  powers = access_powers(char_results)
   image = access_image(char_results)
+  name = access_name(char_results)
+  # real_name = access_realName(char_results)
+  # alias = access_alias(char_results)
+  gender = access_gender(char_results)
+  # species = access_species(char_results)
+  biography = access_biography(char_results)
+  # changed power plurality
+  power = access_power(char_results)
+  # changed creator plurality
+  creator = access_creator(char_results)
 
-  print(f'creators: {creators}, id: {id}, name: {name}')
+  print(f'creator: {creator}, id: {id}, name: {name}')
   character_dictionary['id'] = id
   character_dictionary['image'] = image
   character_dictionary['name'] = name
   character_dictionary['gender'] = gender
   character_dictionary['biography'] = biography
-  character_dictionary['powers'] = powers
-  character_dictionary['creators'] = creators
+  character_dictionary['power'] = power
+  character_dictionary['creator'] = creator
 
   char_dicts.append(character_dictionary)
   # print(f'character_dictionary {character_dictionary}')
@@ -65,15 +69,24 @@ for char in char_dicts:
   # print(character)
   print(f"ID: {char['id']}, NAME: {char['name']}")
   id, image, name, gender, biography, power, creator = (
-    # character['creators'][1]['name'],
-    # character_creators,
+    # character['creator'][1]['name'],
+    # character_creator,
     char['id'],
     char['image'],
     char['name'],
+    char['real_name'],
+    char['alias'],
     char['gender'],
+    char['species'],
     char['biography'],
-    char['powers'],
-    char['creators'],
+    char['power'],
+    char['friend'],
+    char['enemy'],
+    char['team'],
+    char['first_appearance'],
+    char['appearance_count'],
+    char['issue_credit'],
+    char['creator'],
   )
 
   print(f" NAME CHAR {char['name']}")

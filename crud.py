@@ -9,7 +9,7 @@ def create_character(id, image, name, real_name, alias, gender, species, biograp
                    image=image,
                    name=name,
                    real_name=real_name,
-                   alias=alias
+                   alias=alias,
                    gender=gender,
                    species=species,
                   #  alignment=alignment,

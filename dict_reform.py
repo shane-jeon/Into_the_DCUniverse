@@ -5,7 +5,7 @@ import os
 
 directory = 'data/characters'
 
-# dictionary keys include: creators, deck (biography), gender, id, name, powers
+# dictionary keys include: creator, deck (biography), gender, id, name, power
 
 for char_file in os.listdir(directory):
   # f is a single file
@@ -100,16 +100,16 @@ def access_biography(dict_results):
 
 ####POWERS####
 # returns a list of dictionaries. key to power is "name"
-def access_powers(dict_results):
-  """Returns list of character's powers."""
-  powers = dict_results['powers']
-  powers_list = []
-  for power in powers:
+def access_power(dict_results):
+  """Returns list of character's power."""
+  power = dict_results['power']
+  power_list = []
+  for power in power:
     char_power = power['name']
-    powers_list.append(char_power)
+    power_list.append(char_power)
     # print(f'char_power {char_power}')
-  # print(f'powers_list {powers_list}')
-  return powers_list
+  # print(f'power_list {power_list}')
+  return power_list
 
 ####ACCESS_FRIENDS####
 # returns list of dictionaries. Dictionary access key "name" (possibly need ID?)
@@ -156,15 +156,15 @@ def access_enemy(dict_results):
 ####ACCESS_ISSUE_CREDITS####
 # returns list of dictionaries. Access key "name" (possibly need "id")
 
-def access_creators(dict_results):
+def access_creator(dict_results):
   """Extracts a character's creator name(s) and return as a list."""
-  creators = dict_results['creators']
-  creators_list = []
-  for creator in creators:
+  creator = dict_results['creators']
+  creator_list = []
+  for creator in creator:
     creator_name = creator['name']
-    creators_list.append(creator_name)
-  # print(f'creators: {creators_list}')
-  return creators_list
+    creator_list.append(creator_name)
+  # print(f'creator: {creator_list}')
+  return creator_list
 
 # creators = access_creators(char_results)
 # print(creators)
@@ -191,12 +191,12 @@ for char_file in os.listdir(directory):
     
   character_dictionary = {}
 
-  creators = access_creators(char_results)
+  creator = access_creator(char_results)
   biography = access_biography(char_results)
   gender = access_gender(char_results)
   id = access_comicvineID(char_results)
   name = access_name(char_results)
-  powers = access_powers(char_results)
+  power = access_power(char_results)
   image = access_image(char_results)
 
   character_dictionary['id'] = id
@@ -204,8 +204,8 @@ for char_file in os.listdir(directory):
   character_dictionary['name'] = name
   character_dictionary['gender'] = gender
   character_dictionary['biography'] = biography
-  character_dictionary['powers'] = powers
-  character_dictionary['creators'] = creators
+  character_dictionary['power'] = power
+  character_dictionary['creator'] = creator
 
   char_dicts.append(character_dictionary)
   # print(f'character_dictionary {character_dictionary}')
