@@ -74,26 +74,55 @@ def character_JSON_request(your_UA, API_KEY, char_id, new_filename):
 # char_fields = 'id,name,gender,deck,powers,creators'
 
 # JOHN CONSTANTINE
-character_JSON_request(user_agent, comicvine_API_KEY, 3329,'john_constantine')
+# character_JSON_request(user_agent, comicvine_API_KEY, 3329,'john_constantine')
 # HARLEY QUINN
-character_JSON_request(user_agent, comicvine_API_KEY, 1696,'harley_quinn')
+# character_JSON_request(user_agent, comicvine_API_KEY, 1696,'harley_quinn')
 # ZATANNA
-character_JSON_request(user_agent, comicvine_API_KEY, 5691, 'zatanna')
-
+# character_JSON_request(user_agent, comicvine_API_KEY, 5691, 'zatanna')
 # ORPHAN (Cassandra Cain)
-character_JSON_request(user_agent, comicvine_API_KEY, 65230, 'cassandra_cain')
-
+# character_JSON_request(user_agent, comicvine_API_KEY, 65230, 'cassandra_cain')
 # BLACK CANARY
-character_JSON_request(user_agent, comicvine_API_KEY, 1689, 'black_canary')
-
+# character_JSON_request(user_agent, comicvine_API_KEY, 1689, 'black_canary')
 # Jackson Hyde (AQUALAD)
-character_JSON_request(user_agent, comicvine_API_KEY, 71494, 'jackson_hyde_aqualad')
-
+# character_JSON_request(user_agent, comicvine_API_KEY, 71494, 'jackson_hyde_aqualad')
 # POISON IVY
-character_JSON_request(user_agent, comicvine_API_KEY, 1697, 'poison_ivy')
-
+# character_JSON_request(user_agent, comicvine_API_KEY, 1697, 'poison_ivy')
 # RAVEN
 # character_JSON_request(user_agent, comicvine_API_KEY, 3584, 'raven')
+
+
+#  
+def comic_JSON_request(your_UA, API_KEY, resource, fields, new_filename):
+  """Get information of comic issues each character has appeared in."""
+
+  # needed to get response 200 from API request
+  headers = { 'User-Agent' : your_UA}
+
+  # required information needed
+  payload = { 'api_key' : API_KEY,
+              'format' : 'json',
+              'field_list' : fields
+  }
+
+  # URL for API request
+  URL = f'https://comicvine.com/api/{resource}/4010-10/'
+
+  # holds information from get request
+  response = requests.get(URL, params=payload, headers=headers)
+
+  # converts to JSON dictionary I think
+  json_object = json.dumps(response.json(), indent=3)
+
+  with open(f'data/comics{new_filename}.json', 'w') as outfile:
+    outfile.write(json_object)
+
+
+comic_JSON_request(user_agent, comicvine_API_KEY, 'comic', 'id,name,person_credits,volume,deck,description,cover_date')
+
+# iterate through each file
+# get characters' comic ids
+# limit 100 requests per hour
+# fields: cover_date, deck, description, id, name, person_credits, volume
 
 def alphabetize_JSON_dict(filename, new_filename):
   """Retrieves dictionary from JSON file. Alphabetizes data."""

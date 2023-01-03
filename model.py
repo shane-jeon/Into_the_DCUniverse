@@ -76,34 +76,8 @@ class Character(db.Model):
     >
     '''
 
-# class Character(db.Model):
-#   """A character profile."""
-#   __tablename__ = 'character'
+# relationship w/media_association table
 
-#   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-#   image = db.Column(db.String)
-#   name = db.Column(db.String(50), nullable=False)
-#   # alignment = db.Column(db.String(15), nullable=False)
-#   gender = db.Column(db.String(15), nullable=False)
-#   # origin = db.Column(db.String)
-#   biography = db.Column(db.String, nullable=False)
-#   # earth_id = db.Column(db.String, db.ForeignKey('earth.id')) 
-#   # era_id = db.Column(db.Integer, db.ForeignKey('era.id'))
-#   # media_id = db.Column(db.Integer, db.ForeignKey('media.id'))
-#   power = db.Column(db.String)
-#   creator = db.Column(db.String)  
-#   # first_appearance = db.Column(db.String)
-
-#   # relationship w/media_association table
-
-#   def __repr__(self):
-#     return f'''
-    
-#     <CharacterID={self.id} ,
-#     name={self.name} ,
-#     biography={self.biography} ,
-#     img={self.image}>
-#     '''
 
 
 # #########################
@@ -161,10 +135,10 @@ class Character(db.Model):
 # #########COMIC###########
 # #########################
 
-# class Comic(db.Model):
-#   """List of DC comics."""
+class Comic(db.Model):
+  """List of DC comics."""
 
-#   __tablename__ = 'comic'
+  __tablename__ = 'comic'
 
 #   id = db.Column(db.Integer, autoincrement=True, primary_key=True)
 #   comic_issue = db.Column(db.Integer)

@@ -26,11 +26,11 @@ for char_file in os.listdir(directory):
 
 
 # prints all key and value pairs in char_results dictionary
-def get_key_attributes(char_results):
-  for attribute, char_info in char_results.items():
-    # print(f'{attribute}:{char_info}')
-    print(f'Key attribute: {attribute}')
-  return
+# def get_key_attributes(char_results):
+#   for attribute, char_info in char_results.items():
+#     # print(f'{attribute}:{char_info}')
+#     print(f'Key attribute: {attribute}')
+#   return
 
 
 ####id####
@@ -173,7 +173,7 @@ def access_firstAppearance(dict_results):
   first_appearance = dict_results['first_appeared_in_issue']
   first_appearance_data = {}
 
-  print(first_appearance)
+  # print(first_appearance)
 
   first_appearance_issue = first_appearance['name'] 
   issue_id = first_appearance['id']
@@ -236,7 +236,8 @@ char_dicts = []
 for char_file in os.listdir(directory):
   # f is a single file
   f = os.path.join(directory, char_file)
-  print('f', f)
+  # print(char_file)
+  # print('f', f)
   if os.path.isfile(f):
     # reads JSON file for character
     json_string = open(f).read()
@@ -246,6 +247,8 @@ for char_file in os.listdir(directory):
 
   # accesses 'results' and returns dictionary containing only relevant information
   char_results = json_dict['results']
+
+
     
   character_dictionary = {}
   id = access_comicvineID(char_results)
@@ -255,7 +258,7 @@ for char_file in os.listdir(directory):
   alias = access_alias(char_results)
   origin = access_origin(char_results)
   gender = access_gender(char_results)
-  biography = access_biography
+  biography = access_biography(char_results)
   power = access_power(char_results)
   friend = access_friend(char_results)
   enemy = access_enemy(char_results)
@@ -285,5 +288,12 @@ for char_file in os.listdir(directory):
   char_dicts.append(character_dictionary)
 
 
+  with open(f"data/characters_reformatted/{char_file}", "w") as outfile:
+    json.dump(character_dictionary, outfile, indent=4)
+
+
 # for char in char_dicts:
 #   print(f'charid: {char["id"]}')
+
+
+# turn dict into JSON file 
