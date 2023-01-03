@@ -126,7 +126,7 @@ def access_friend(dict_results):
   for friend in friends:
     # print(friend)
     friend_name = friend['name'].strip('\\')
-    print(f'friend_name {friend_name}')
+    # print(f'friend_name {friend_name}')
     friend_id = friend['id']
     friend_type = (friend_name, friend_id)
     friend_list.append(friend_type)
@@ -236,19 +236,16 @@ char_dicts = []
 for char_file in os.listdir(directory):
   # f is a single file
   f = os.path.join(directory, char_file)
-  # print('f', f)
+  print('f', f)
   if os.path.isfile(f):
     # reads JSON file for character
     json_string = open(f).read()
-    # print('json_string', json_string)
 
   # returns JSON file as python dictionary
-  json_dict = json.loads(json_string)
-  # print('json_dict', json_dict)
+  json_dict = (json.loads(json_string))
 
   # accesses 'results' and returns dictionary containing only relevant information
   char_results = json_dict['results']
-  # print('char_results', char_results)
     
   character_dictionary = {}
   id = access_comicvineID(char_results)
@@ -286,9 +283,7 @@ for char_file in os.listdir(directory):
   character_dictionary['creator'] = creator
 
   char_dicts.append(character_dictionary)
-  # print(f'character_dictionary {character_dictionary}')
 
-# print(character_dictionary['first_appearance'])
 
 # for char in char_dicts:
 #   print(f'charid: {char["id"]}')

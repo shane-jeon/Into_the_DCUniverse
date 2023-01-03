@@ -2,7 +2,7 @@
 
 <h1 class="page_title">Into the DC Universe</h1>
 
-{% for character in characters %}
+{% for character in characters | sort(attribute='name') %}
 <div class="container">
   <div class="flexbox-item character-img">
     <img class="char_avatar" src="{{character.image}}" />
