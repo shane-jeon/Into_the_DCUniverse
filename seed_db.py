@@ -84,7 +84,7 @@ characters_in_db = []
 # for character in char_dict:
 for char in char_dicts:
   # print(character)
-  # print(f"ID: {char['id']}, NAME: {char['name']}")
+  print(f"ID: {char['id']}, NAME: {char['name']}")
   id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
     # character['creator'][1]['name'],
     # character_creator,

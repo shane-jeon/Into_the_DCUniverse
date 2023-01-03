@@ -288,7 +288,7 @@ for char_file in os.listdir(directory):
   char_dicts.append(character_dictionary)
   # print(f'character_dictionary {character_dictionary}')
 
-print(character_dictionary['first_appearance'])
+# print(character_dictionary['first_appearance'])
 
 # for char in char_dicts:
 #   print(f'charid: {char["id"]}')
