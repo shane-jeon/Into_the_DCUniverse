@@ -2,7 +2,9 @@
 
 **Please see txt_files/MVP.md**
 
-_Into the DCUniverse_, a web application that aims to provide an accessible and organized way for users to learn about characters in the DC Comics multiverse by offering recommendations for which comic series to start reading. The application includes a list of all characters, with basic information and a list of apperances in various media, as well as a quiz to help users find recommendations based on their interests.
+_Into the DCUniverse_, a web application meant for fans of the DC Animated Universe (Specifically "Young Justice", "Justice League", "Justice League Unlimited", & "Harley Quinn") who want to learn more about the characters they have grown to love. Provided is a list of characters, each with a link to their own profiles, with profiles consisting of basic information (name, biography, gender, etc.) as well as a comprehensive list of comic issues. The list of comic book issues are partitioned according to its' publication era (from "The Golden Age" right down to the present "Rebirth"). The DC Universe is vast, complicated, and sometimes contradictory (but all good stuff of course)! A newbie (like myself 3 years ago) would have to flutter from resource to resource to paint a general picture of their chosen character. The caveat is once you look into one character, their featured comic book issues are usually intertwined with the stories of other related characters, whether "good" or "evil". The goal of this project is to offer a "primer" of sorts to help ease a budding DC Comics fan into, well, the DC Universe.
+
+# Please check back later, this file needs to be reassesed, revised, and updated as I restructure my project to produce a realistic MVP within my projected timeline. Thank you for your patience and stay tuned. (1/3/2023)
 
 The project was created to address the difficulty and time-consuming nature of researching the DC Universe and provide a solution for those who may be intimidated by the complexities of the various multiverses, publication eras, and anthologies.
 

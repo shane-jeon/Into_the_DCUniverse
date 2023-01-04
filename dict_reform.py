@@ -237,7 +237,7 @@ for char_file in os.listdir(directory):
   # f is a single file
   f = os.path.join(directory, char_file)
   # print(char_file)
-  # print('f', f)
+  print('f', f)
   if os.path.isfile(f):
     # reads JSON file for character
     json_string = open(f).read()

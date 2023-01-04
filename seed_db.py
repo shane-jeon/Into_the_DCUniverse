@@ -4,12 +4,14 @@ import os
 import json
 import crud
 import model
-import server
+# import server
+import run
+
 from dict_reform import *
 os.system("dropdb characters")
 os.system("createdb characters")
 
-model.connect_to_db(server.app)
+model.connect_to_db(run.app)
 model.db.create_all()
 
 directory = 'data/characters'
@@ -36,7 +38,7 @@ for char_file in os.listdir(directory):
   character_dictionary = {}
 
   id = access_comicvineID(char_results)
-  print(f'id:::::: {id}')
+  # print(f'id:::::: {id}')
   image = access_image(char_results)
   name = access_name(char_results)
   real_name = access_realName(char_results)
@@ -55,9 +57,9 @@ for char_file in os.listdir(directory):
   # changed creator plurality
   creator = access_creator(char_results)
 
-  print(f'creator: {creator}, id: {id}, name: {name}')
-  print("*"*30)
-  print(f'comic issue {comic_issue}')
+  # print(f'creator: {creator}, id: {id}, name: {name}')
+  # print("*"*30)
+  # print(f'comic issue {comic_issue}')
   character_dictionary['id'] = id
   character_dictionary['image'] = image
   character_dictionary['name'] = name
@@ -82,8 +84,10 @@ for char_file in os.listdir(directory):
 characters_in_db = []
 # print(f'CHAR DICTS: {char_dicts}')
 # for character in char_dict:
+
 for char in char_dicts:
   # print(character)
+  print('*'*200, 'type(char): ', type(char))
   print(f"ID: {char['id']}, NAME: {char['name']}")
   id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
     # character['creator'][1]['name'],
@@ -106,16 +110,65 @@ for char in char_dicts:
     char['creator'],
   )
 
-  print(f" NAME CHAR {char['name']}")
   db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
-
-
 
   characters_in_db.append(db_character)
 
+
 # model.db.session.add_all(characters_in_db)
 # model.db.session.commit()
+# directory = 'data/characters_reformatted'
+# character_dictionaries = []
+# for char_file in os.listdir(directory):
+#   # f is a single file
+#   f = os.path.join(directory, char_file)
+#   print('f', f)
+#   if os.path.isfile(f):
+#     # reads JSON file for character
+#     json_string = open(f).read()
+#     # print('json_string', json_string)
 
+#   # returns JSON file as python dictionary
+#   character_dictionary = json.loads(json_string)
+#   # print('CHARACTER DICTIONARY', {character_dictionary['id']})
+#   # print('type', type(character_dictionary))
+#   print('KEYS', character_dictionary.keys())
+#   # print('json_dict', json_dict)
+#   # print(f'character_dictionary {character_dictionary}')
+#   character_dictionaries.append(character_dictionary)
+
+#   print('LENGTH', len(character_dictionaries))
+
+# characters_in_db = []
+
+# for character in character_dictionaries:
+#   print(type(character))
+#   print(f"ID: {character['id']}, NAME: {character['name']}")
+
+#   id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
+#     character['id'],
+#     character['image'],
+#     character['name'],
+#     character['real_name'],
+#     character['alias'],
+#     character['gender'],
+#     character['origin'],
+#     character['biography'],
+#     character['power'],
+#     character['friend'],
+#     character['enemy'],
+#     character['team'],
+#     character['first_appearance'],
+#     character['appearance_count'],
+#     character['comic_issue'],
+#     character['creator'],
+#   )
+#   print('POST DB DICTIONARY ACCESS', '*'*100)
+#   print(id, image, name, real_name, alias, gender)
+
+#   db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
+
+#   characters_in_db.append(db_character)
 
 
 # def seed_db_comicvine(char_dict):

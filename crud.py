@@ -29,8 +29,11 @@ def create_character(id, image, name, real_name, alias, gender, origin, biograph
 
   # to add new object
   db.session.add(char)
+  print('*'*500, 'HERE')
+  print(char)
   # database will not actually be modified unless following call included
   db.session.commit()
+  print('*'*500, 'COMMIT COMPLETE')
 
   return char
 
@@ -53,5 +56,5 @@ def get_characters():
   return Character.query.all()
 
 if __name__ == '__main__':
-  from server import app
+  from app import app
   connect_to_db(app)

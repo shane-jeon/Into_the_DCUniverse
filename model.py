@@ -20,7 +20,7 @@ class Character(db.Model):
 
   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
   image = db.Column(db.String)
-  name = db.Column(db.String(50), nullable=False)
+  name = db.Column(db.String, nullable=False)
   real_name = db.Column(db.String)
   alias = db.Column(db.String)
   # alignment = db.Column(db.String(15), nullable=False)
@@ -60,24 +60,24 @@ class Character(db.Model):
 
     biography={self.biography},
 
-    power={self.power},
-
-    friend={self.friend},
-
-    enemy={self.enemy},
-
-    team={self.team},
-
-    first_appearance={self.first_appearance},
-
-    appearance_count={self.appearance_count},
-    
-    creator={self.creator}
+  
     >
     '''
 
 # relationship w/media_association table
+# power={self.power},
 
+    # friend={self.friend},
+
+    # enemy={self.enemy},
+
+    # team={self.team},
+
+    # first_appearance={self.first_appearance},
+
+    # appearance_count={self.appearance_count},
+    
+    # creator={self.creator}
 
 
 # #########################
@@ -135,10 +135,10 @@ class Character(db.Model):
 # #########COMIC###########
 # #########################
 
-class Comic(db.Model):
-  """List of DC comics."""
+# class Comic(db.Model):
+#   """List of DC comics."""
 
-  __tablename__ = 'comic'
+#   __tablename__ = 'comic'
 
 #   id = db.Column(db.Integer, autoincrement=True, primary_key=True)
 #   comic_issue = db.Column(db.Integer)
@@ -246,7 +246,7 @@ def connect_to_db(flask_app, db_uri='postgresql:///characters', echo=True):
 
 
 if __name__ == "__main__":
-  from server import app
+  from app import app
 
   # connection call
   # Any errors about db connection that will arise, check connect_to_db(app) is called before app.run() 
