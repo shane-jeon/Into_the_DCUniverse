@@ -1,5 +1,12 @@
 01/13/2023 Friday:
 
+7:01pm:
+Successfully webscraped data to create a csv file containing all characters from Young Justice.
+Next step is to use names to look through comicvine API data, many will be incorrect
+
+
+1pm-ish:
+
 Need to reassess MVP again. Major delay in even completing the backend has proven to me that my vision is much too wide. I need to narrow down the scope. Key emphasis on MINIMUM Viable Product.
 There are hundreds and hundreds of DC characters. Even to focus merely on the DC animated universe is too big, so I will be narrowing down to the television show that made me a DC fan in the first place, Young Justice. Will attempt to find a list with a thorough list of characters that have appeared in show even with non-speaking roles. Will most likely need to manually find characters in JSON file containing all DC characters. Too many duplicates and some aren't under their nom de guerre (superhero/villian name), e.g., "Orphan" AKA Cassandra Cain.
 

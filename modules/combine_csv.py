@@ -12,7 +12,8 @@ def extract_YJ_characters():
       fields = next(csvreader)
       
       for row in csvreader:
-        names.append([row[1]])
+        # print(names)
+        print(row)
   return names
 
 def create_whole_file(names):
@@ -20,6 +21,6 @@ def create_whole_file(names):
     writer = csv.writer(file)
     writer.writerows(names)
 
-names = extract_YJ_characters()
-create_whole_file(names)
+# names = extract_YJ_characters()
+# create_whole_file(names)
 
