@@ -27,6 +27,9 @@ OR select from different categories~~
 
 The web application will consist of an alphabetical list of characters, along with a search bar to query for a character. A click to a character link redirects you to a page dedicated to the DC character with the following information: photo, character name, real name, brief biography, gender, origin (if possible) first and all comic appearances, appearances in television/film in chronological order.
 
+01/13/2023 update:
+Realized I still had too broad of a scope. Major emphasis needed on MINIMUM Viable Product. Will obtain list of characters from the DC animated show "Young Justice" only, sift through list of DC characters obtained from ComicVine API (manually, as some characters are listed under their "real" names.) This will also allow me to create an easier timeline for the characters based purely on seasons.
+
 ## data/APIs
 
 I will need to collect data from different sources as DC does not have an API.

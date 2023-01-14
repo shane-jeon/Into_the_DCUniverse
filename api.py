@@ -117,8 +117,34 @@ def comic_JSON_request(your_UA, API_KEY, resource, fields, new_filename):
     outfile.write(json_object)
 
 
-comic_JSON_request(user_agent, comicvine_API_KEY, 'comic', 'id,name,person_credits,volume,deck,description,cover_date')
+# comic_JSON_request(user_agent, comicvine_API_KEY, 'comic', 'id,name,person_credits,volume,deck,description,cover_date')
 
+
+def series_JSON_request(your_UA, API_KEY):
+  """Get list of characters from television series YJ."""
+
+  # needed to get response 200 from API request
+  headers = { 'User-Agent' : your_UA}
+
+  # required information needed
+  payload = { 'api_key' : API_KEY,
+              'format' : 'json',
+              'field_list' : 'character_credits'
+  }
+
+  # URL for API request
+  URL = f'https://comicvine.com/api/series/4075-33/'
+
+  # holds information from get request
+  response = requests.get(URL, params=payload, headers=headers)
+
+  # converts to JSON dictionary I think
+  json_object = json.dumps(response.json(), indent=3)
+
+  with open(f'data/tvseriesYJ.json', 'w') as outfile:
+    outfile.write(json_object)
+
+series_JSON_request(user_agent, comicvine_API_KEY)
 # iterate through each file
 # get characters' comic ids
 # limit 100 requests per hour
