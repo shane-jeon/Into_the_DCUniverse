@@ -30,7 +30,7 @@ def to_pandas_dataframe(members, letter):
   and subsequently creates a new CSV file. """
   character = pd.DataFrame({"name": members})
 
-  character.to_csv(f'/Users/shanejeon/Desktop/programming/intoTheDCUniverse/DCuniverse_app/data/YJcharacters{letter}')
+  character.to_csv(f'/Users/shanejeon/Desktop/programming/intoTheDCUniverse/DCuniverse_app/data/YJ_characters/YJcharacters{letter}.csv')
 
 
 def collect_character_data():
