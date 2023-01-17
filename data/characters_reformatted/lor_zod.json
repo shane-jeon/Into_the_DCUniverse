@@ -1,0 +1,404 @@
+{
+    "id": 42372,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11126/111269625/6246636-lzrco005.jpg",
+    "name": "Lor-Zod",
+    "real_name": "Lor-Zod",
+    "alias": [
+        "Chris Kent",
+        "K'riss",
+        "Nightwing",
+        "Superman",
+        "Last Son of Krypton",
+        "Superboy",
+        "Hernan Guerra",
+        "Christopher Kent",
+        "Son of Kal El"
+    ],
+    "gender": "male",
+    "origin": "Lor-Zod",
+    "biography": "The son of General Zod and Ursa who was born in the Phantom Zone.",
+    "power": [
+        "Flight",
+        "Super Strength",
+        "Super Speed",
+        "Agility",
+        "Stamina",
+        "Invulnerability",
+        "Telekinesis",
+        "Teleport",
+        "Blast Power",
+        "Healing",
+        "Super Sight",
+        "Super Smell",
+        "Super Hearing",
+        "Precognition",
+        "Postcognition",
+        "Darkness Manipulation",
+        "Heat Vision",
+        "Ice Breath"
+    ],
+    "friend": [
+        [
+            "Alan Scott",
+            12663
+        ],
+        [
+            "Damian Wayne",
+            42413
+        ],
+        [
+            "Eradicator",
+            5377
+        ],
+        [
+            "General Zod",
+            13075
+        ],
+        [
+            "Jay Garrick",
+            2395
+        ],
+        [
+            "Kent V. Nelson",
+            5898
+        ],
+        [
+            "Krypto",
+            8332
+        ],
+        [
+            "Lois Lane",
+            1808
+        ],
+        [
+            "Mr. Terrific",
+            19179
+        ],
+        [
+            "Natasha Irons",
+            10019
+        ],
+        [
+            "Power Girl",
+            4915
+        ],
+        [
+            "Supergirl",
+            2351
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "Thara Ak-Var",
+            58252
+        ],
+        [
+            "Tim Drake",
+            9290
+        ],
+        [
+            "Ursa",
+            41953
+        ]
+    ],
+    "enemy": [
+        [
+            "Alexis Luthor",
+            108766
+        ],
+        [
+            "Assassin",
+            35888
+        ],
+        [
+            "Az-Rel",
+            62746
+        ],
+        [
+            "Booster Gold",
+            1786
+        ],
+        [
+            "C.H.A.D.",
+            139533
+        ],
+        [
+            "Commander Gor",
+            58601
+        ],
+        [
+            "Dev-Em",
+            27239
+        ],
+        [
+            "Gorin-Sunn",
+            95167
+        ],
+        [
+            "Hal Jordan",
+            11202
+        ],
+        [
+            "Iolande",
+            43828
+        ],
+        [
+            "Jax-Ur",
+            16345
+        ],
+        [
+            "John Stewart",
+            10451
+        ],
+        [
+            "Kilowog",
+            6952
+        ],
+        [
+            "Kyle Rayner",
+            40431
+        ],
+        [
+            "Lex Luthor",
+            41952
+        ],
+        [
+            "Mirabai",
+            65154
+        ],
+        [
+            "Nadira",
+            30669
+        ],
+        [
+            "Raynunn",
+            139501
+        ],
+        [
+            "Reactron",
+            48730
+        ],
+        [
+            "Rogol Zaar",
+            147336
+        ],
+        [
+            "Sergeant Cloud",
+            71191
+        ],
+        [
+            "Space Ape",
+            138323
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "Tor-An",
+            38017
+        ],
+        [
+            "Toyman (Schott)",
+            1814
+        ],
+        [
+            "Vohc",
+            69814
+        ]
+    ],
+    "team": [
+        [
+            "House of Zod",
+            59938
+        ],
+        [
+            "Kent Family",
+            55792
+        ],
+        [
+            "Kryptonians",
+            45710
+        ],
+        [
+            "Nightwing & Flamebird",
+            56092
+        ],
+        [
+            "Phantom Zone Inhabitants",
+            52655
+        ],
+        [
+            "Suicide Squad",
+            40394
+        ],
+        [
+            "Superman Family",
+            45468
+        ]
+    ],
+    "first_appearance": {
+        "name": "Last Son, Part 1",
+        "issue_id": 111262,
+        "issue_number": "844"
+    },
+    "appearance_count": 149,
+    "comic_issue": [
+        909595,
+        905296,
+        901104,
+        897160,
+        894333,
+        870483,
+        842635,
+        829322,
+        826325,
+        824995,
+        819286,
+        814049,
+        743310,
+        738538,
+        726912,
+        719315,
+        717405,
+        710050,
+        703037,
+        692051,
+        670718,
+        669431,
+        664267,
+        662715,
+        661116,
+        661106,
+        659984,
+        659972,
+        655477,
+        655464,
+        638576,
+        634521,
+        610452,
+        611986,
+        579298,
+        576604,
+        571622,
+        513626,
+        509687,
+        503538,
+        502084,
+        498561,
+        498077,
+        497549,
+        496505,
+        489840,
+        495410,
+        495252,
+        495165,
+        495164,
+        494844,
+        494741,
+        494665,
+        494160,
+        494105,
+        494104,
+        487175,
+        477801,
+        468416,
+        445167,
+        444523,
+        400905,
+        390757,
+        378888,
+        323066,
+        315211,
+        292577,
+        268931,
+        296581,
+        453821,
+        262264,
+        259540,
+        222490,
+        220209,
+        216195,
+        214806,
+        213344,
+        212151,
+        226826,
+        210785,
+        207341,
+        296576,
+        211475,
+        259566,
+        199871,
+        196735,
+        119120,
+        195082,
+        194801,
+        186788,
+        259534,
+        189581,
+        182582,
+        304797,
+        304796,
+        300612,
+        176791,
+        179255,
+        177693,
+        171393,
+        172570,
+        167066,
+        166782,
+        168291,
+        167362,
+        247289,
+        164004,
+        159791,
+        160455,
+        157158,
+        155458,
+        223070,
+        247288,
+        153515,
+        151810,
+        150025,
+        150681,
+        145239,
+        259439,
+        146850,
+        141990,
+        304144,
+        249657,
+        259467,
+        129655,
+        259435,
+        127817,
+        125194,
+        259433,
+        122847,
+        121124,
+        378696,
+        121199,
+        121197,
+        120939,
+        120389,
+        120244,
+        296427,
+        168929,
+        116945,
+        115397,
+        115148,
+        111359,
+        108958,
+        106731,
+        111261,
+        107567,
+        111262,
+        890018
+    ],
+    "creator": [
+        "Adam Kubert",
+        "Geoff Johns",
+        "Richard Donner"
+    ]
+}

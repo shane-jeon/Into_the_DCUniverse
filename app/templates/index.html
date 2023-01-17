@@ -1,19 +1,26 @@
-{% extends 'base.html' %} {% block title %}{% endblock %} {% block body %}
+{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %} {%
+block js %}
+<script type="text/jsx" src="/static/JS/hello.jsx"></script>
+{% endblock %} {% block body %}
 
 <h1 class="page_title">Into the DC Universe</h1>
+<div id="root"></div>
+<ul>
+  {% for character in characters | sort(attribute='name') %}
+  <li>
+    <div class="container">
+      <div class="flexbox-item character-img">
+        <img class="char_avatar" src="{{character.image}}" />
+      </div>
 
-{% for character in characters | sort(attribute='name') %}
-<div class="container">
-  <div class="flexbox-item character-img">
-    <img class="char_avatar" src="{{character.image}}" />
-  </div>
-
-  <div class="flexbox-item character-name">
-    <p>
-      <a class="hyperlink character_redirect" href="/{{character.id}}"
-        >{{ character.name }}</a
-      >
-    </p>
-  </div>
-</div>
-{% endfor %} {% endblock body %}
+      <div class="flexbox-item character-name">
+        <p>
+          <a class="hyperlink character_redirect" href="/{{character.id}}"
+            >{{ character.name }}</a
+          >
+        </p>
+      </div>
+    </div>
+  </li>
+  {% endfor %} {% endblock %}
+</ul>

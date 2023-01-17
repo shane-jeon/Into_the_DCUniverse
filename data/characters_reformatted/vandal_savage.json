@@ -1,0 +1,1859 @@
+{
+    "id": 5722,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/10/100647/4154736-vandal%20savage%20final.jpg",
+    "name": "Vandal Savage",
+    "real_name": "Vandar Adg",
+    "alias": [
+        "Blackbeard\r",
+        "Cain\r",
+        "Dr. Curtis Knox\r",
+        "Genghis Khan\r",
+        "General Savage\r",
+        "Jack the Ripper\r",
+        "Jon Savage\r",
+        "Julius Caesar\r",
+        "Marshal Sauvage\r",
+        "Mr. DeWitt\r",
+        "Khafre\r",
+        "Kr'ull\r",
+        "Licinius\r",
+        "Death Masque\r",
+        "The Greatest of the Caesars\r",
+        "The Most Brutal of the Khans\r",
+        "Vandar the Killer\r",
+        "Varney Sack\r",
+        "Head Chief"
+    ],
+    "gender": "male",
+    "origin": "Vandal Savage",
+    "biography": "Vandal Savage, the immortal tyrant, has been witness to humanity's growth from the dawn of civilization, and his desire to control mankind has led him into conflict with many heroes of the DC Universe.",
+    "power": [
+        "Super Strength",
+        "Stamina",
+        "Invulnerability",
+        "Intellect",
+        "Healing",
+        "Weapon Master",
+        "Insanely Rich",
+        "Power Suit",
+        "Unarmed Combat",
+        "Immortal",
+        "Swordsmanship",
+        "Leadership",
+        "Longevity"
+    ],
+    "friend": [
+        [
+            "Adolf Hitler",
+            9671
+        ],
+        [
+            "Al Jabr",
+            79621
+        ],
+        [
+            "Albert Michaels",
+            84829
+        ],
+        [
+            "Anthony Monetti",
+            65231
+        ],
+        [
+            "Bane",
+            6129
+        ],
+        [
+            "Baron Blitzkrieg",
+            22040
+        ],
+        [
+            "Brainwave",
+            9338
+        ],
+        [
+            "Capucine",
+            88808
+        ],
+        [
+            "Cheetah (Minerva)",
+            8344
+        ],
+        [
+            "Cheshire",
+            2537
+        ],
+        [
+            "Cliff DeWitt",
+            10598
+        ],
+        [
+            "Darkseid",
+            2349
+        ],
+        [
+            "Doctor Hurt",
+            54826
+        ],
+        [
+            "Dr. Psycho",
+            4918
+        ],
+        [
+            "Eobard Thawne",
+            18340
+        ],
+        [
+            "Etrigan",
+            7367
+        ],
+        [
+            "Exoristos",
+            79959
+        ],
+        [
+            "Fiddler",
+            6900
+        ],
+        [
+            "Garn Daanuth",
+            56626
+        ],
+        [
+            "Gorilla Grodd",
+            2380
+        ],
+        [
+            "Grendel",
+            53397
+        ],
+        [
+            "Hordr_Root",
+            120867
+        ],
+        [
+            "Horsewoman",
+            79620
+        ],
+        [
+            "Icicle",
+            83835
+        ],
+        [
+            "Jarret Kugel",
+            113876
+        ],
+        [
+            "John F. Kennedy",
+            33077
+        ],
+        [
+            "Jonah Hex",
+            3614
+        ],
+        [
+            "Joseph Martin",
+            13006
+        ],
+        [
+            "Kass Sage",
+            82282
+        ],
+        [
+            "Krusivax",
+            72303
+        ],
+        [
+            "Lady Flash",
+            19087
+        ],
+        [
+            "Lady Vic",
+            6867
+        ],
+        [
+            "Lex Luthor",
+            41952
+        ],
+        [
+            "Madame Xanadu",
+            12662
+        ],
+        [
+            "Napoleon Bonaparte",
+            35568
+        ],
+        [
+            "Negotiator",
+            71796
+        ],
+        [
+            "Neutron",
+            22661
+        ],
+        [
+            "Nocturna",
+            31028
+        ],
+        [
+            "Per Degaton",
+            4922
+        ],
+        [
+            "Phobia",
+            2530
+        ],
+        [
+            "Ra's al Ghul",
+            40816
+        ],
+        [
+            "Red Panzer",
+            43826
+        ],
+        [
+            "Salvaxe",
+            125983
+        ],
+        [
+            "Scandal Savage",
+            42304
+        ],
+        [
+            "Shade",
+            9362
+        ],
+        [
+            "Sir Ystin",
+            33256
+        ],
+        [
+            "Solaris",
+            23273
+        ],
+        [
+            "Solomon Grundy",
+            8342
+        ],
+        [
+            "Sportsmaster",
+            34694
+        ],
+        [
+            "The Gambler",
+            31131
+        ],
+        [
+            "Thinker",
+            23851
+        ],
+        [
+            "Tigress",
+            76607
+        ],
+        [
+            "Veronica Cale",
+            43636
+        ],
+        [
+            "Wizard",
+            24415
+        ],
+        [
+            "Wrath",
+            122247
+        ],
+        [
+            "Zeiss",
+            3743
+        ],
+        [
+            "Ziggie Barnes",
+            113875
+        ]
+    ],
+    "enemy": [
+        [
+            "Adam Strange",
+            4604
+        ],
+        [
+            "Al Jabr",
+            79621
+        ],
+        [
+            "Al Pratt",
+            9298
+        ],
+        [
+            "Alan Scott",
+            12663
+        ],
+        [
+            "Alan Wayne",
+            77809
+        ],
+        [
+            "Alanna Strange",
+            11262
+        ],
+        [
+            "Alex Luthor",
+            24087
+        ],
+        [
+            "Alfred Pennyworth",
+            5556
+        ],
+        [
+            "Amadeus Arkham",
+            50547
+        ],
+        [
+            "Animal Man",
+            22707
+        ],
+        [
+            "Apros",
+            46419
+        ],
+        [
+            "Aquagirl (Marquez)",
+            5901
+        ],
+        [
+            "Aqualad 1000000",
+            146059
+        ],
+        [
+            "Aquaman",
+            2357
+        ],
+        [
+            "Aquaman 1000000",
+            114361
+        ],
+        [
+            "Argent",
+            3575
+        ],
+        [
+            "Arisia",
+            2046
+        ],
+        [
+            "Arrowette",
+            1685
+        ],
+        [
+            "Arsenal",
+            146058
+        ],
+        [
+            "Arthur Joseph Curry",
+            43498
+        ],
+        [
+            "Ballistic",
+            10696
+        ],
+        [
+            "Barbara Gordon",
+            5368
+        ],
+        [
+            "Barry Allen",
+            22804
+        ],
+        [
+            "Bart Allen",
+            1680
+        ],
+        [
+            "Bat Lash",
+            3612
+        ],
+        [
+            "Batman",
+            1699
+        ],
+        [
+            "Batman 1000000",
+            74689
+        ],
+        [
+            "Beast Boy",
+            3586
+        ],
+        [
+            "Big Barda",
+            3628
+        ],
+        [
+            "Billy Batson",
+            2350
+        ],
+        [
+            "Black Canary",
+            1689
+        ],
+        [
+            "Black Lightning",
+            10994
+        ],
+        [
+            "Bloodwynd",
+            6591
+        ],
+        [
+            "Bonnie Baxter",
+            33205
+        ],
+        [
+            "Booster Gold",
+            1786
+        ],
+        [
+            "Brainiac 5",
+            1255
+        ],
+        [
+            "Brainwave Jr.",
+            9319
+        ],
+        [
+            "Calvin Ellis",
+            88508
+        ],
+        [
+            "Captain Atom",
+            2050
+        ],
+        [
+            "Captain Cold",
+            2392
+        ],
+        [
+            "Catherine Van Derm",
+            82601
+        ],
+        [
+            "Catwoman",
+            1698
+        ],
+        [
+            "Cave Carson",
+            9321
+        ],
+        [
+            "Chameleon Boy",
+            5945
+        ],
+        [
+            "Charity",
+            11235
+        ],
+        [
+            "Charles M McNider",
+            9301
+        ],
+        [
+            "Chaselon",
+            46423
+        ],
+        [
+            "Cheshire",
+            2537
+        ],
+        [
+            "Citizen Steel",
+            43296
+        ],
+        [
+            "Cliff DeWitt",
+            10598
+        ],
+        [
+            "Commander Steel",
+            23481
+        ],
+        [
+            "Congorilla",
+            30387
+        ],
+        [
+            "Connor Hawke",
+            14257
+        ],
+        [
+            "Corky Baxter",
+            33206
+        ],
+        [
+            "Cosmic Boy",
+            1264
+        ],
+        [
+            "Creeper",
+            5713
+        ],
+        [
+            "Cyborg",
+            2388
+        ],
+        [
+            "Cyclone",
+            31964
+        ],
+        [
+            "Damage",
+            3582
+        ],
+        [
+            "Damian Wayne",
+            42413
+        ],
+        [
+            "Damien Darhk",
+            56627
+        ],
+        [
+            "Dane Dorrance",
+            31278
+        ],
+        [
+            "Danette Reilly",
+            66975
+        ],
+        [
+            "Deadman",
+            5690
+        ],
+        [
+            "Deathstroke",
+            3588
+        ],
+        [
+            "Dick Grayson",
+            1691
+        ],
+        [
+            "Dinah Drake",
+            94264
+        ],
+        [
+            "Doc Fate",
+            66190
+        ],
+        [
+            "Doctor Mid-Nite",
+            11238
+        ],
+        [
+            "Dolphin",
+            13570
+        ],
+        [
+            "Donna Troy",
+            4913
+        ],
+        [
+            "Dr. Light (Hoshi)",
+            7655
+        ],
+        [
+            "Elongated Man",
+            4437
+        ],
+        [
+            "Enemy Ace",
+            24090
+        ],
+        [
+            "Equinox",
+            100121
+        ],
+        [
+            "Etrigan",
+            7367
+        ],
+        [
+            "Etta Candy",
+            15790
+        ],
+        [
+            "Eugenie Hedstrom",
+            113855
+        ],
+        [
+            "Exoristos",
+            79959
+        ],
+        [
+            "Faith",
+            9040
+        ],
+        [
+            "Farris Knight",
+            77071
+        ],
+        [
+            "Fire",
+            4439
+        ],
+        [
+            "Firestorm",
+            2353
+        ],
+        [
+            "Firestorm (Rusch)",
+            94845
+        ],
+        [
+            "Freddy Freeman",
+            10935
+        ],
+        [
+            "Gangbuster",
+            13690
+        ],
+        [
+            "Geo-Force",
+            9544
+        ],
+        [
+            "Green Arrow",
+            5936
+        ],
+        [
+            "Guy Gardner",
+            1791
+        ],
+        [
+            "Gypsy",
+            10206
+        ],
+        [
+            "Hal Jordan",
+            11202
+        ],
+        [
+            "Halo",
+            5694
+        ],
+        [
+            "Hannu",
+            46404
+        ],
+        [
+            "Harold Halston",
+            113852
+        ],
+        [
+            "Hawkgirl",
+            6903
+        ],
+        [
+            "Hawkman",
+            8337
+        ],
+        [
+            "Hawkwoman",
+            5693
+        ],
+        [
+            "Heat Wave",
+            7651
+        ],
+        [
+            "Hector Hall",
+            4905
+        ],
+        [
+            "Hikaru Sulu",
+            25746
+        ],
+        [
+            "Hippolyta",
+            4929
+        ],
+        [
+            "Horsewoman",
+            79620
+        ],
+        [
+            "Hourman (Matthew Tyler)",
+            7643
+        ],
+        [
+            "Hourman (Rex Tyler)",
+            22787
+        ],
+        [
+            "Hourman (Richard Tyler)",
+            21393
+        ],
+        [
+            "Huntress (Bertinelli)",
+            1690
+        ],
+        [
+            "Huntress (Wayne)",
+            45563
+        ],
+        [
+            "Ice",
+            2051
+        ],
+        [
+            "Immortal Man",
+            28862
+        ],
+        [
+            "Jackson Hyde",
+            71494
+        ],
+        [
+            "Jade",
+            3406
+        ],
+        [
+            "James T. Kirk",
+            20078
+        ],
+        [
+            "Jason Blood ",
+            94476
+        ],
+        [
+            "Jay Garrick",
+            2395
+        ],
+        [
+            "Jeff Smith",
+            30999
+        ],
+        [
+            "Jefferson Jackson ",
+            123925
+        ],
+        [
+            "Jesse Chambers",
+            9345
+        ],
+        [
+            "Jessica Cruz",
+            89628
+        ],
+        [
+            "Jim Corrigan",
+            5810
+        ],
+        [
+            "John Fox",
+            24888
+        ],
+        [
+            "John Law",
+            30273
+        ],
+        [
+            "John Stewart",
+            10451
+        ],
+        [
+            "Johnny Quick",
+            36717
+        ],
+        [
+            "Johnny Thunder",
+            4935
+        ],
+        [
+            "Jon Kent",
+            81104
+        ],
+        [
+            "Jonah Hex",
+            3614
+        ],
+        [
+            "Kal Kent",
+            41761
+        ],
+        [
+            "Kal-L",
+            62833
+        ],
+        [
+            "Karnevil",
+            50027
+        ],
+        [
+            "Katana",
+            9547
+        ],
+        [
+            "Katar Hol",
+            81180
+        ],
+        [
+            "Kent Nelson",
+            6599
+        ],
+        [
+            "Kilowog",
+            6952
+        ],
+        [
+            "Kon-El",
+            1686
+        ],
+        [
+            "Krypto",
+            8332
+        ],
+        [
+            "Kyle Rayner",
+            40431
+        ],
+        [
+            "L-Ron",
+            1789
+        ],
+        [
+            "Lana Lang",
+            5547
+        ],
+        [
+            "Larvox",
+            47876
+        ],
+        [
+            "Leonard McCoy",
+            20080
+        ],
+        [
+            "Lex Luthor",
+            41952
+        ],
+        [
+            "Lian Harper",
+            4698
+        ],
+        [
+            "Libby Lawrence",
+            32525
+        ],
+        [
+            "Lightning Lad",
+            1253
+        ],
+        [
+            "Lois Lane",
+            1808
+        ],
+        [
+            "Lois Lane Robot",
+            50112
+        ],
+        [
+            "Lucifer Morningstar",
+            24232
+        ],
+        [
+            "Ma Hunkel",
+            41181
+        ],
+        [
+            "Madame Xanadu",
+            12662
+        ],
+        [
+            "Manitou Dawn",
+            6207
+        ],
+        [
+            "Manitou Raven",
+            6205
+        ],
+        [
+            "Martian Manhunter",
+            2047
+        ],
+        [
+            "Mary Marvel",
+            2356
+        ],
+        [
+            "Maxima",
+            10034
+        ],
+        [
+            "Medphyll",
+            47255
+        ],
+        [
+            "Mera",
+            14654
+        ],
+        [
+            "Merlin",
+            5335
+        ],
+        [
+            "Metamorpho",
+            2384
+        ],
+        [
+            "Montgomery Scott",
+            25747
+        ],
+        [
+            "Mordru",
+            4904
+        ],
+        [
+            "Mr. Miracle",
+            5703
+        ],
+        [
+            "Mr. Terrific",
+            19179
+        ],
+        [
+            "Nabu the Wise",
+            3291
+        ],
+        [
+            "NautKeLoi",
+            53675
+        ],
+        [
+            "Negotiator",
+            71796
+        ],
+        [
+            "Nightwing ",
+            146057
+        ],
+        [
+            "Nyota Uhura",
+            28180
+        ],
+        [
+            "Obsidian",
+            9359
+        ],
+        [
+            "Orion",
+            2363
+        ],
+        [
+            "Pandora",
+            81779
+        ],
+        [
+            "Parasite (Allen)",
+            93184
+        ],
+        [
+            "Patricia Trayce",
+            9952
+        ],
+        [
+            "Pavel Chekov",
+            26347
+        ],
+        [
+            "Phantom Stranger",
+            3298
+        ],
+        [
+            "Plastic Man",
+            6270
+        ],
+        [
+            "Power Girl",
+            4915
+        ],
+        [
+            "Professor Martin Stein",
+            84003
+        ],
+        [
+            "Questing Queen",
+            79992
+        ],
+        [
+            "Ragman",
+            4846
+        ],
+        [
+            "Raven",
+            3584
+        ],
+        [
+            "Ray Palmer",
+            34685
+        ],
+        [
+            "Red Tornado",
+            1688
+        ],
+        [
+            "Renee Montoya",
+            3716
+        ],
+        [
+            "Resurrection Man",
+            23450
+        ],
+        [
+            "Rick Flag",
+            39769
+        ],
+        [
+            "Rip Hunter",
+            4937
+        ],
+        [
+            "Robert Crane",
+            78498
+        ],
+        [
+            "Robotman",
+            4079
+        ],
+        [
+            "Roy Harper",
+            3404
+        ],
+        [
+            "Roy Raymond Jr.",
+            59265
+        ],
+        [
+            "S.T.R.I.P.E.",
+            30289
+        ],
+        [
+            "Salaak",
+            11304
+        ],
+        [
+            "Sandy Hawkins",
+            9292
+        ],
+        [
+            "Saturn Girl",
+            1273
+        ],
+        [
+            "Scandal Savage",
+            42304
+        ],
+        [
+            "Secret",
+            1682
+        ],
+        [
+            "Shadow Lass",
+            1261
+        ],
+        [
+            "Shining Knight",
+            6890
+        ],
+        [
+            "Simon Baz",
+            84895
+        ],
+        [
+            "Sir Ystin",
+            33256
+        ],
+        [
+            "Skeets",
+            13107
+        ],
+        [
+            "Snapper Carr",
+            21385
+        ],
+        [
+            "Space Ranger",
+            11260
+        ],
+        [
+            "Spectre",
+            2361
+        ],
+        [
+            "Spock",
+            20079
+        ],
+        [
+            "Star-Spangled Kid",
+            10998
+        ],
+        [
+            "Starfire",
+            2389
+        ],
+        [
+            "Stargirl",
+            4897
+        ],
+        [
+            "Steel",
+            2031
+        ],
+        [
+            "Steve Trevor",
+            15789
+        ],
+        [
+            "Superboy Prime",
+            40756
+        ],
+        [
+            "Supergirl",
+            2351
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "Swamp Thing",
+            15809
+        ],
+        [
+            "Tanya Spears",
+            106791
+        ],
+        [
+            "Ted Knight",
+            9296
+        ],
+        [
+            "Ted Kord",
+            2054
+        ],
+        [
+            "Tempest",
+            2382
+        ],
+        [
+            "Terry Sloane",
+            47343
+        ],
+        [
+            "The Radiant",
+            57519
+        ],
+        [
+            "The Ray",
+            2049
+        ],
+        [
+            "The Swan Killer",
+            83892
+        ],
+        [
+            "Thom Kallor",
+            1260
+        ],
+        [
+            "Thunderbolt",
+            33126
+        ],
+        [
+            "Tim Drake",
+            9290
+        ],
+        [
+            "Tomar Tu",
+            10450
+        ],
+        [
+            "Tomcat",
+            42806
+        ],
+        [
+            "Tomorrow Woman",
+            11281
+        ],
+        [
+            "Topo",
+            16337
+        ],
+        [
+            "Trey Thompson",
+            30270
+        ],
+        [
+            "Troy",
+            146060
+        ],
+        [
+            "Ukur",
+            96596
+        ],
+        [
+            "Wallace West",
+            130018
+        ],
+        [
+            "Wally West",
+            23879
+        ],
+        [
+            "Walter West",
+            66922
+        ],
+        [
+            "Wesley Dodds",
+            9299
+        ],
+        [
+            "White Canary",
+            71585
+        ],
+        [
+            "Wildcat",
+            7645
+        ],
+        [
+            "Wonder Girl",
+            10885
+        ],
+        [
+            "Wonder Woman",
+            2048
+        ],
+        [
+            "Wonder Woman 1000000",
+            104919
+        ],
+        [
+            "Xax",
+            50771
+        ],
+        [
+            "Zatanna",
+            5691
+        ],
+        [
+            "Zauriel",
+            6902
+        ]
+    ],
+    "team": [
+        [
+            "Avatars",
+            56652
+        ],
+        [
+            "Black Glove",
+            54825
+        ],
+        [
+            "Cavemen",
+            57593
+        ],
+        [
+            "Dark Arcana",
+            57083
+        ],
+        [
+            "Demon Knights",
+            58606
+        ],
+        [
+            "HORDR",
+            61877
+        ],
+        [
+            "Injustice Society",
+            22535
+        ],
+        [
+            "Justice League United",
+            60754
+        ],
+        [
+            "Legion of Doom",
+            43922
+        ],
+        [
+            "Lords and Agents of Chaos",
+            46161
+        ],
+        [
+            "Mankind Liberation Front",
+            61334
+        ],
+        [
+            "Religion of Crime",
+            57033
+        ],
+        [
+            "Secret Society of Super Villains",
+            40433
+        ],
+        [
+            "Special Forces",
+            62263
+        ],
+        [
+            "Tartarus",
+            48054
+        ],
+        [
+            "The Fourth Reich",
+            55848
+        ],
+        [
+            "The Horde",
+            64280
+        ],
+        [
+            "The Light",
+            61344
+        ],
+        [
+            "The Totality ",
+            64804
+        ]
+    ],
+    "first_appearance": {
+        "name": "The Man Who Wanted the World!",
+        "issue_id": 153319,
+        "issue_number": "10"
+    },
+    "appearance_count": 516,
+    "comic_issue": [
+        961563,
+        958799,
+        953915,
+        963975,
+        949495,
+        953746,
+        949025,
+        946061,
+        943640,
+        939718,
+        920632,
+        919214,
+        913027,
+        942575,
+        908238,
+        956352,
+        891943,
+        891116,
+        889244,
+        886385,
+        884600,
+        883732,
+        889243,
+        878411,
+        876284,
+        870559,
+        870516,
+        864705,
+        862622,
+        858436,
+        848258,
+        858429,
+        856247,
+        831250,
+        845234,
+        843927,
+        842631,
+        842609,
+        841488,
+        829322,
+        828555,
+        839998,
+        826325,
+        823813,
+        823806,
+        826079,
+        825070,
+        825068,
+        824264,
+        824223,
+        823736,
+        797691,
+        812508,
+        796808,
+        783116,
+        795895,
+        941984,
+        941494,
+        940690,
+        938465,
+        741784,
+        738517,
+        737718,
+        741778,
+        741777,
+        735364,
+        729493,
+        725998,
+        722985,
+        721744,
+        721049,
+        725992,
+        718643,
+        721740,
+        716311,
+        715222,
+        939581,
+        937248,
+        939272,
+        938463,
+        705412,
+        705411,
+        701289,
+        697274,
+        693431,
+        683813,
+        686342,
+        675127,
+        672262,
+        666763,
+        675265,
+        673005,
+        672993,
+        668766,
+        670088,
+        669375,
+        665874,
+        664889,
+        663676,
+        634512,
+        626253,
+        621582,
+        608175,
+        597168,
+        583692,
+        580712,
+        579282,
+        576587,
+        575216,
+        569317,
+        566676,
+        963476,
+        962259,
+        552970,
+        552147,
+        767208,
+        551283,
+        959921,
+        540059,
+        762900,
+        520189,
+        520185,
+        518820,
+        762899,
+        516936,
+        516582,
+        514401,
+        513615,
+        762898,
+        510470,
+        762897,
+        514336,
+        509692,
+        509690,
+        508875,
+        507736,
+        507139,
+        506640,
+        505497,
+        505489,
+        899290,
+        502838,
+        502827,
+        500278,
+        499727,
+        499720,
+        499716,
+        898155,
+        503538,
+        503528,
+        501005,
+        500263,
+        492194,
+        495770,
+        493467,
+        490866,
+        485472,
+        489860,
+        484880,
+        477801,
+        477789,
+        479365,
+        479246,
+        479477,
+        470368,
+        473980,
+        472883,
+        468867,
+        463969,
+        471306,
+        471304,
+        465796,
+        465795,
+        463972,
+        456502,
+        489083,
+        453365,
+        450518,
+        449545,
+        452574,
+        447985,
+        447494,
+        886853,
+        441866,
+        428827,
+        425900,
+        424491,
+        431431,
+        421659,
+        426113,
+        419960,
+        416908,
+        415205,
+        426224,
+        410274,
+        401176,
+        396384,
+        395311,
+        404691,
+        392321,
+        388533,
+        386095,
+        380324,
+        372344,
+        367675,
+        360797,
+        355790,
+        382105,
+        349626,
+        346230,
+        345356,
+        341644,
+        340160,
+        345443,
+        335902,
+        335120,
+        343034,
+        329227,
+        336602,
+        321669,
+        314086,
+        310555,
+        323064,
+        306509,
+        315707,
+        315211,
+        301536,
+        356426,
+        309446,
+        313241,
+        294824,
+        306668,
+        305600,
+        292587,
+        291159,
+        294300,
+        292577,
+        453824,
+        268931,
+        268206,
+        269376,
+        453822,
+        261125,
+        260256,
+        267626,
+        255275,
+        259584,
+        252624,
+        250640,
+        261247,
+        246457,
+        264178,
+        244804,
+        239769,
+        230244,
+        227018,
+        226719,
+        216196,
+        213188,
+        210236,
+        202576,
+        237076,
+        184045,
+        304823,
+        170612,
+        289114,
+        166420,
+        160430,
+        473402,
+        157808,
+        156697,
+        344260,
+        289111,
+        189158,
+        155878,
+        289110,
+        152532,
+        298515,
+        150661,
+        149282,
+        246742,
+        145538,
+        150684,
+        150511,
+        140143,
+        148686,
+        148042,
+        138181,
+        135780,
+        263270,
+        132930,
+        131869,
+        131423,
+        130994,
+        130596,
+        127622,
+        265454,
+        125285,
+        122846,
+        121854,
+        120290,
+        114748,
+        259627,
+        135925,
+        114196,
+        124153,
+        107410,
+        106505,
+        394140,
+        134667,
+        108391,
+        134666,
+        249408,
+        134664,
+        134663,
+        159024,
+        218556,
+        159023,
+        159021,
+        119451,
+        159020,
+        131565,
+        131564,
+        131563,
+        379747,
+        260821,
+        123555,
+        123554,
+        113401,
+        337003,
+        268656,
+        303979,
+        93966,
+        93965,
+        258874,
+        132643,
+        120848,
+        93365,
+        93364,
+        93363,
+        150355,
+        150342,
+        384677,
+        259470,
+        150341,
+        299167,
+        304108,
+        190559,
+        69295,
+        69293,
+        46262,
+        245017,
+        69292,
+        46213,
+        113562,
+        111563,
+        69291,
+        46159,
+        69290,
+        69289,
+        69288,
+        69287,
+        45977,
+        69286,
+        45934,
+        45892,
+        352077,
+        45846,
+        172544,
+        45798,
+        237501,
+        45748,
+        45629,
+        230506,
+        151666,
+        45537,
+        230505,
+        45476,
+        45438,
+        230504,
+        189342,
+        134838,
+        134837,
+        134836,
+        134835,
+        116162,
+        114849,
+        46110,
+        45403,
+        45376,
+        45410,
+        45309,
+        150927,
+        173427,
+        44793,
+        44699,
+        271004,
+        230503,
+        43556,
+        42937,
+        123412,
+        123410,
+        42679,
+        42547,
+        123409,
+        42446,
+        42285,
+        42195,
+        123049,
+        123405,
+        123047,
+        123404,
+        123402,
+        123400,
+        41487,
+        123399,
+        41354,
+        123398,
+        41210,
+        123395,
+        41077,
+        40931,
+        40678,
+        40688,
+        40553,
+        40420,
+        40275,
+        40033,
+        39899,
+        39711,
+        39622,
+        39327,
+        39328,
+        39169,
+        39176,
+        39030,
+        39036,
+        409610,
+        139911,
+        36369,
+        36123,
+        133827,
+        133825,
+        133824,
+        101753,
+        34610,
+        34497,
+        34378,
+        34270,
+        34170,
+        700292,
+        34163,
+        34143,
+        34062,
+        34055,
+        33948,
+        397013,
+        222947,
+        169126,
+        480499,
+        128697,
+        33173,
+        33058,
+        32943,
+        32815,
+        32709,
+        32611,
+        32503,
+        32401,
+        355644,
+        29016,
+        29015,
+        133029,
+        30008,
+        934852,
+        29774,
+        29657,
+        29536,
+        27533,
+        384218,
+        28284,
+        28171,
+        133975,
+        26138,
+        25734,
+        25638,
+        25324,
+        25110,
+        120099,
+        120152,
+        120151,
+        120418,
+        120628,
+        21410,
+        959472,
+        120934,
+        117079,
+        881349,
+        879271,
+        17229,
+        17053,
+        184772,
+        119591,
+        15435,
+        12163,
+        12030,
+        9128,
+        6527,
+        116139,
+        153319,
+        934723,
+        892190,
+        878834,
+        819179,
+        705984,
+        504876
+    ],
+    "creator": [
+        "Alfred Bester",
+        "Martin Nodell"
+    ]
+}

@@ -89,7 +89,79 @@ def character_JSON_request(your_UA, API_KEY, char_id, new_filename):
 # character_JSON_request(user_agent, comicvine_API_KEY, 1697, 'poison_ivy')
 # RAVEN
 # character_JSON_request(user_agent, comicvine_API_KEY, 3584, 'raven')
-
+# NIGHTWING 146057
+# character_JSON_request(user_agent, comicvine_API_KEY, 146057, 'nightwing')
+# # STARFIRE 62757
+# character_JSON_request(user_agent, comicvine_API_KEY, 62757, 'startfire')
+# # SPOILER (STEPHANIE BROWN) 6156
+# character_JSON_request(user_agent, comicvine_API_KEY, 6156, 'stephanie_brown')
+# # BARBARA GORDON (BATGIRL/ORACLE) 5368
+# character_JSON_request(user_agent, comicvine_API_KEY, 5368, 'barbara_gordon')
+# # PHANTOM STRANGER 116997
+# character_JSON_request(user_agent, comicvine_API_KEY, 116997, 'phantom_stranger')
+# # KLARION 11976
+# character_JSON_request(user_agent, comicvine_API_KEY, 11976, 'klarion')
+# # DEATHSTROKE 3588
+# character_JSON_request(user_agent, comicvine_API_KEY, 3588, 'deathstroke')
+# # ARROWETTE 1685
+# character_JSON_request(user_agent, comicvine_API_KEY, 1685, 'arrowette')
+# # AMANDA WALLER 4920
+# character_JSON_request(user_agent, comicvine_API_KEY, 4920, 'amanda_waller')
+# # DEADSHOT 5763
+# character_JSON_request(user_agent, comicvine_API_KEY, 5763, 'deadshot')
+# # AMAZO 3737
+# character_JSON_request(user_agent, comicvine_API_KEY, 3737, 'amazo')
+# # PROFESSOR IVO 22015
+# character_JSON_request(user_agent, comicvine_API_KEY, 22015, 'professor_ivo')
+# # T.O. Morrow 22016
+# character_JSON_request(user_agent, comicvine_API_KEY, 22016, 'to_morrow')
+# # RED TORNADO 1688
+# character_JSON_request(user_agent, comicvine_API_KEY, 1688, 'red_tornado')
+# # HUNTRESS 1690
+# character_JSON_request(user_agent, comicvine_API_KEY, 1690, 'huntress')
+# # JAIME REYES (BLUE BEETLE) 4438
+# character_JSON_request(user_agent, comicvine_API_KEY, 4438, 'blue_beetle')
+# # LOR-ZOD 42372
+# character_JSON_request(user_agent, comicvine_API_KEY, 42372, 'lor_zod')
+# # KON-EL (SUPERBOY) 1686
+# character_JSON_request(user_agent, comicvine_API_KEY, 1686, 'superboy')
+# # JADE 3406 //wrong jade
+# CHESHIRE 2537
+# character_JSON_request(user_agent, comicvine_API_KEY, 2537, 'cheshire')
+# # ROY HARPER 3404
+# character_JSON_request(user_agent, comicvine_API_KEY, 3404, 'roy_harper')
+# # ROULETTE 19004
+# character_JSON_request(user_agent, comicvine_API_KEY, 19004, 'roulette')
+# # KITE-MAN 34169
+# character_JSON_request(user_agent, comicvine_API_KEY, 34169, 'kite_man')
+# # KING SHARK 17772
+# character_JSON_request(user_agent, comicvine_API_KEY, 17772, 'king_shark')
+# # CLAYFACE (HAGEN) 35188
+# character_JSON_request(user_agent, comicvine_API_KEY, 35188, 'clayface_hagen')
+# # BLACK ADAM 4916
+# character_JSON_request(user_agent, comicvine_API_KEY, 4916, 'black_adam')
+# # COUNT VERTIGO 19006
+# character_JSON_request(user_agent, comicvine_API_KEY, 19006, 'count_vertigo')
+# # BEAST BOY 47265
+# character_JSON_request(user_agent, comicvine_API_KEY, 47265, 'beast_boy')
+# # WHISPER A'DAIRE 44355
+# character_JSON_request(user_agent, comicvine_API_KEY, 44355, 'whisper_adaire')
+# # CYBORG 2388
+# character_JSON_request(user_agent, comicvine_API_KEY, 2388, 'cyborg')
+# # BLACK LIGHTNING 10994
+# character_JSON_request(user_agent, comicvine_API_KEY, 10994, 'black_lightning')
+# # VANDAL SAVAGE 5722
+# character_JSON_request(user_agent, comicvine_API_KEY, 5722, 'vandal_savage')
+# # JOHN STEWART 10451
+# character_JSON_request(user_agent, comicvine_API_KEY, 10451, 'GL_john_stewart')
+# # JESSICA CRUZ 89628
+# character_JSON_request(user_agent, comicvine_API_KEY, 89628, 'GL_jessica_cruz')
+# # NUBIA 34121
+# character_JSON_request(user_agent, comicvine_API_KEY, 34121, 'nubia')
+# # SPECTRE 2361
+# character_JSON_request(user_agent, comicvine_API_KEY, 2361, 'spectre')
+# # LIVEWIRE 4678
+# character_JSON_request(user_agent, comicvine_API_KEY, 4678, 'livewire')
 
 #  
 def comic_JSON_request(your_UA, API_KEY, resource, fields, new_filename):

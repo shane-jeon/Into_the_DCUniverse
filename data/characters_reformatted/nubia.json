@@ -1,0 +1,305 @@
+{
+    "id": 34121,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/8452543-ezgif-4-a7016ad3b8.jpg",
+    "name": "Nubia",
+    "real_name": "Nubia",
+    "alias": [
+        "Wonder Woman"
+    ],
+    "gender": "female",
+    "origin": "Nubia",
+    "biography": "An Amazon warrior who was charged by the Greek Gods with defending the entrance to the river Styx and the Tartarus Gate. Sometime during her time in the underworld, Nu'bia met the Zoroastrian god of light, Ahura Mazda, and became his lover. Nu'bia sided with Wonder Woman. Reimagined in the New 52 and Grant Morrison's Multiversity to be the Wonder Woman of Earth-23. Now the new current Queen of the Amazons.",
+    "power": [
+        "Super Strength",
+        "Super Speed",
+        "Agility",
+        "Stamina",
+        "Invulnerability",
+        "Telepathy",
+        "Intellect",
+        "Healing",
+        "Weapon Master",
+        "Super Sight",
+        "Super Smell",
+        "Super Hearing",
+        "Unarmed Combat",
+        "Divine Powers",
+        "Immortal",
+        "Tracking",
+        "Swordsmanship",
+        "Empathy",
+        "Marksmanship",
+        "Power Item",
+        "Leadership",
+        "Longevity"
+    ],
+    "friend": [
+        [
+            "Aquaman",
+            2357
+        ],
+        [
+            "Batman",
+            1699
+        ],
+        [
+            "Black Lightning",
+            10994
+        ],
+        [
+            "Calvin Ellis",
+            88508
+        ],
+        [
+            "Cyborg",
+            2388
+        ],
+        [
+            "Daphne Blake",
+            47274
+        ],
+        [
+            "Donna Troy",
+            4913
+        ],
+        [
+            "Fred Jones",
+            47272
+        ],
+        [
+            "Guardian",
+            7644
+        ],
+        [
+            "Hal Jordan",
+            11202
+        ],
+        [
+            "Hippolyta",
+            4929
+        ],
+        [
+            "Isadore Cale",
+            136233
+        ],
+        [
+            "John Stewart",
+            10451
+        ],
+        [
+            "Jumpa",
+            81587
+        ],
+        [
+            "Maggie",
+            179338
+        ],
+        [
+            "Red Tornado",
+            1688
+        ],
+        [
+            "Scooby-Doo",
+            7786
+        ],
+        [
+            "Shaggy",
+            7790
+        ],
+        [
+            "Steel",
+            2031
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "Velma Dinkley",
+            47273
+        ],
+        [
+            "Vixen",
+            2551
+        ],
+        [
+            "Wonder Girl",
+            10885
+        ],
+        [
+            "Wonder Woman",
+            2048
+        ],
+        [
+            "Yara Flor",
+            165650
+        ],
+        [
+            "Zatanna",
+            5691
+        ]
+    ],
+    "enemy": [
+        [
+            "Blue Ice",
+            17694
+        ],
+        [
+            "Duke of Deception",
+            56849
+        ],
+        [
+            "Grail",
+            117906
+        ],
+        [
+            "The Hydra",
+            33899
+        ],
+        [
+            "Zillah",
+            178116
+        ]
+    ],
+    "team": [
+        [
+            "Amazons of Themyscira",
+            42494
+        ],
+        [
+            "Justice League of America",
+            31815
+        ]
+    ],
+    "first_appearance": {
+        "name": "The Second Life of the Original Wonder Woman",
+        "issue_id": 109474,
+        "issue_number": "204"
+    },
+    "appearance_count": 119,
+    "comic_issue": [
+        960844,
+        959665,
+        958804,
+        957906,
+        953915,
+        951239,
+        946696,
+        946066,
+        958111,
+        941549,
+        958140,
+        934930,
+        956322,
+        929554,
+        929552,
+        922154,
+        920644,
+        919151,
+        918114,
+        916167,
+        911133,
+        910556,
+        910257,
+        942575,
+        907429,
+        907426,
+        903451,
+        899054,
+        895162,
+        894448,
+        893997,
+        890036,
+        890020,
+        889302,
+        888329,
+        916965,
+        878430,
+        874008,
+        872309,
+        850419,
+        848269,
+        867289,
+        831250,
+        828562,
+        834426,
+        825079,
+        829288,
+        822759,
+        819287,
+        819875,
+        814046,
+        809809,
+        774444,
+        774441,
+        768309,
+        774467,
+        766103,
+        768237,
+        760410,
+        737735,
+        734544,
+        731305,
+        726914,
+        723839,
+        722982,
+        716328,
+        714171,
+        711814,
+        713297,
+        705411,
+        687001,
+        678512,
+        670088,
+        647917,
+        644482,
+        638576,
+        636194,
+        634203,
+        630558,
+        632287,
+        622906,
+        605084,
+        595714,
+        673293,
+        523243,
+        509687,
+        503538,
+        477801,
+        480661,
+        462852,
+        458607,
+        461716,
+        458606,
+        453402,
+        400135,
+        396532,
+        334200,
+        399870,
+        211200,
+        189158,
+        150660,
+        399832,
+        140273,
+        141589,
+        53546,
+        53545,
+        76663,
+        19824,
+        767595,
+        767589,
+        315215,
+        384564,
+        940667,
+        940384,
+        13863,
+        109476,
+        109475,
+        109474,
+        897184
+    ],
+    "creator": [
+        "Don Heck",
+        "Robert Kanigher"
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": 116997,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11111/111113340/4466649-5884037767-Adam_.jpg",
+    "name": "Phantom Stranger",
+    "real_name": "Adam Strange",
+    "alias": "none available",
+    "gender": "male",
+    "origin": "Phantom Stranger",
+    "biography": "Dweller of the phantom zone of earth-6.",
+    "power": [
+        "Intellect",
+        "Magic",
+        "Phasing / Ghost",
+        "Astral Projection",
+        "Illusion Casting",
+        "Cosmic Awareness"
+    ],
+    "friend": [],
+    "enemy": [],
+    "team": [],
+    "first_appearance": {
+        "name": null,
+        "issue_id": 175681,
+        "issue_number": "1"
+    },
+    "appearance_count": 5,
+    "comic_issue": [
+        436502,
+        300725,
+        300723,
+        175681,
+        175680
+    ],
+    "creator": [
+        "Jerry Ordway",
+        "John Cassaday",
+        "Stan Lee"
+    ]
+}

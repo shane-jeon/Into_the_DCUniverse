@@ -1,0 +1,669 @@
+{
+    "id": 19006,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11114/111147698/5789293-screen%20shot%202017-04-05%20at%201.51.59%20pm.png",
+    "name": "Count Vertigo",
+    "real_name": "Count Werner Vertigo / Werner Zytle",
+    "alias": [
+        "Count Werner Vertigo\r",
+        "Mr. Zytle\r",
+        "Count Zytle\r",
+        "Warren Zytle"
+    ],
+    "gender": "male",
+    "origin": "Count Vertigo",
+    "biography": "Werner Zytle is the ruler of the country Vlatava, and one of the archenemies of Green Arrow. He uses a device implanted in his head to disorient his foes.",
+    "power": [
+        "Flight",
+        "Stamina",
+        "Weapon Master",
+        "Implants",
+        "Insanely Rich",
+        "Unarmed Combat",
+        "Mesmerize",
+        "Escape Artist",
+        "Reality Manpulation",
+        "Levitation",
+        "Marksmanship",
+        "Hypnosis",
+        "Leadership"
+    ],
+    "friend": [
+        [
+            "Abel ",
+            108236
+        ],
+        [
+            "Albert Michaels",
+            84829
+        ],
+        [
+            "Amanda Waller",
+            4920
+        ],
+        [
+            "Artemis Crock",
+            19011
+        ],
+        [
+            "Blockbuster",
+            8263
+        ],
+        [
+            "Bronze Tiger",
+            23535
+        ],
+        [
+            "Deadshot",
+            5763
+        ],
+        [
+            "Juliette Ballantine",
+            172572
+        ],
+        [
+            "Junior Diaz",
+            103400
+        ],
+        [
+            "Multiplex",
+            3412
+        ],
+        [
+            "Owen Mercer",
+            7650
+        ],
+        [
+            "Plastique",
+            25441
+        ],
+        [
+            "Silver Swan (Beaudry)",
+            80834
+        ]
+    ],
+    "enemy": [
+        [
+            "Alan Scott",
+            12663
+        ],
+        [
+            "Amanda Waller",
+            4920
+        ],
+        [
+            "Aquaman",
+            2357
+        ],
+        [
+            "Atom Smasher",
+            4921
+        ],
+        [
+            "Backlash",
+            60333
+        ],
+        [
+            "Bane",
+            6129
+        ],
+        [
+            "Barbara Gordon",
+            5368
+        ],
+        [
+            "Barry Allen",
+            22804
+        ],
+        [
+            "Batman",
+            1699
+        ],
+        [
+            "Black Alice",
+            41210
+        ],
+        [
+            "Black Canary",
+            1689
+        ],
+        [
+            "Black Lightning",
+            10994
+        ],
+        [
+            "Blind Faith",
+            50236
+        ],
+        [
+            "Bolt",
+            5932
+        ],
+        [
+            "Catman",
+            23247
+        ],
+        [
+            "Catwoman",
+            1698
+        ],
+        [
+            "Connor Hawke",
+            14257
+        ],
+        [
+            "Cyborg",
+            2388
+        ],
+        [
+            "Darkseid",
+            2349
+        ],
+        [
+            "Deadshot",
+            5763
+        ],
+        [
+            "Dick Grayson",
+            1691
+        ],
+        [
+            "Doctor Mid-Nite",
+            11238
+        ],
+        [
+            "Dr. Polaris (Emerson)",
+            10996
+        ],
+        [
+            "Emiko Queen",
+            87910
+        ],
+        [
+            "Fire",
+            4439
+        ],
+        [
+            "Grace Choi",
+            3405
+        ],
+        [
+            "Green Arrow",
+            5936
+        ],
+        [
+            "Hawkgirl",
+            6903
+        ],
+        [
+            "Hawkman",
+            8337
+        ],
+        [
+            "Hector Hall",
+            4905
+        ],
+        [
+            "Houngan",
+            24930
+        ],
+        [
+            "Hourman (Richard Tyler)",
+            21393
+        ],
+        [
+            "Huntress (Bertinelli)",
+            1690
+        ],
+        [
+            "Ice",
+            2051
+        ],
+        [
+            "Jackson Hyde",
+            71494
+        ],
+        [
+            "Jason Todd",
+            6849
+        ],
+        [
+            "Jay Garrick",
+            2395
+        ],
+        [
+            "Jeannette",
+            59952
+        ],
+        [
+            "Jessica Cruz",
+            89628
+        ],
+        [
+            "John Diggle",
+            86315
+        ],
+        [
+            "Kanto",
+            4679
+        ],
+        [
+            "Katana",
+            9547
+        ],
+        [
+            "Kate Spencer",
+            2544
+        ],
+        [
+            "Lady Blackhawk",
+            2035
+        ],
+        [
+            "Mark Shaw",
+            47040
+        ],
+        [
+            "Massacre",
+            10035
+        ],
+        [
+            "Metamorpho",
+            2384
+        ],
+        [
+            "Mia Dearden",
+            72170
+        ],
+        [
+            "Miss Martian",
+            41145
+        ],
+        [
+            "Mlle. Marie",
+            30643
+        ],
+        [
+            "Mr. Terrific",
+            19179
+        ],
+        [
+            "Owen Mercer",
+            7650
+        ],
+        [
+            "Patricia Trayce",
+            9952
+        ],
+        [
+            "Poison Ivy",
+            1697
+        ],
+        [
+            "Power Girl",
+            4915
+        ],
+        [
+            "Ragdoll",
+            11251
+        ],
+        [
+            "Red Tornado",
+            1688
+        ],
+        [
+            "Roland Desmond",
+            6858
+        ],
+        [
+            "Roy Harper",
+            3404
+        ],
+        [
+            "Sandy Hawkins",
+            9292
+        ],
+        [
+            "Sasha Bordeaux",
+            5552
+        ],
+        [
+            "Sasha Martens",
+            46947
+        ],
+        [
+            "Scandal Savage",
+            42304
+        ],
+        [
+            "Shrike",
+            47018
+        ],
+        [
+            "Simon Baz",
+            84895
+        ],
+        [
+            "Stargirl",
+            4897
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "The Key",
+            10454
+        ],
+        [
+            "Thunder",
+            3407
+        ],
+        [
+            "Tress",
+            171863
+        ],
+        [
+            "Vixen",
+            2551
+        ],
+        [
+            "Wally West",
+            23879
+        ],
+        [
+            "Wildcat",
+            7645
+        ],
+        [
+            "Wiley Wolverman",
+            46948
+        ],
+        [
+            "Wonder Woman",
+            2048
+        ]
+    ],
+    "team": [
+        [
+            "Checkmate",
+            40521
+        ],
+        [
+            "Injustice League",
+            22672
+        ],
+        [
+            "Injustice Society",
+            22535
+        ],
+        [
+            "Longbow Hunters",
+            60794
+        ],
+        [
+            "Secret Society of Super Villains",
+            40433
+        ],
+        [
+            "Suicide Squad",
+            40394
+        ],
+        [
+            "The Resistance",
+            58504
+        ],
+        [
+            "Vertigo Cult",
+            64512
+        ]
+    ],
+    "first_appearance": {
+        "name": "Invasion of the Deathless Brain",
+        "issue_id": 131938,
+        "issue_number": "251"
+    },
+    "appearance_count": 236,
+    "comic_issue": [
+        954702,
+        950866,
+        953746,
+        947307,
+        939718,
+        934932,
+        931261,
+        929454,
+        928346,
+        926034,
+        926030,
+        921544,
+        920636,
+        919166,
+        908238,
+        904495,
+        867826,
+        864723,
+        872312,
+        840025,
+        817454,
+        814052,
+        812510,
+        736327,
+        706918,
+        709173,
+        705411,
+        700120,
+        696924,
+        695918,
+        672256,
+        654040,
+        643018,
+        643013,
+        630498,
+        609295,
+        606581,
+        603102,
+        590772,
+        595674,
+        587383,
+        583697,
+        593234,
+        563704,
+        578423,
+        571622,
+        569314,
+        767208,
+        533014,
+        526030,
+        523234,
+        902173,
+        509681,
+        508408,
+        505494,
+        502098,
+        502085,
+        488591,
+        485487,
+        486112,
+        487195,
+        476060,
+        481490,
+        479246,
+        479245,
+        469432,
+        473980,
+        473630,
+        465794,
+        471290,
+        467637,
+        461689,
+        460269,
+        458565,
+        455435,
+        452262,
+        449542,
+        453121,
+        444475,
+        447981,
+        886853,
+        436184,
+        427653,
+        424497,
+        420607,
+        415210,
+        369073,
+        321656,
+        285171,
+        279957,
+        292973,
+        237195,
+        318460,
+        196593,
+        192446,
+        191315,
+        300929,
+        187893,
+        171543,
+        259464,
+        163328,
+        157517,
+        189158,
+        153480,
+        473399,
+        175724,
+        473398,
+        253272,
+        246742,
+        142133,
+        139759,
+        148042,
+        137392,
+        140850,
+        135191,
+        253271,
+        261855,
+        265709,
+        130596,
+        137363,
+        127606,
+        286610,
+        168928,
+        137362,
+        123413,
+        121642,
+        121122,
+        120285,
+        120270,
+        219189,
+        118192,
+        114662,
+        268269,
+        235932,
+        268636,
+        112392,
+        111340,
+        111210,
+        110763,
+        111209,
+        109345,
+        111208,
+        124128,
+        106932,
+        108512,
+        268630,
+        113673,
+        111918,
+        107571,
+        107570,
+        106748,
+        115174,
+        115173,
+        115172,
+        113634,
+        108079,
+        122356,
+        260821,
+        117280,
+        117274,
+        243680,
+        120848,
+        135511,
+        229091,
+        268652,
+        115930,
+        126517,
+        51449,
+        46612,
+        46435,
+        46354,
+        46323,
+        151666,
+        292767,
+        45280,
+        132525,
+        132524,
+        132522,
+        59132,
+        216619,
+        35812,
+        35661,
+        35557,
+        35499,
+        35348,
+        154153,
+        35241,
+        611549,
+        34981,
+        34914,
+        34857,
+        34796,
+        34622,
+        154151,
+        34508,
+        34391,
+        34279,
+        33964,
+        33580,
+        33399,
+        33290,
+        127422,
+        32939,
+        32811,
+        32705,
+        32607,
+        32302,
+        142596,
+        32037,
+        31843,
+        31737,
+        31628,
+        31518,
+        31410,
+        31257,
+        31190,
+        30977,
+        111465,
+        30492,
+        30968,
+        384218,
+        27744,
+        26138,
+        114079,
+        23394,
+        23310,
+        23226,
+        23143,
+        139182,
+        139089,
+        138950,
+        173878,
+        133561,
+        949184,
+        131938,
+        895666
+    ],
+    "creator": [
+        "Bob Haney",
+        "George Tuska",
+        "Vince Colletta"
+    ]
+}

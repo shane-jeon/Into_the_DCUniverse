@@ -1,0 +1,739 @@
+{
+    "id": 71494,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11115/111156051/8054915-5890369730-E5ou45IUYAIGs41.jpg",
+    "name": "Jackson Hyde",
+    "real_name": "Kaldur'ahm /Jackson ",
+    "alias": [
+        "Kaldur",
+        "Jackson ",
+        "Jackson Hyde",
+        "Kaldur'ahm",
+        "Aquaman",
+        "Aqualad"
+    ],
+    "gender": "male",
+    "origin": "Jackson Hyde",
+    "biography": "Jackson Hyde is the son of the infamous villain Black Manta, Aquaman's nemesis. With his Xebel-born mother's hydrokinetic abilities and Atlantean physiology, he fights for justice as a member of the Teen Titans, Young Justice and along with his mentor, Aquaman.",
+    "power": [
+        "Super Strength",
+        "Agility",
+        "Stamina",
+        "Magic",
+        "Weapon Master",
+        "Super Sight",
+        "Super Hearing",
+        "Unarmed Combat",
+        "Electricity Control",
+        "Sub-Mariner",
+        "Adaptive",
+        "Energy-Enhanced Strike",
+        "Swordsmanship",
+        "Water Control",
+        "Willpower-Based Constructs",
+        "Leadership",
+        "Longevity"
+    ],
+    "friend": [
+        [
+            "Agw\u00e9",
+            151931
+        ],
+        [
+            "Alonzo Malrey",
+            3752
+        ],
+        [
+            "Amanikable",
+            156519
+        ],
+        [
+            "Aqua-Queen",
+            65304
+        ],
+        [
+            "Aquababy",
+            38292
+        ],
+        [
+            "Aquagirl (Marquez)",
+            5901
+        ],
+        [
+            "Aquaman",
+            2357
+        ],
+        [
+            "Argent",
+            3575
+        ],
+        [
+            "Arrowette",
+            1685
+        ],
+        [
+            "Artemis Crock",
+            19011
+        ],
+        [
+            "Atabey",
+            156520
+        ],
+        [
+            "Atlan",
+            21325
+        ],
+        [
+            "Barry Allen",
+            22804
+        ],
+        [
+            "Bart Allen",
+            1680
+        ],
+        [
+            "Batman",
+            1699
+        ],
+        [
+            "Beast Boy",
+            3586
+        ],
+        [
+            "Blubber Man",
+            65525
+        ],
+        [
+            "Bumblebee",
+            3576
+        ],
+        [
+            "Caille",
+            153824
+        ],
+        [
+            "Cal Durham",
+            35140
+        ],
+        [
+            "Captain Atom",
+            2050
+        ],
+        [
+            "Cerdian",
+            13575
+        ],
+        [
+            "Chalchiuhtlique",
+            23554
+        ],
+        [
+            "Chanda Madan",
+            59081
+        ],
+        [
+            "Damage",
+            3582
+        ],
+        [
+            "Damian Wayne",
+            42413
+        ],
+        [
+            "Deadman",
+            5690
+        ],
+        [
+            "Dick Grayson",
+            1691
+        ],
+        [
+            "Doctor Deering",
+            65488
+        ],
+        [
+            "Dolphin",
+            13570
+        ],
+        [
+            "Donna Troy",
+            4913
+        ],
+        [
+            "Eel Man",
+            65527
+        ],
+        [
+            "Firestorm (Rusch)",
+            94845
+        ],
+        [
+            "Fluorescent Water-Man",
+            65528
+        ],
+        [
+            "Gill Girl",
+            69191
+        ],
+        [
+            "Gleek",
+            43470
+        ],
+        [
+            "Gnarrk",
+            35014
+        ],
+        [
+            "Golden Eagle",
+            12530
+        ],
+        [
+            "Guardian Of Hy-Brasil",
+            24908
+        ],
+        [
+            "Ha'wea",
+            164872
+        ],
+        [
+            "Hank Hall",
+            2030
+        ],
+        [
+            "Hawkgirl",
+            6903
+        ],
+        [
+            "Jayna",
+            34788
+        ],
+        [
+            "Jesse Chambers",
+            9345
+        ],
+        [
+            "Kaltor",
+            65496
+        ],
+        [
+            "King Neptune",
+            39293
+        ],
+        [
+            "King Thar",
+            14650
+        ],
+        [
+            "Kingdom Come Superman",
+            47070
+        ],
+        [
+            "Kon-El",
+            1686
+        ],
+        [
+            "Kumungwe",
+            156517
+        ],
+        [
+            "Lagoon Boy",
+            10942
+        ],
+        [
+            "Lian Harper",
+            4698
+        ],
+        [
+            "Lightning",
+            9545
+        ],
+        [
+            "Lucia Hyde",
+            140730
+        ],
+        [
+            "Manannan mac Lir",
+            36836
+        ],
+        [
+            "Martian Manhunter",
+            2047
+        ],
+        [
+            "Mecha Manta",
+            165431
+        ],
+        [
+            "Mera",
+            14654
+        ],
+        [
+            "Mermor",
+            65344
+        ],
+        [
+            "Miss Martian",
+            41145
+        ],
+        [
+            "Pilot",
+            166007
+        ],
+        [
+            "Porpy",
+            39443
+        ],
+        [
+            "Princess Andy",
+            161501
+        ],
+        [
+            "Professor Richards",
+            65333
+        ],
+        [
+            "Quink",
+            65460
+        ],
+        [
+            "Raven",
+            3584
+        ],
+        [
+            "Red Tornado",
+            1688
+        ],
+        [
+            "Repun",
+            156521
+        ],
+        [
+            "Rocket",
+            16695
+        ],
+        [
+            "Roy Harper",
+            3404
+        ],
+        [
+            "Santa Claus",
+            22143
+        ],
+        [
+            "Sideways",
+            145875
+        ],
+        [
+            "Siren",
+            38926
+        ],
+        [
+            "Starfire",
+            2389
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "Syl",
+            170131
+        ],
+        [
+            "Tangaroa",
+            156518
+        ],
+        [
+            "Tempest",
+            2382
+        ],
+        [
+            "Tlaloc",
+            14966
+        ],
+        [
+            "Tristram Maurer",
+            158054
+        ],
+        [
+            "Varuna",
+            26854
+        ],
+        [
+            "Wallace West",
+            130018
+        ],
+        [
+            "Wally West",
+            23879
+        ],
+        [
+            "Wonder Girl",
+            10885
+        ],
+        [
+            "Zan",
+            34787
+        ],
+        [
+            "Zatanna",
+            5691
+        ]
+    ],
+    "enemy": [
+        [
+            "Albert Michaels",
+            84829
+        ],
+        [
+            "Bane",
+            6129
+        ],
+        [
+            "Batman Who Laughs",
+            141840
+        ],
+        [
+            "Black Manta",
+            8345
+        ],
+        [
+            "Black Spider",
+            5812
+        ],
+        [
+            "Blockbuster",
+            8263
+        ],
+        [
+            "Breathtaker",
+            79089
+        ],
+        [
+            "Brick",
+            4452
+        ],
+        [
+            "Cheshire",
+            2537
+        ],
+        [
+            "Count Vertigo",
+            19006
+        ],
+        [
+            "Darkseid",
+            2349
+        ],
+        [
+            "Deluge",
+            173480
+        ],
+        [
+            "Dr. Glory",
+            159573
+        ],
+        [
+            "Human Flying Fish",
+            58807
+        ],
+        [
+            "Killshot",
+            70377
+        ],
+        [
+            "Klarion",
+            11976
+        ],
+        [
+            "Kobra",
+            3607
+        ],
+        [
+            "Lex Luthor",
+            41952
+        ],
+        [
+            "Mecha Manta",
+            165431
+        ],
+        [
+            "Mister Twister",
+            46998
+        ],
+        [
+            "Ocean Master",
+            3758
+        ],
+        [
+            "Provoke",
+            79086
+        ],
+        [
+            "Shock Trauma",
+            79087
+        ],
+        [
+            "Siren",
+            38926
+        ],
+        [
+            "Sportsmaster",
+            34694
+        ],
+        [
+            "Stranglehold",
+            79088
+        ],
+        [
+            "The Hook",
+            19326
+        ],
+        [
+            "Ultra-Humanite",
+            10993
+        ],
+        [
+            "Vandal Savage",
+            5722
+        ]
+    ],
+    "team": [
+        [
+            "Aquaman and Aqualad",
+            59768
+        ],
+        [
+            "Atlanteans",
+            56878
+        ],
+        [
+            "Atlantis Royal Family",
+            63877
+        ],
+        [
+            "JLQ",
+            64933
+        ],
+        [
+            "Justice League of America",
+            31815
+        ],
+        [
+            "Teen Titans",
+            19081
+        ],
+        [
+            "Xebellians",
+            63584
+        ],
+        [
+            "Young Justice",
+            17733
+        ]
+    ],
+    "first_appearance": {
+        "name": "Thresholds",
+        "issue_id": 219509,
+        "issue_number": "4"
+    },
+    "appearance_count": 193,
+    "comic_issue": [
+        960844,
+        958804,
+        956131,
+        954923,
+        954702,
+        953915,
+        952218,
+        949495,
+        949024,
+        947975,
+        942702,
+        942674,
+        941548,
+        939718,
+        939072,
+        935612,
+        935608,
+        934932,
+        956322,
+        932950,
+        929552,
+        929454,
+        928347,
+        926033,
+        922113,
+        921544,
+        938073,
+        919214,
+        919161,
+        913028,
+        942575,
+        908798,
+        907422,
+        906207,
+        903456,
+        903449,
+        906350,
+        900183,
+        898185,
+        894109,
+        891082,
+        890020,
+        888325,
+        885307,
+        916966,
+        882780,
+        858440,
+        862453,
+        867294,
+        867291,
+        867289,
+        850403,
+        831250,
+        829318,
+        826321,
+        823806,
+        827755,
+        823034,
+        821189,
+        820431,
+        825071,
+        819287,
+        818622,
+        819549,
+        802690,
+        809809,
+        794381,
+        797683,
+        769595,
+        768311,
+        763280,
+        768312,
+        768237,
+        760402,
+        741782,
+        740572,
+        740529,
+        737716,
+        736309,
+        732682,
+        731305,
+        731299,
+        729502,
+        728312,
+        725218,
+        723822,
+        722979,
+        719299,
+        721054,
+        717399,
+        716806,
+        713770,
+        707486,
+        703085,
+        695619,
+        686996,
+        667622,
+        673094,
+        667609,
+        661131,
+        662075,
+        654043,
+        650908,
+        661132,
+        649718,
+        647923,
+        644474,
+        641392,
+        638576,
+        638575,
+        632480,
+        630496,
+        626260,
+        626255,
+        636362,
+        625292,
+        622889,
+        621603,
+        619732,
+        619582,
+        632467,
+        616154,
+        614985,
+        614978,
+        630466,
+        610475,
+        609299,
+        606578,
+        622537,
+        619391,
+        605072,
+        617435,
+        611945,
+        598362,
+        597164,
+        595678,
+        609131,
+        593241,
+        601600,
+        588550,
+        558932,
+        531155,
+        503538,
+        503528,
+        485470,
+        468416,
+        462870,
+        456538,
+        386462,
+        374635,
+        386461,
+        354694,
+        346431,
+        331855,
+        338300,
+        323063,
+        315796,
+        312014,
+        307550,
+        386460,
+        302745,
+        297689,
+        293427,
+        286176,
+        281837,
+        275918,
+        270644,
+        269654,
+        268781,
+        267554,
+        264585,
+        262594,
+        259836,
+        263078,
+        264821,
+        258340,
+        258336,
+        255869,
+        249178,
+        248436,
+        237039,
+        234621,
+        232414,
+        227714,
+        219509,
+        824210,
+        820171,
+        819250,
+        710844,
+        706443,
+        705984,
+        508630,
+        344088
+    ],
+    "creator": [
+        "Geoff Johns",
+        "Greg Weisman"
+    ]
+}

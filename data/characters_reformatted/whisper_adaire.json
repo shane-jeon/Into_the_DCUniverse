@@ -1,0 +1,191 @@
+{
+    "id": 44355,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11144/111442157/8307375-whispera%E2%80%99daireloa.jpg",
+    "name": "Whisper A'Daire",
+    "real_name": "Tatiana ",
+    "alias": [
+        "Snake Fatale"
+    ],
+    "gender": "female",
+    "origin": "Whisper A'Daire",
+    "biography": "Former agent of Ra's Al Ghul. Later worked for Intergang.",
+    "power": [
+        "Intellect",
+        "Healing",
+        "Insanely Rich",
+        "Immortal",
+        "Mesmerize",
+        "Emotion Control",
+        "Hypnosis",
+        "Poisonous",
+        "Voice-induced Manipulation",
+        "Longevity"
+    ],
+    "friend": [
+        [
+            "Able Crown",
+            80741
+        ],
+        [
+            "Aku Kwesi",
+            78934
+        ],
+        [
+            "Bruno Mannheim",
+            12938
+        ],
+        [
+            "Ekin Tzu",
+            80742
+        ],
+        [
+            "Enigma",
+            41797
+        ],
+        [
+            "Kyle Abbot",
+            44357
+        ],
+        [
+            "Safiyah Sohail",
+            138610
+        ]
+    ],
+    "enemy": [
+        [
+            "Able Crown",
+            80741
+        ],
+        [
+            "Alice",
+            65553
+        ],
+        [
+            "Batman",
+            1699
+        ],
+        [
+            "Batwing",
+            88300
+        ],
+        [
+            "Batwoman",
+            9052
+        ],
+        [
+            "Ekin Tzu",
+            80742
+        ],
+        [
+            "Emanuel Escabedo",
+            113559
+        ],
+        [
+            "Hawkfire",
+            3577
+        ],
+        [
+            "Jake Kane",
+            70105
+        ],
+        [
+            "Josef Witschi",
+            113916
+        ],
+        [
+            "Julia Pennyworth",
+            18008
+        ],
+        [
+            "Pasquale Galante",
+            113561
+        ],
+        [
+            "Question (Sage)",
+            3211
+        ],
+        [
+            "Renee Montoya",
+            3716
+        ],
+        [
+            "Ryan Wilder",
+            165147
+        ],
+        [
+            "Safiyah Sohail",
+            138610
+        ],
+        [
+            "Sophie Moore",
+            146027
+        ],
+        [
+            "Talia al Ghul",
+            4917
+        ],
+        [
+            "Vasily Kosov",
+            113560
+        ]
+    ],
+    "team": [
+        [
+            "Intergang",
+            41506
+        ],
+        [
+            "League of Assassins",
+            9591
+        ],
+        [
+            "Religion of Crime",
+            57033
+        ]
+    ],
+    "first_appearance": {
+        "name": "Evolution: (Part One): Whispers in the Dark",
+        "issue_id": 107589,
+        "issue_number": "743"
+    },
+    "appearance_count": 33,
+    "comic_issue": [
+        953746,
+        913027,
+        725518,
+        587707,
+        579437,
+        571622,
+        559126,
+        558626,
+        552394,
+        463969,
+        424491,
+        369073,
+        187891,
+        151827,
+        149813,
+        268297,
+        268296,
+        229716,
+        236001,
+        268268,
+        268254,
+        235426,
+        108128,
+        107889,
+        106747,
+        105837,
+        258794,
+        113219,
+        113216,
+        113215,
+        113214,
+        182833,
+        107589
+    ],
+    "creator": [
+        "Greg Rucka",
+        "Shawn Martinbrough"
+    ]
+}

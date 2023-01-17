@@ -1,0 +1,82 @@
+{
+    "id": 146057,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11111/111113340/6296053-01_nightwing0.jpg",
+    "name": "Nightwing ",
+    "real_name": null,
+    "alias": "none available",
+    "gender": "male",
+    "origin": "Nightwing ",
+    "biography": "Member of the Justice Legion B from the 853rd century. He is an analog to Richard Grayson Nightwing.",
+    "power": [
+        "Flight",
+        "Super Hearing",
+        "Feral",
+        "Sonic Scream"
+    ],
+    "friend": [
+        [
+            "Aqualad 1000000",
+            146059
+        ],
+        [
+            "Arsenal",
+            146058
+        ],
+        [
+            "Resurrection Man",
+            23450
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "Troy",
+            146060
+        ]
+    ],
+    "enemy": [
+        [
+            "Solaris",
+            23273
+        ],
+        [
+            "Vandal Savage",
+            5722
+        ]
+    ],
+    "team": [
+        [
+            "Justice League Task Force",
+            25003
+        ],
+        [
+            "Justice Legion B",
+            63459
+        ]
+    ],
+    "first_appearance": {
+        "name": "A Handful of Dust",
+        "issue_id": 46110,
+        "issue_number": "1000000"
+    },
+    "appearance_count": 15,
+    "comic_issue": [
+        894096,
+        916967,
+        959978,
+        959977,
+        918935,
+        708119,
+        697275,
+        697274,
+        960789,
+        511790,
+        431431,
+        258874,
+        167616,
+        116162,
+        46110
+    ],
+    "creator": []
+}

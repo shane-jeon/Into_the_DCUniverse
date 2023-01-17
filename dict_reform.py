@@ -68,7 +68,15 @@ def access_realName(dict_results):
 def access_alias(dict_results):
   """Returns list of character's aliases by accessing 'aliases' key in character results dictionary. As it returns a string, will be changing into list."""
   aliases = dict_results['aliases']
-  alias = list(aliases.split("\r\n"))
+  if aliases is None:
+    alias = "none available"
+  else:
+  # elif '\n' in aliases:
+    alias = list(aliases.rstrip().split("\n"))
+  # if '\r' in aliases:
+  #   alias = list(aliases.split("\r"))
+  # else:
+  #   alias = list(aliases.split("\r\n"))
 
   return alias
 

@@ -9,6 +9,7 @@ def homepage():
   """Display character names."""
 
   characters = crud.get_characters()
+  
 
   return render_template('index.html', characters=characters)
 
@@ -20,3 +21,8 @@ def characterpage(id=id):
   character = crud.get_char_by_id(id)
 
   return render_template('character.html', character=character)
+
+@app.route('/react')
+def react_test_page():
+  """Tests React functionality"""
+  return render_template("react_test.html")

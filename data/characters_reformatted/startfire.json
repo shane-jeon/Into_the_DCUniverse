@@ -1,0 +1,205 @@
+{
+    "id": 62757,
+    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/114183/6136052-starfire_earth-one_01.jpg",
+    "name": "Starfire",
+    "real_name": null,
+    "alias": "none available",
+    "gender": "female",
+    "origin": "Starfire",
+    "biography": "Starfire was once a concubine-in-training for a conquering alien race known as Mygorgs. She was rescued by a man named Dagan, fell in love with him, and had him die in her arms. She now fights to free all humans from the Mygorg race, avenging her beloved in the process.",
+    "power": [
+        "Agility",
+        "Weapon Master",
+        "Unarmed Combat",
+        "Swordsmanship"
+    ],
+    "friend": [
+        [
+            "Anzus",
+            62770
+        ],
+        [
+            "Booster Gold",
+            1786
+        ],
+        [
+            "Claw",
+            8664
+        ],
+        [
+            "Dagan",
+            62758
+        ],
+        [
+            "Eos",
+            68845
+        ],
+        [
+            "Goldstar",
+            47689
+        ],
+        [
+            "Hal Jordan",
+            11202
+        ],
+        [
+            "Jack Knight",
+            23783
+        ],
+        [
+            "Kyrse",
+            134640
+        ],
+        [
+            "Liri Lee",
+            10030
+        ],
+        [
+            "Mikaal Tomas",
+            23478
+        ],
+        [
+            "Moonwatcher",
+            62767
+        ],
+        [
+            "Rip Hunter",
+            4937
+        ],
+        [
+            "Skeets",
+            13107
+        ],
+        [
+            "Stalker",
+            54853
+        ],
+        [
+            "Superman",
+            1807
+        ],
+        [
+            "Supernova",
+            41195
+        ],
+        [
+            "The Keeper",
+            134646
+        ],
+        [
+            "Thrumdahg",
+            62759
+        ],
+        [
+            "Thump",
+            62771
+        ],
+        [
+            "Waverider",
+            10029
+        ]
+    ],
+    "enemy": [
+        [
+            "Djinn, Lady of the Lightning",
+            134649
+        ],
+        [
+            "Goolah",
+            134636
+        ],
+        [
+            "Karoleen",
+            118573
+        ],
+        [
+            "Kevarj",
+            134638
+        ],
+        [
+            "Serhatuu",
+            74564
+        ],
+        [
+            "Skred",
+            134648
+        ],
+        [
+            "Skyle",
+            74565
+        ],
+        [
+            "Sookaroth",
+            134635
+        ],
+        [
+            "The Sacred Guardian Beast",
+            134645
+        ],
+        [
+            "Thrumdahg",
+            62759
+        ],
+        [
+            "Ultra-Humanite",
+            10993
+        ],
+        [
+            "Velg Lortnan",
+            134639
+        ]
+    ],
+    "team": [
+        [
+            "Starfire's Rebel Army",
+            62798
+        ]
+    ],
+    "first_appearance": {
+        "name": "A World Made Of War",
+        "issue_id": 16658,
+        "issue_number": "1"
+    },
+    "appearance_count": 35,
+    "comic_issue": [
+        842631,
+        673008,
+        666787,
+        649710,
+        576606,
+        537923,
+        516068,
+        514207,
+        374635,
+        278125,
+        249301,
+        239847,
+        236260,
+        237156,
+        231662,
+        78369,
+        42193,
+        42083,
+        133972,
+        18871,
+        18390,
+        17938,
+        17752,
+        17574,
+        17409,
+        17247,
+        17073,
+        16843,
+        16658,
+        859316,
+        859179,
+        858994,
+        858890,
+        858824,
+        858639
+    ],
+    "creator": [
+        "David Michelinie",
+        "Mike Vosburg"
+    ]
+}
