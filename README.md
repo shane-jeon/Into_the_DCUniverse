@@ -1,26 +1,11 @@
 # Into the DCUniverse
 
-**Please see txt_files/MVP.md**
+"Dive into the DC Universe, a web application for fans of the DC Animated Universe who want to learn more about their favorite characters. The app currently features characters from _Young Justice_, but will soon expand to include _Justice League_, _Justice League Unlimited_, and _Harley Quinn_. The homepage displays a list of characters with their photos, each leading to a profile with basic information and a comprehensive list of comic issues organized by publication era. The DC Universe can be overwhelming for new fans, and that's why this project was created- to offer a "primer" and simplify the research process. The creator of this project fell in love with the DC Animated Universe and eventually moved on to comics, but found the complexity of the multiverses and different publication eras intimidating. They wanted to create a one-stop-shop for new fans to ease their journey into the DC Universe, avoiding the time-consuming process of piecing information together from various sources."
 
-_Into the DCUniverse_, a web application meant for fans of the DC Animated Universe (Specifically "Young Justice", "Justice League", "Justice League Unlimited", & "Harley Quinn") who want to learn more about the characters they have grown to love. Provided is a list of characters, each with a link to their own profiles, with profiles consisting of basic information (name, biography, gender, etc.) as well as a comprehensive list of comic issues. The list of comic book issues are partitioned according to its' publication era (from "The Golden Age" right down to the present "Rebirth"). The DC Universe is vast, complicated, and sometimes contradictory (but all good stuff of course)! A newbie (like myself 3 years ago) would have to flutter from resource to resource to paint a general picture of their chosen character. The caveat is once you look into one character, their featured comic book issues are usually intertwined with the stories of other related characters, whether "good" or "evil". The goal of this project is to offer a "primer" of sorts to help ease a budding DC Comics fan into, well, the DC Universe.
+## Project Description (Tech Stack, Challenges, Ideas for Future Feature Implementations)
 
-# Please check back later, this file needs to be reassesed, revised, and updated as I restructure my project to produce a realistic MVP within my projected timeline. Thank you for your patience and stay tuned. (1/3/2023)
-
-The project was created to address the difficulty and time-consuming nature of researching the DC Universe and provide a solution for those who may be intimidated by the complexities of the various multiverses, publication eras, and anthologies.
-
-How this project came to be? I was drawn into the DC Franchise through the DC Animated Universe. Soon the animated television shows drew me to animated film, live action film, and finally the comics themselves. However, as a new DC Comics fan, I was incredibly confused with all the multiverses, "Pre & Post" Crisis, different Earths, the reboots that came from new ages...I eventually was able to piece everything together albeit through an arduous process of investigation through wikipedia, fandom wiki, and my own personal media consumption. How wonderful would it have been to go to one website and to have a primer guiding my reading journey of the thousands of comic book series published by DC.
-
-My initial vision was to pack as much information into each character's profile, including the many plotlines belonging to different multiverse versions of a DC character. However, as I began my research and found an API (Comic Vine's API) that provided all the information I needed, I quickly realized that I'd merely be replicating Comic Vine's web application. This vast vision also would prevent me from creating a MVP for quite some time. So I decided to shift focus and reassess the goals of what I wanted to get out of my project. I went back to the roots of my vision and decided I'd create a web application to help those who may be thrown off by the complexities of the DC Universe.
-
-Stay tuned!
-
-model.py
-
-To create the tables needed for my postgreSQL relational database, I required the use of 3 libraries:
-
-- psycopg2 : allows Python to connect with DB
-- SQLAlchemy : Needed to work with DB using Python
-- Flask-SQLAlchemy : Makes it easier to use SQLAlchemy w/Flask
+For the backend of this application, I have utilized the Python programming language, in conjunction with SQLAlchemy and PostgreSQL, for database management. The frontend is composed of HTML, CSS, JavaScript, and React for dynamic rendering. I chose to use this tech stack as it allowed me to build upon the skills and knowledge I acquired during my time at Hackbright Academy, where I created my first project. Specifically, I aimed to expand my proficiency in JavaScript and React, which I did not have the opportunity to fully explore in my previous project. To gather information on the characters featured in the app, I utilized the Comic Vine API as a valuable resource, and for obtaining a list of characters introduced in the Young Justice television series, I employed web scraping techniques using Beautiful Soup library on the Young Justice Fandom Wiki page. By cross-referencing this list of character names with a dictionary of all characters within the DC Universe, I was able to selectively gather information on the desired characters.
+It's important to note that, as the Comic Vine API is a community-built and supported resource, there are certain limitations to the number of requests that can be made in a given time frame. To adhere to these restrictions, I implemented a function that enforces a delay of 1 hour after 100 requests, ensuring compliance with the API's rules while still efficiently retrieving the necessary data.
 
 Working with comicvine API:
 
