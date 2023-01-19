@@ -6,8 +6,9 @@ import crud
 import model
 # import server
 import run
+from modules.dict_reform import *
 
-from dict_reform import *
+# from modules.dict_reform import *
 os.system("dropdb characters")
 os.system("createdb characters")
 
