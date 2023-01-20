@@ -1,3 +1,6 @@
+01/19/2023 Thursday:
+Created code that will extract characters from comic vine JSON file that exist in webscraped data list, requested all data. reformatted JSON files for easier input. fixed bugs in seed_db.py, model.py, crud.py to be able to completely seed db without any errors. cannot convert dict error was because one of the items was a dictionary, so I got rid of it. Next was fixing data type in model.py to array for 'friends, enemies, teams', then finally added code in create characters in crud.py so duplicates won't be added to db. In frontend, added styling so each character is inside a div with their avatar and name, they are now spread out in rows in the page. Next step is to work on individual profiles and how to put data out (specifically links to the comics....that might need to be done with backend but now shifting focusing on javascript and react). Today's the day.
+
 01/13/2023 Friday:
 
 7:01pm:
