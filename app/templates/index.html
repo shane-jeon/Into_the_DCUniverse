@@ -3,24 +3,34 @@ block js %}
 <script type="text/jsx" src="/static/JS/hello.jsx"></script>
 {% endblock %} {% block body %}
 
-<h1 class="page_title">Into the DC Universe</h1>
-<div id="root"></div>
-<ul>
-  {% for character in characters | sort(attribute='name') %}
-  <li>
-    <div class="container">
-      <div class="flexbox-item character-img">
-        <img class="char_avatar" src="{{character.image}}" />
-      </div>
+<div class="main-header">
 
-      <div class="flexbox-item character-name">
-        <p>
-          <a class="hyperlink character_redirect" href="/{{character.id}}"
-            >{{ character.name }}</a
-          >
-        </p>
+  <h1 class="page-title">
+    Into the </h1>
+    <img class="dc-logo" src="/static/img/DC_Comics_logo.png" /> <h1 class="page-title">Universe</h1>
+  </h1>
+</div>
+<div id="root"></div>
+<ul class="character-list">
+  <div class="container">
+    {% for character in characters | sort(attribute='name') %}
+    <li>
+      <div class="characters">
+        <div class="character-individual">
+          <div class="flexbox-item character-img">
+            <img class="char_avatar" src="{{character.image}}" />
+          </div>
+
+          <div class="flexbox-item character-name">
+            <p>
+              <a class="hyperlink character_redirect" href="/{{character.id}}"
+                >{{ character.name }}</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </li>
-  {% endfor %} {% endblock %}
+    </li>
+    {% endfor %} {% endblock %}
+  </div>
 </ul>

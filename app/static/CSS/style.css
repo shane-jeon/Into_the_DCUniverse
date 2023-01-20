@@ -9,24 +9,48 @@ body {
   color: #fff;
 }
 
-.page_title {
-  font-size: 20px;
+.page-title {
+  font-size: 25px;
   text-align: center;
   padding: 15px;
   font-weight: normal;
+  display: inline;
+}
+
+.main-header {
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+  justify-content: center;
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.dc-logo {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  align-self: flex-end;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
 
 .flexbox-item {
-  padding: 20px;
+  padding: 10px;
 }
 .hyperlink {
   color: #fff;
   font-size: 18px;
-  margin-bottom: 13px;
+  /* margin-bottom: 13px; */
   display: inline-block;
 }
 
@@ -39,12 +63,16 @@ body {
   background-color: #fff;
   color: #000;
 
-  padding: 5px;
+  padding: 3px;
 }
 
 .character_redirect:active {
 }
 
+.character-individual {
+  padding: 5px 10px;
+  margin: 7px 10px;
+}
 .char_avatar {
   /* max-width: 100%;
   max-height: 100%; */
@@ -52,16 +80,19 @@ body {
   height: 100px;
   width: 100px;
   object-fit: cover;
-  padding: 10px 5px;
+  /* padding: 10px 5px; */
+  /* padding-bottom: 0; */
   clip-path: circle();
   /* display: inline; */
 }
 
-/* CHARACTER HTML PAGE */
-.char-img {
-  height: 200px;
-  width: auto;
-  padding: 20px;
+.character-list {
+  list-style-type: none;
+}
+
+.character-name {
+  /* padding-top: 4px; */
+  text-align: center;
 }
 
 .back:link,
