@@ -6,7 +6,7 @@ import crud
 import model
 # import server
 import run
-from modules.dict_reform import *
+# from dict_reform import *
 
 # from modules.dict_reform import *
 os.system("dropdb characters")
@@ -29,34 +29,51 @@ for char_file in os.listdir(directory):
     # print('json_string', json_string)
 
   # returns JSON file as python dictionary
-  json_dict = json.loads(json_string)
+  char_results = json.loads(json_string)
+  # json_dict = json.loads(json_string)
   # print('json_dict', json_dict)
 
   # accesses 'results' and returns dictionary containing only relevant information
-  char_results = json_dict['results']
+  # char_results = json_dict['results']
   # print('char_results', char_results)
     
   character_dictionary = {}
 
-  id = access_comicvineID(char_results)
+  id = char_results['id']
   # print(f'id:::::: {id}')
-  image = access_image(char_results)
-  name = access_name(char_results)
-  real_name = access_realName(char_results)
-  alias = access_alias(char_results)
-  gender = access_gender(char_results)
-  origin = access_origin(char_results)
-  biography = access_biography(char_results)
-  # changed power plurality
-  power = access_power(char_results)
-  friend = access_friend(char_results)
-  enemy = access_enemy(char_results)
-  team = access_team(char_results)
-  first_appearance = access_firstAppearance(char_results)
-  appearance_count = access_appearanceCount(char_results)
-  comic_issue = access_comicIssues(char_results)
-  # changed creator plurality
-  creator = access_creator(char_results)
+  image = char_results['image']
+  # image = access_image(char_results)
+  name = char_results['name']
+  # name = access_name(char_results)
+  real_name = char_results['real_name']
+  # real_name = access_realName(char_results)
+  alias = char_results['alias']
+  # alias = access_alias(char_results)
+  gender = char_results['gender']
+  # gender = access_gender(char_results)
+  origin = char_results['origin']
+  # origin = access_origin(char_results)
+  biography = char_results['biography']
+  # biography = access_biography(char_results)
+  power = char_results['power']
+  # # changed power plurality
+  # power = access_power(char_results)
+  friend = char_results['friend']
+  # friend = access_friend(char_results)
+  enemy = char_results['enemy']
+  # enemy = access_enemy(char_results)
+  team = char_results['team']
+  # team = access_team(char_results)
+  # first_appearance = char_results['first_appearance']
+  # first_appearance = access_firstAppearance(char_results)
+  appearance_count = char_results['appearance_count']
+  # appearance_count = access_appearanceCount(char_results)
+  comic_issue = char_results['comic_issue']
+  # comic_issue = access_comicIssues(char_results)
+  creator = char_results['creator']
+  # # changed creator plurality
+  # creator = access_creator(char_results)
+
 
   # print(f'creator: {creator}, id: {id}, name: {name}')
   # print("*"*30)
@@ -73,11 +90,12 @@ for char_file in os.listdir(directory):
   character_dictionary['friend'] = friend
   character_dictionary['enemy'] = enemy
   character_dictionary['team'] = team
-  character_dictionary['first_appearance'] = first_appearance['name']
+  # character_dictionary['first_appearance'] = first_appearance
   character_dictionary['appearance_count'] = appearance_count
   character_dictionary['comic_issue'] = comic_issue
   character_dictionary['creator'] = creator
 
+  
   char_dicts.append(character_dictionary)
   # print(f'character_dictionary {character_dictionary}')
 
@@ -88,10 +106,13 @@ characters_in_db = []
 
 for char in char_dicts:
   # print(character)
+  print(char)
   print('*'*200, 'type(char): ', type(char))
   print(f"ID: {char['id']}, NAME: {char['name']}")
-  id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
+  # id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
     # character['creator'][1]['name'],
+
+  id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, appearance_count, comic_issue, creator = (
     # character_creator,
     char['id'],
     char['image'],
@@ -105,13 +126,15 @@ for char in char_dicts:
     char['friend'],
     char['enemy'],
     char['team'],
-    char['first_appearance'],
+    # char['first_appearance'],
     char['appearance_count'],
     char['comic_issue'],
     char['creator'],
   )
-
-  db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
+  print('*'* 800)
+  # print(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
+  # db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
+  db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, appearance_count, comic_issue, creator)
 
   characters_in_db.append(db_character)
 

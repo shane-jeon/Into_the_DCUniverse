@@ -2,6 +2,8 @@
 
 # from xml.dom.minidom import AttributeList
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import Column, Integer, ARRAY
+from sqlalchemy.dialects.postgresql import ARRAY
 # from datetime import datetime
 
 # db object gives access to db.Model class to define models and db.session to execute queries
@@ -26,15 +28,15 @@ class Character(db.Model):
   # alignment = db.Column(db.String(15), nullable=False)
   gender = db.Column(db.String(15), nullable=False)
   origin = db.Column(db.String)
-  biography = db.Column(db.String, nullable=False)
+  biography = db.Column(db.String)
   power = db.Column(db.String)
   # earth_id = db.Column(db.String, db.ForeignKey('earth.id')) 
   # era_id = db.Column(db.Integer, db.ForeignKey('era.id'))
   # media_id = db.Column(db.Integer, db.ForeignKey('media.id'))
-  friend = db.Column(db.String)
-  enemy = db.Column(db.String)
-  team = db.Column(db.String)
-  first_appearance = db.Column(db.String)
+  friend = db.Column(db.ARRAY(db.String))
+  enemy = db.Column(db.ARRAY(db.String))
+  team = db.Column(db.ARRAY(db.String))
+  # first_appearance = db.Column(db.String)
   appearance_count = db.Column(db.String)  
   comic_issue = db.Column(db.String)
   creator = db.Column(db.String)

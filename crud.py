@@ -2,8 +2,11 @@
 
 from model import db, Character, connect_to_db
 
-def create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator):
+# def create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator):
+def create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, appearance_count, comic_issue, creator):
   """Create and return a new character."""
+  print('*'*500)
+  print(id, image, name, real_name,power, 'POWER')
   char = Character(
                    id=id,
                    image=image,
@@ -18,22 +21,26 @@ def create_character(id, image, name, real_name, alias, gender, origin, biograph
                    friend=friend,
                    enemy=enemy, 
                    team=team,
-                   first_appearance=first_appearance,
+                  #  first_appearance=first_appearance,
                    appearance_count=appearance_count,
                    comic_issue=comic_issue,
                    creator=creator
   )
+  existing_record = Character.query.filter_by(id=id).first()
+  if existing_record:
+    return "ID already exists, record not inserted"
+  else:
 
   # db.session used for database transactions (nothing to do with Flask 'session')
   # db.session stores modifications made to database
 
   # to add new object
-  db.session.add(char)
-  print('*'*500, 'HERE')
-  print(char)
-  # database will not actually be modified unless following call included
-  db.session.commit()
-  print('*'*500, 'COMMIT COMPLETE')
+    db.session.add(char)
+    print('*'*500, 'HERE')
+    print('TYPE', type(char))
+    # database will not actually be modified unless following call included
+    db.session.commit()
+    print('*'*500, 'COMMIT COMPLETE')
 
   return char
 

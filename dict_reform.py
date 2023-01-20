@@ -7,22 +7,22 @@ directory = 'data/api_data'
 
 # dictionary keys include: id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, issue_credit, creator
 
-for char_file in os.listdir(directory):
-  # f is a single file
-  f = os.path.join(directory, char_file)
-  # print('f', f)
-  if os.path.isfile(f):
-    # reads JSON file for character
-    json_string = open(f).read()
-    # print('json_string', json_string)
+# for char_file in os.listdir(directory):
+#   # f is a single file
+#   f = os.path.join(directory, char_file)
+#   # print('f', f)
+#   if os.path.isfile(f):
+#     # reads JSON file for character
+#     json_string = open(f).read()
+#     # print('json_string', json_string)
 
-  # returns JSON file as python dictionary
-  json_dict = json.loads(json_string)
-  print('json_dict', json_dict)
+#   # returns JSON file as python dictionary
+#   json_dict = json.loads(json_string)
+#   print('json_dict', json_dict)
 
-  # accesses 'results' and returns dictionary containing only relevant information
-  char_results = json_dict["results"]
-  # print('char_results', char_results)
+#   # accesses 'results' and returns dictionary containing only relevant information
+#   char_results = json_dict["results"]
+#   # print('char_results', char_results)
 
 
 # prints all key and value pairs in char_results dictionary
@@ -240,64 +240,64 @@ def access_creator(dict_results):
 
 # print('os.listdir(directory)', os.listdir(directory))
 
-char_dicts = []
-for char_file in os.listdir(directory):
-  # f is a single file
-  f = os.path.join(directory, char_file)
-  # print(char_file)
-  print('f', f)
-  if os.path.isfile(f):
-    # reads JSON file for character
-    json_string = open(f).read()
+# char_dicts = []
+# for char_file in os.listdir(directory):
+#   # f is a single file
+#   f = os.path.join(directory, char_file)
+#   # print(char_file)
+#   print('f', f)
+#   if os.path.isfile(f):
+#     # reads JSON file for character
+#     json_string = open(f).read()
 
-  # returns JSON file as python dictionary
-  json_dict = (json.loads(json_string))
+#   # returns JSON file as python dictionary
+#   json_dict = (json.loads(json_string))
 
-  # accesses 'results' and returns dictionary containing only relevant information
-  char_results = json_dict['results']
+#   # accesses 'results' and returns dictionary containing only relevant information
+#   char_results = json_dict['results']
 
 
     
-  character_dictionary = {}
-  id = access_comicvineID(char_results)
-  image = access_image(char_results)
-  name = access_name(char_results)
-  real_name = access_realName(char_results)
-  alias = access_alias(char_results)
-  origin = access_origin(char_results)
-  gender = access_gender(char_results)
-  biography = access_biography(char_results)
-  power = access_power(char_results)
-  friend = access_friend(char_results)
-  enemy = access_enemy(char_results)
-  team = access_team(char_results)
-  first_appearance = access_firstAppearance(char_results)
-  appearance_count = access_appearanceCount(char_results)
-  comic_issue = access_comicIssues(char_results)
-  creator = access_creator(char_results)
+#   character_dictionary = {}
+#   id = access_comicvineID(char_results)
+#   image = access_image(char_results)
+#   name = access_name(char_results)
+#   real_name = access_realName(char_results)
+#   alias = access_alias(char_results)
+#   origin = access_origin(char_results)
+#   gender = access_gender(char_results)
+#   biography = access_biography(char_results)
+#   power = access_power(char_results)
+#   friend = access_friend(char_results)
+#   enemy = access_enemy(char_results)
+#   team = access_team(char_results)
+#   first_appearance = access_firstAppearance(char_results)
+#   appearance_count = access_appearanceCount(char_results)
+#   comic_issue = access_comicIssues(char_results)
+#   creator = access_creator(char_results)
 
-  character_dictionary['id'] = id
-  character_dictionary['image'] = image
-  character_dictionary['name'] = name
-  character_dictionary['real_name'] = real_name
-  character_dictionary['alias'] = alias 
-  character_dictionary['gender'] = gender
-  character_dictionary['origin'] = origin
-  character_dictionary['biography'] = biography
-  character_dictionary['power'] = power
-  character_dictionary['friend'] = friend
-  character_dictionary['enemy'] = enemy
-  character_dictionary['team'] = team
-  character_dictionary['first_appearance'] = first_appearance
-  character_dictionary['appearance_count'] = appearance_count
-  character_dictionary['comic_issue'] = comic_issue
-  character_dictionary['creator'] = creator
+#   character_dictionary['id'] = id
+#   character_dictionary['image'] = image
+#   character_dictionary['name'] = name
+#   character_dictionary['real_name'] = real_name
+#   character_dictionary['alias'] = alias 
+#   character_dictionary['gender'] = gender
+#   character_dictionary['origin'] = origin
+#   character_dictionary['biography'] = biography
+#   character_dictionary['power'] = power
+#   character_dictionary['friend'] = friend
+#   character_dictionary['enemy'] = enemy
+#   character_dictionary['team'] = team
+#   character_dictionary['first_appearance'] = first_appearance
+#   character_dictionary['appearance_count'] = appearance_count
+#   character_dictionary['comic_issue'] = comic_issue
+#   character_dictionary['creator'] = creator
 
-  char_dicts.append(character_dictionary)
+#   char_dicts.append(character_dictionary)
 
 
-  with open(f"data/characters_api/{char_file}", "w") as outfile:
-    json.dump(character_dictionary, outfile, indent=4)
+#   with open(f"data/characters/{char_file}", "w") as outfile:
+#     json.dump(character_dictionary, outfile, indent=4)
 
 
 # for char in char_dicts:
