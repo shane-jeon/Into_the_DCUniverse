@@ -9,6 +9,7 @@ body {
   color: #fff;
 }
 
+/* HEADER  */
 .page-title {
   font-size: 25px;
   text-align: center;
@@ -36,6 +37,37 @@ body {
   align-self: flex-end;
 }
 
+/* SEARCH BAR */
+/* note, styling not ideal, but will do for now */
+.search-bar {
+  text-align: center;
+  padding: 20px 20px;
+  /* position: absolute; */
+  /* margin-bottom: 25px; */
+  /* white-space: nowrap; */
+}
+.search-description {
+  display: block;
+  padding: 10px;
+  margin-bottom: 7px;
+}
+
+.input {
+  min-width: 75%;
+  padding: 10px 10px;
+}
+
+/* RETURN TO LATER: figure out how to adjust box in proper ratio to inner content */
+.search-container {
+  /* display: inline-block; */
+  /* position: relative; */
+  border: 4px solid white;
+  /* padding: 0px 30px; */
+  margin: 0px 280px;
+  margin-bottom: 20px;
+}
+
+/* CHARACTER CONTAINERS */
 .container {
   display: flex;
   flex-direction: row;
@@ -47,6 +79,7 @@ body {
 .flexbox-item {
   padding: 10px;
 }
+
 .hyperlink {
   color: #fff;
   font-size: 18px;

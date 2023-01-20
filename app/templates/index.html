@@ -1,36 +1,45 @@
 {% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %} {%
 block js %}
-<script type="text/jsx" src="/static/JS/hello.jsx"></script>
+<!-- <script type="text/jsx" src="/static/JS/hello.jsx"></script> 
+-->
+<script type="text/js" src="/static/JS/searchBar.js"></script>
 {% endblock %} {% block body %}
 
 <div class="main-header">
-
   <h1 class="page-title">
     Into the </h1>
     <img class="dc-logo" src="/static/img/DC_Comics_logo.png" /> <h1 class="page-title">Universe</h1>
   </h1>
 </div>
+
+<div class="search-container">
+  <div class="search-bar" id="search">
+    <label class="search-description" for="searchInput">Characters Search</label>
+    <input class="input" id="searchInput" type="text" placeholder="Search">
+  </div>
+</div>
+
 <div id="root"></div>
 <ul class="character-list">
   <div class="container">
-    {% for character in characters | sort(attribute='name') %}
-    <li>
-      <div class="characters">
-        <div class="character-individual">
-          <div class="flexbox-item character-img">
-            <img class="char_avatar" src="{{character.image}}" />
-          </div>
-
-          <div class="flexbox-item character-name">
-            <p>
-              <a class="hyperlink character_redirect" href="/{{character.id}}"
+      {% for character in characters | sort(attribute='name') %}
+      <li>
+        <div class="characters">
+          <div class="character-individual">
+            <div class="flexbox-item character-img">
+              <img class="char_avatar" src="{{character.image}}" />
+            </div>
+            
+            <div class="flexbox-item character-name">
+              <p>
+                <a class="hyperlink character_redirect" href="/{{character.id}}"
                 >{{ character.name }}</a
-              >
-            </p>
+                >
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </li>
-    {% endfor %} {% endblock %}
+      </li>
+      {% endfor %} {% endblock %}
   </div>
 </ul>
