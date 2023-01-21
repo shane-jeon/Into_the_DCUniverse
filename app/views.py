@@ -31,13 +31,13 @@ def search():
 
   return jsonify(results)
 
-@app.route(f'/search-results?name={character.name}')
-def return_search():
-  "Return search results."
+# @app.route(f'/search-results?name={character.name}')
+# def return_search():
+#   "Return search results."
 
 
 
-  return render_template('search-results.html', results=results)
+#   return render_template('search-results.html', results=results)
 
 
 # Route "decorator"
