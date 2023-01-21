@@ -1,9 +1,4 @@
-{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %} {%
-block js %}
-<!-- <script type="text/jsx" src="/static/JS/hello.jsx"></script> 
--->
-<script type="text/js" src="/static/JS/searchBar.js"></script>
-{% endblock %} {% block body %}
+{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %}  {% block body %}
 
 <div class="main-header">
   <h1 class="page-title">
@@ -13,10 +8,15 @@ block js %}
 </div>
 
 <div class="search-container">
-  <div class="search-bar" id="search">
+
     <label class="search-description" for="searchInput">Characters Search</label>
-    <input class="input" id="searchInput" type="text" placeholder="Search">
-  </div>
+    <form>
+      <input class="input" id="search-term" type="text" placeholder="Search">
+      <button type="submit" onclick="search()">Search</button>
+    </form>
+    <!-- <div id="results"></div>
+    <script src="{{ url_for('static', filename='/static/JS/searchBar.js')}}"></script> -->
+      
 </div>
 
 <div id="root"></div>

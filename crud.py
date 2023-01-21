@@ -53,6 +53,11 @@ def get_char_by_id(char_id):
 
 # # IDs appear to be not consecutive...create a function to get IDs by name... //RESOLVED 10/25/2022
 
+def search_character_by_name(name):
+  """Returns character by searched name."""
+
+  return Character.query.filter_by(name=name)
+  
 def get_charID_by_name(name):
 
   return Character.query.filter_by(name=name)
