@@ -157,7 +157,22 @@ body {
     right: 200px;
   }
 
-  #modal {
+  .modal {
+    position: absolute; /* set the position of the modal to absolute */
+    width: 300px; /* set the width of the modal */
+    height: 400px; /* set the height of the modal */
+    background-color: white; /* set the background color of the modal */
+    box-shadow: 0px 0px 10px #ccc; /* add a drop shadow to the modal */
+    border-radius: 10px; /* add rounded corners to the modal */
+    display: none; /* set the modal to be hidden by default */
+}
+
+#modal-img {
+    max-width: 100%; /* set the maximum width of the image to 100% of the modal */
+    max-height: 100%; /* set the maximum height of the image to 100% of the modal */
+}
+
+  /* #modal {
     display: none;
     position: absolute;
     z-index: 1;
@@ -167,12 +182,12 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
-  }
+  } */
   
-  #modal-content {
+  /* #modal-content {
     position: relative;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     width: 80%;
-  }
+  } */
