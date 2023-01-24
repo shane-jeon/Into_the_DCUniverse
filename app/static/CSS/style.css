@@ -106,11 +106,11 @@ body {
 .character_redirect:active {
 }
 
-.character-individual {
+.char-individual {
   padding: 5px 10px;
   margin: 7px 10px;
 }
-.char_avatar {
+.char-avatar {
   /* max-width: 100%;
   max-height: 100%; */
   display: inline-block;
@@ -140,3 +140,39 @@ body {
   border: 3px solid;
   margin: 10px;
 }
+
+/* .popup-text { */
+#text {
+      background-color: pink;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 150px 80px;
+  /*  preferred solution  */
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+  }
+
+  #modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  #modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+  }

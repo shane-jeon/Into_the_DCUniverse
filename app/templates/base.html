@@ -15,7 +15,7 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
       crossorigin
     ></script>
-    {% block js %}{% endblock %}
+    
   </head>
   <body>
     <!-- {% for msg in get_flashed_messages() %}
@@ -24,7 +24,8 @@
       </p>
     {% endfor %} -->
 
-    {% block body %}{% endblock %}
+    {% block body %}  {% block js %}{% endblock %}{% endblock %}
+  
     <!-- {% block after_body %} {% endblock %} -->
   </body>
 </html>

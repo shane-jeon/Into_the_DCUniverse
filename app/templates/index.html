@@ -1,4 +1,8 @@
-{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %}  {% block body %}
+{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %}  
+
+
+
+{% block body %}
 
 <div class="main-header">
   <h1 class="page-title">
@@ -20,14 +24,24 @@
 </div>
 
 <div id="root"></div>
+<div id="modal">
+  <div id="modal-content">
+    <img src="" id="modal-img" />
+    <p id="modal-text">
+    </p>
+  </div>
+</div>
+
 <ul class="character-list">
   <div class="container">
       {% for character in characters | sort(attribute='name') %}
-      <li>
+
+      <!-- <li class="popup-text"> -->
+        <li>
         <div class="characters">
-          <div class="character-individual">
-            <div class="flexbox-item character-img">
-              <img class="char_avatar" src="{{character.image}}" />
+          <div class="char-individual">
+            <div class="flexbox-item char-img">
+              <img class="char-avatar modal-trigger" src="{{character.image}}" />
             </div>
             
             <div class="flexbox-item character-name">
@@ -40,6 +54,54 @@
           </div>
         </div>
       </li>
-      {% endfor %} {% endblock %}
+      {% endfor %} 
   </div>
 </ul>
+
+
+{% block js %}
+<script>
+  const modalImg = document.getElementById("modal-img");
+  const modalText = document.getElementById("modal-text");
+  const modal = document.getElementById("modal");
+  const triggers = document.querySelectorAll(".modal-trigger");
+
+  function showModal() {
+    modalImg.src = this.src;
+    modalText.innerHTML = this.dataset.description;
+    modal.style.display = "block";
+  }
+
+  function hideModal() {
+    modal.style.display = "none";
+  }
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener("mouseover", showModal);
+    trigger.addEventListener("mouseout", hideModal)
+  });
+  // console.log('script')
+  // const text = document.getElementById("text");
+  // const img = document.querySelectorAll('.char-img')
+  // console.log('text: ', text)
+  // console.log('img: ', img)
+
+  // function showText() {
+  //   text.style.display = "block";
+  //   // this.nextSibling.style.display = "block";
+  // }
+
+  // function hideText() {
+  //   text.style.display = "none";
+  //   // this.nextSibling.style.display = "none";
+  // }
+
+  // for (let i = 0; i < img.length; i++) {
+  //   img[i].addEventListener("mouseover", showText);
+  //   img[i].addEventListener("mouseout", hideText);
+  // }
+</script>
+{% endblock %}
+
+{% endblock %}
+
