@@ -1,6 +1,6 @@
 """CRUD Operations."""
 
-from model import db, Character, connect_to_db
+from model import db, Character, connect_to_db, convert_dict
 
 # def create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator):
 def create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, appearance_count, comic_issue, creator):
@@ -66,13 +66,13 @@ def get_charID_by_name(name):
 
 def get_characters():
   """Return all characters."""
-  # print("***********"* 500)
-  # print(Character.query.all())
 
   return Character.query.all()
 
 def display_char_react(id):
+  """Returns dictionary of names, aliases, and img links"""
   char = Character.query.filter(Character.id == id).first()
+  return [ charData.conv_to_dict() for charData in Character.char]
   # return [char.dict_conv() for char in char.]
   # 65230# def get_character_
 

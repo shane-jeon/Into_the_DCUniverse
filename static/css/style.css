@@ -46,14 +46,43 @@ nav {
 
 /* CARDS */
 
-.card--grid {
+/* .card--grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
+} */
 
-.card--char {
+.card {
   background: #0472EE4D;
   width: 250px;
   height: 340px;
+  padding-top: 28px;
+  padding-left: 40px;
+  /* change margin to surround homepage body when able to include multiple cards */
+  margin: 90px 70px 70px 190px;
+  border-radius: 8px;
+}
+
+.card--img {
+  width: 170px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: -10px 10px 18px black;
+}
+
+.card--name {
+  font-weight: 400px;
+  text-align: center;
+  size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.card--alias {
+  font-weight: 400px;
+  text-align: center;
+  size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
 }

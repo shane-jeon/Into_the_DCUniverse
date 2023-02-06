@@ -101,16 +101,9 @@ for char_file in os.listdir(directory):
 
 # 12/29/2022 --> will need to create new dictionary to hold results from API request to more easily seed database
 characters_in_db = []
-# print(f'CHAR DICTS: {char_dicts}')
-# for character in char_dict:
+
 
 for char in char_dicts:
-  # print(character)
-  # print(char)
-  # print('*'*200, 'type(char): ', type(char))
-  # print(f"ID: {char['id']}, NAME: {char['name']}")
-  # id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
-    # character['creator'][1]['name'],
 
   id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, appearance_count, comic_issue, creator = (
     # character_creator,
@@ -138,117 +131,6 @@ for char in char_dicts:
 
   characters_in_db.append(db_character)
 
-
-# model.db.session.add_all(characters_in_db)
-# model.db.session.commit()
-# directory = 'data/characters_reformatted'
-# character_dictionaries = []
-# for char_file in os.listdir(directory):
-#   # f is a single file
-#   f = os.path.join(directory, char_file)
-#   print('f', f)
-#   if os.path.isfile(f):
-#     # reads JSON file for character
-#     json_string = open(f).read()
-#     # print('json_string', json_string)
-
-#   # returns JSON file as python dictionary
-#   character_dictionary = json.loads(json_string)
-#   # print('CHARACTER DICTIONARY', {character_dictionary['id']})
-#   # print('type', type(character_dictionary))
-#   print('KEYS', character_dictionary.keys())
-#   # print('json_dict', json_dict)
-#   # print(f'character_dictionary {character_dictionary}')
-#   character_dictionaries.append(character_dictionary)
-
-#   print('LENGTH', len(character_dictionaries))
-
-# characters_in_db = []
-
-# for character in character_dictionaries:
-#   print(type(character))
-#   print(f"ID: {character['id']}, NAME: {character['name']}")
-
-#   id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
-#     character['id'],
-#     character['image'],
-#     character['name'],
-#     character['real_name'],
-#     character['alias'],
-#     character['gender'],
-#     character['origin'],
-#     character['biography'],
-#     character['power'],
-#     character['friend'],
-#     character['enemy'],
-#     character['team'],
-#     character['first_appearance'],
-#     character['appearance_count'],
-#     character['comic_issue'],
-#     character['creator'],
-#   )
-#   print('POST DB DICTIONARY ACCESS', '*'*100)
-#   print(id, image, name, real_name, alias, gender)
-
-#   db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
-
-#   characters_in_db.append(db_character)
-
-
-# def seed_db_comicvine(char_dict):
-#   """Seeding available character data from Comicvine API."""
-
-#   id = char_dict['id']
-#   char_name = char_dict['name']
-
-
-# def create_biography(char_data, char):
-#   """Create a character's biography summary."""
-  
-#   # putting a pin on this ** 10/26/2022 **
-#   # char_gender_key = char_data[char]['appearance']['gender'] 
-#   # genders = {'female': ['she', 'her', 'hers'], 'male': ['he', 'him', 'his'], 'nonbinary': ['they', 'them', 'their']}
-
-#   # for gender in genders:
-#   #   if char_gender_key == gender:
-
-#   char_dict = char_data[char]
-#   char_name = char_dict['name']
-#   biography_access = char_dict['biography']
-#   char_stats = char_dict['powerstats']
-#   char_bio = f'''{char_name}, also known as {biography_access['full-name']} first appeared in {biography_access['first-appearance']} and is originally based in {char_dict['work']['base']}. {char_name}'s professional and personal affiliations include '{char_dict['connections']['group-affiliation']}' and
-#   '{char_dict['connections']['relatives']}', respectively. {char_name}'s stats are as below:
-  
-#              {char_name}'s POWERSTATS  
-#   +----------------------------------------------+
-#     Intelligence: {char_stats['intelligence']}, 
-#     Strength: {char_stats['strength']},         
-#     Speed: {char_stats['speed']},               
-#     Durability: {char_stats['durability']},     
-#     Power: {char_stats['power']},               
-#     Combat: {char_stats['combat']}              
-#   +----------------------------------------------+
-#   '''
-#   return char_bio
-
-
-# chars_in_db = []
-
-# for char in char_data:
-#   # print(char_data[char])
-#   print("char: ", char)
-#   char_id, name, alignment, biography = (
-#     char_data[char]['id'], 
-#     char_data[char]['name'],
-#     char_data[char]['biography']['alignment'],
-#     create_biography(char_data, char), 
-#   )
-
-
-#   db_char = crud.create_char(char_id, name, alignment, biography)
-#   chars_in_db.append(db_char)
-
-# 
 
 
 

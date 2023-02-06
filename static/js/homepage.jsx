@@ -19,9 +19,10 @@ function Navbar() {
 
 function CharacterCard() {
   return(
-    <div className="card--char">
-      <img src="" />
-      <h3>*insert char_name*</h3>
+    <div className="card">
+      <img className="card--img" src="https://comicvine.gamespot.com/a/uploads/screen_medium/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg" />
+      <p className="card--name">Cassandra Cain</p>
+      <p className="card--alias">Alias: "Orphan"</p>
     </div>
   )
 }
@@ -29,11 +30,10 @@ function CharacterCard() {
 function Homepage() {
   console.log("is this working")
   return (
-    // <h1>homepage</h1>
     <div>
-    {/* <h1>Homepage goes here</h1> */}
-    <Navbar />
-    {/* <Characters /> */}
+      <Navbar />
+      <CharacterCard />
+    
     </div>
   )
   

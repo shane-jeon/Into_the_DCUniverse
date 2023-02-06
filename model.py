@@ -45,7 +45,7 @@ class Character(db.Model):
   def __repr__(self):
     return f'<Character id={self.id} name={self.name}'
 
-  def dict_convert(self):
+  def convert_dict(self):
     """Dictionary conversion to later retrieve data as JSON."""
     return {
       "char_id": {self.id},
