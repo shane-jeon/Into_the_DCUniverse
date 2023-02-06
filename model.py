@@ -43,26 +43,26 @@ class Character(db.Model):
 
 
   def __repr__(self):
-    return f'<Character id={self.id} name={self.name}'
+    return f'<Character id={self.id} name={self.name}>'
 
   def convert_dict(self):
     """Dictionary conversion to later retrieve data as JSON."""
     return {
-      "char_id": {self.id},
-      "image": {self.image},
-      "name": {self.name},
-      "real_name": {self.real_name},
-      "alias": {self.alias},
-      "gender": {self.gender},
-      "origin": {self.origin},
-      "biography": {self.biography},
-      "power": {self.power},
-      "friend": {self.friend},
-      "enemy": {self.enemy},
-      "team": {self.team},
-      "appearance_count": {self.appearance_count},
-      "comic_issue": {self.comic_issue},
-      "creator": {self.creator}
+      "char_id": self.id,
+      "image": self.image,
+      "name": self.name,
+      "real_name": self.real_name,
+      "alias": self.alias,
+      "gender": self.gender,
+      "origin": self.origin,
+      "biography": self.biography,
+      "power": self.power,
+      "friend": self.friend,
+      "enemy": self.enemy,
+      "team": self.team,
+      "appearance_count": self.appearance_count,
+      "comic_issue": self.comic_issue,
+      "creator": self.creator
     }
     
 

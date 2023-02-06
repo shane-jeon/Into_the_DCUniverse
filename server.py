@@ -24,12 +24,12 @@ def homepage():
 
 
 @app.route('/characters.json')
-def get_characters():
-  """Returns list of all characters."""
-  # char_id = crud.
-  characters = crud.get_characters()
+def populate_character_data():
+  """Returns list of dictionaries containing all character data."""
 
-  return jsonify(characters)
+  characters = crud.display_character_details()
+
+  return jsonify({"characters": characters})
 
 # Route "decorator"
 @app.route('/<id>')
