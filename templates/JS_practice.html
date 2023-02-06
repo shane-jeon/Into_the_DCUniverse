@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>DOM Manipulation</h1>
+
+  <p>Hello world!</p>
+  <p>Goodbye world!</p>
+  <button id="sample-button">Click me!</button>
+
+  <!-- <script>
+    const button = document.querySelector("#sample-button");
+    button.addEventListener('click', () => {alert("hello world!");});
+  </script> -->
+  <button id="angry-button">😠 Don't click me</button>
+  <button id="event-button">See event (in console)</button>
+  
+
+  <h4>Suggest a word!</h4>
+  <p>Your word must be > 5 characters long</p>
+  <form id="suggest-word" action="/suggest-word" method="POST">
+    <input type="text" name="word">
+    <input type="submit">
+  </form>
+
+
+  <p>Please click on the checkbox control.</p>
+
+<form>
+  <label for="id-checkbox">Checkbox:</label>
+  <input type="checkbox" id="id-checkbox" />
+</form>
+
+<div id="output-box"></div>
+<button id="event-target">See event target (in console)</button>
+
+
+<button class="font-changer" id="monospace">
+  Change to monospace!
+</button>
+<button class="font-changer" id="sans-serif">
+  Change to sans-serif!
+</button>
+<button class="font-changer" id="serif">
+  Change to serif!
+</button>
+<script src="../static/JS/jsPractice.js"></script> 
+</body>
+</html>

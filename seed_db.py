@@ -22,7 +22,7 @@ char_dicts = []
 for char_file in os.listdir(directory):
   # f is a single file
   f = os.path.join(directory, char_file)
-  print('f', f)
+  # print('f', f)
   if os.path.isfile(f):
     # reads JSON file for character
     json_string = open(f).read()
@@ -106,9 +106,9 @@ characters_in_db = []
 
 for char in char_dicts:
   # print(character)
-  print(char)
-  print('*'*200, 'type(char): ', type(char))
-  print(f"ID: {char['id']}, NAME: {char['name']}")
+  # print(char)
+  # print('*'*200, 'type(char): ', type(char))
+  # print(f"ID: {char['id']}, NAME: {char['name']}")
   # id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator = (
     # character['creator'][1]['name'],
 
@@ -131,7 +131,7 @@ for char in char_dicts:
     char['comic_issue'],
     char['creator'],
   )
-  print('*'* 800)
+  # print('*'* 800)
   # print(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
   # db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator)
   db_character = crud.create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, appearance_count, comic_issue, creator)

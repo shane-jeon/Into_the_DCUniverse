@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.20.15/babel.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -12,7 +12,13 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <!-- <link rel="stylesheet" href="static/CSS/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
 
     <title>{% block title %}{% endblock %}</title>
   </head>

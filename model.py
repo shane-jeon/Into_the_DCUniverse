@@ -41,30 +41,30 @@ class Character(db.Model):
   comic_issue = db.Column(db.String)
   creator = db.Column(db.String)
 
-  # relationship w/media_association table
 
   def __repr__(self):
-    return f'''
+    return f'<Character id={self.id} name={self.name}'
+
+  def dict_convert(self):
+    """Dictionary conversion to later retrieve data as JSON."""
+    return {
+      "char_id": {self.id},
+      "image": {self.image},
+      "name": {self.name},
+      "real_name": {self.real_name},
+      "alias": {self.alias},
+      "gender": {self.gender},
+      "origin": {self.origin},
+      "biography": {self.biography},
+      "power": {self.power},
+      "friend": {self.friend},
+      "enemy": {self.enemy},
+      "team": {self.team},
+      "appearance_count": {self.appearance_count},
+      "comic_issue": {self.comic_issue},
+      "creator": {self.creator}
+    }
     
-    <CharacterID={self.id},
-
-    img={self.image},
-
-    name={self.name},
-
-    real_name={self.real_name},
-
-    alias={self.alias},
-
-    gender={self.gender},
-
-    origin={self.origin},
-
-    biography={self.biography},
-
-  
-    >
-    '''
 
 # relationship w/media_association table
 # power={self.power},
@@ -248,7 +248,7 @@ def connect_to_db(flask_app, db_uri='postgresql:///characters', echo=True):
 
 
 if __name__ == "__main__":
-  from app import app
+  from depleted import app
 
   # connection call
   # Any errors about db connection that will arise, check connect_to_db(app) is called before app.run() 

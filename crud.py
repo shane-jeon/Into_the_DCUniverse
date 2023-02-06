@@ -5,8 +5,8 @@ from model import db, Character, connect_to_db
 # def create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, first_appearance, appearance_count, comic_issue, creator):
 def create_character(id, image, name, real_name, alias, gender, origin, biography, power, friend, enemy, team, appearance_count, comic_issue, creator):
   """Create and return a new character."""
-  print('*'*500)
-  print(id, image, name, real_name,power, 'POWER')
+  # print('*'*500)
+  # print(id, image, name, real_name,power, 'POWER')
   char = Character(
                    id=id,
                    image=image,
@@ -30,7 +30,7 @@ def create_character(id, image, name, real_name, alias, gender, origin, biograph
   count = 1
   if existing_record:
     # return "ID already exists, record not inserted"
-    id=id+'-'+count
+    id=str(id)+'-'+str(count)
     count += 1
   else:
     # db.session used for database transactions (nothing to do with Flask 'session')
@@ -66,9 +66,16 @@ def get_charID_by_name(name):
 
 def get_characters():
   """Return all characters."""
+  # print("***********"* 500)
+  # print(Character.query.all())
 
   return Character.query.all()
 
+def display_char_react(id):
+  char = Character.query.filter(Character.id == id).first()
+  # return [char.dict_conv() for char in char.]
+  # 65230# def get_character_
+
 if __name__ == '__main__':
-  from app import app
+  from depleted import app
   connect_to_db(app)

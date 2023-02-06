@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %}  
+{% block body %}
+<header>
+  <p>Search Results</p>
+</header>
+<div class="container">
+  <div id="results"></div>
+  <script src="{{ url_for('static', filename='/static/JS/searchBar.js')}}"></script>
+</div>
+{% endblock %}
