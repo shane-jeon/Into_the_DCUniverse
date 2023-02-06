@@ -27,20 +27,22 @@ def create_character(id, image, name, real_name, alias, gender, origin, biograph
                    creator=creator
   )
   existing_record = Character.query.filter_by(id=id).first()
+  count = 1
   if existing_record:
-    return "ID already exists, record not inserted"
+    # return "ID already exists, record not inserted"
+    id=id+'-'+count
+    count += 1
   else:
+    # db.session used for database transactions (nothing to do with Flask 'session')
+    # db.session stores modifications made to database
 
-  # db.session used for database transactions (nothing to do with Flask 'session')
-  # db.session stores modifications made to database
-
-  # to add new object
+    # to add new object
     db.session.add(char)
-    print('*'*500, 'HERE')
-    print('TYPE', type(char))
+    # print('*'*500, 'HERE')
+    # print('TYPE', type(char))
     # database will not actually be modified unless following call included
     db.session.commit()
-    print('*'*500, 'COMMIT COMPLETE')
+    # print('*'*500, 'COMMIT COMPLETE')
 
   return char
 

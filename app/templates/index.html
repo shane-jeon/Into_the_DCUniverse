@@ -1,29 +1,16 @@
-{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %}  
+{% extends 'base.html' %} {% block title %}Into the DC Universe{% endblock %} {%
+block body %}
 
-
-
-{% block body %}
-
-<div class="main-header">
+<!-- <div class="main-header">
   <h1 class="page-title">
     Into the </h1>
     <img class="dc-logo" src="/static/img/DC_Comics_logo.png" /> <h1 class="page-title">Universe</h1>
   </h1>
-</div>
-
-<div class="search-container">
-
-    <label class="search-description" for="searchInput">Characters Search</label>
-    <form>
-      <input class="input" id="search-term" type="text" placeholder="Search">
-      <button type="submit" onclick="search()">Search</button>
-    </form>
-    <!-- <div id="results"></div>
-    <script src="{{ url_for('static', filename='/static/JS/searchBar.js')}}"></script> -->
-      
-</div>
-
-<div id="root"></div>
+</div> -->
+{% block js %}
+<script src="/static/JS/Homepage.jsx" type="text/jsx"></script>
+{% endblock %}
+<div id="root-homepage"></div>
 <!-- <div id="modal">
   <div id="modal-content">
     <img src="" id="modal-img" />
@@ -32,7 +19,7 @@
   </div>
 </div> -->
 
-<ul class="character-list">
+<!-- <ul class="character-list">
   <div class="container">
       {% for character in characters | sort(attribute='name') %}
 
@@ -62,74 +49,6 @@
       </div>
       {% endfor %} 
   </div>
-</ul>
-
-
-{% block js %}
-<script>
-  const input = document.querySelector('.input');
-  const button = document.querySelector('button[type="submit"]');
-  const charList = document.querySelector('.character-list')
-
-  button.addEventListener('click', search);
-
-  function search() {
-    let searchValue = input.value;
-    let characters = document.querySelectorAll('.char-individual');
-    characters.forEach(character => {
-      if (!character.textContent.toLowerCase().includes(searchValue.toLowerCase())) {
-        character.style.display='none';
-      } else {
-        character.style.display='block';
-      }
-    });
-  }
-// const triggers = document.querySelectorAll(".char-avatar");
-
-// triggers.forEach(trigger => {
-//     trigger.addEventListener("mouseover", function() {
-//         var modal = document.getElementById("modal-"+this.id);
-//         var rect = this.getBoundingClientRect();
-//         var top = rect.top + rect.height;
-//         var left = rect.left + rect.width;
-//         modal.style.top = top + "px";
-//         modal.style.left = left + "px";
-//         modal.style.display = "block";
-//     });
-//     var modal = document.getElementById("modal-"+trigger.id);
-//     modal.addEventListener("mouseout", function(event) {
-//         if (!event.relatedTarget.closest('.modal')) {
-//             modal.style.display = "none";
-//         }
-//     });
-// });
-
-
-
-
-
-  // const modalImg = document.getElementById("modal-img");
-  // const modalText = document.getElementById("modal-text");
-  // const modal = document.getElementById("modal");
-  // const triggers = document.querySelectorAll(".modal-trigger");
-
-  // function showModal() {
-  //   modalImg.src = this.src;
-  //   modalText.innerHTML = this.dataset.description;
-  //   modal.style.display = "block";
-  // }
-
-  // function hideModal() {
-  //   modal.style.display = "none";
-  // }
-
-  // triggers.forEach(trigger => {
-  //   trigger.addEventListener("mouseover", showModal);
-  //   trigger.addEventListener("mouseout", hideModal)
-  // });
-
-</script>
-{% endblock %}
+</ul> -->
 
 {% endblock %}
-

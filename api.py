@@ -191,18 +191,18 @@ def import_SuperHeroAPI(API_KEY):
 
 
 # cleans up postman downloaded JSON file*
-def format_conversion(filename, new_filename):
-  """ Transforms incoherent Postman JSON file to readable JSON file.
-  Use when terminal GET request keeps returning with 403,
-  but Postman GET reqest returns 200 and thus have to download file from Postman."""
+# def format_conversion(filename, new_filename):
+#   """ Transforms incoherent Postman JSON file to readable JSON file.
+#   Use when terminal GET request keeps returning with 403,
+#   but Postman GET reqest returns 200 and thus have to download file from Postman."""
 
-  with open(filename) as data_file:
-    data = json.load(data_file)
+#   with open(filename) as data_file:
+#     data = json.load(data_file)
 
-  json_object = json.dumps(data, indent=4)
+#   json_object = json.dumps(data, indent=4)
 
-  with open(new_filename, 'w') as outfile:
-    outfile.write(json_object)
+#   with open(new_filename, 'w') as outfile:
+#     outfile.write(json_object)
 
 
 # format_conversion('data/character_JSON/requires_reformatting/zatanna.json', 'data/character_JSON/zatanna.json')
