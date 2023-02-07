@@ -29,7 +29,7 @@ def populate_character_data():
 
   characters = crud.display_character_details()
 
-  return jsonify({"characters": characters})
+  return jsonify({'characters':characters})
 
 # Route "decorator"
 @app.route('/<id>')
