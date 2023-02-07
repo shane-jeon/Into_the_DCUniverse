@@ -52,18 +52,22 @@ nav {
   justify-content: space-evenly;
 } */
 
-.card--container {
+.card--grid {
   display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 80px 80px;
 }
+
 .card {
   background: #0472EE4D;
   width: 250px;
   height: 340px;
   padding-top: 28px;
-  padding-left: 40px;
+  padding-left: 40px; 
   /* change margin to surround homepage body when able to include multiple cards */
-  margin: 90px 70px 70px 190px;
+  /* /* margin: 90px 70px 70px 190px; */
+  margin: 20px;
   border-radius: 8px;
 }
 

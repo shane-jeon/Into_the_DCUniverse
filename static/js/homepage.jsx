@@ -22,30 +22,14 @@ function Navbar() {
 
 function CharacterCard(props) {
   return(
-    <div className="card--container">
     <div className="card">
       <img className="card--img" src={props.image} />
       <p className="card--name">{props.name} </p>
       <p className="card--alias">{props.alias} </p>
-      {/* <img className="card--img" src="https://comicvine.gamespot.com/a/uploads/screen_medium/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg" />
-      <p className="card--name">Cassandra Cain</p>
-    <p className="card--alias">Alias: "Orphan"</p> */}
-    </div>
     </div>
   )
 }
 
-
-
-// function CharacterCard() {
-//   return(
-//     <div className="card">
-//       <img className="card--img" src="https://comicvine.gamespot.com/a/uploads/screen_medium/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg" />
-//       <p className="card--name">Cassandra Cain</p>
-//       <p className="card--alias">Alias: "Orphan"</p>
-//     </div>
-//   )
-// }
 
 function Homepage() {
   const [characters, setCharacters] = React.useState([]);
@@ -77,7 +61,9 @@ function Homepage() {
  return (
     <div>
       <Navbar />
+      <div className="card--grid">
       {characterCards}
+      </div>
     </div>
   )
 }
