@@ -78,7 +78,7 @@ def comic_JSON_request(your_UA, API_KEY, resource, fields, new_filename):
               'field_list' : fields
   }
 
-  # URL for API request
+  # URL for API request, 4010-10 is DC Comics ID
   URL = f'https://comicvine.com/api/{resource}/4010-10/'
 
   # holds information from get request
@@ -125,6 +125,7 @@ def get_info_from_charID(API_KEY, your_header, matching_values):
       time.sleep(86400)
       continue
 
+      # All DC characters ID are preceeded by DC character identification '4005'
     URL = f'https://www.comicvine.com/api/character/4005-{char_id}/'
 
     response = requests.get(URL, params=payload, headers=headers)
