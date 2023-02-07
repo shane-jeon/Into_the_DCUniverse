@@ -21,30 +21,16 @@ function Navbar() {
 
 
 function CharacterCard(props) {
-  // let characterData = []
-
-
-  // fetch('/characters.json')
-  // .then((response) => response.json())
-  // .then((data) => (characterData.push(data)));
-
-  // const innerArray = characterData[0]
-  // console.log(characterData)
-  // console.log(typeof characterData)
-  // console.log(characterData[0])
-  // const charData = characterData
-  // console.log(charData);
-
-
-    
   return(
+    <div className="card--container">
     <div className="card">
       <img className="card--img" src={props.image} />
       <p className="card--name">{props.name} </p>
       <p className="card--alias">{props.alias} </p>
       {/* <img className="card--img" src="https://comicvine.gamespot.com/a/uploads/screen_medium/11116/111167641/8074849-cassandra-cain_artgerm-art.jpg" />
       <p className="card--name">Cassandra Cain</p>
-      <p className="card--alias">Alias: "Orphan"</p> */}
+    <p className="card--alias">Alias: "Orphan"</p> */}
+    </div>
     </div>
   )
 }
@@ -62,35 +48,25 @@ function CharacterCard(props) {
 // }
 
 function Homepage() {
-  let characterData;
-
-
-  fetch('/characters.json')
-  .then((response) => response.json())
-  .then((data) => {
-    characterData = data;
-    console.log(characterData);
-  });
-
   const [characters, setCharacters] = React.useState([]);
   React.useEffect(()=> {
-    try {fetch('/characters.json')
-    .then((response) => response.json())
-    .then((data) => {
-      setCharacters(data)
+    fetch('/characters.json')
+    .then(response => {
+      console.log(response);
+      return response.json();})
+    .then(data => {
+      console.log(data);
+      setCharacters(data.characters);
+      })
+      .catch(error => {
+        console.error(error);
       });
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
-
-  if (!characters || !Array.isArray(characters)) {
-    return <div>Loading...</div>;
-  }
+    }, []);
 
   const characterCards = characters.map(item => {
     return(
     <CharacterCard
+      key={item.id}
       image={item.image}
       name={item.name}
       alias={item.alias}

@@ -52,6 +52,10 @@ nav {
   justify-content: space-evenly;
 } */
 
+.card--container {
+  display: flex;
+  flex-wrap: row;
+}
 .card {
   background: #0472EE4D;
   width: 250px;
