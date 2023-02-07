@@ -7,6 +7,10 @@
 For the backend of this application, I have utilized the Python programming language, in conjunction with SQLAlchemy and PostgreSQL, for database management. The frontend is composed of HTML, CSS, JavaScript, and React for dynamic rendering. I chose to use this tech stack as it allowed me to build upon the skills and knowledge I acquired during my time at Hackbright Academy, where I created my first project. Specifically, I aimed to expand my proficiency in JavaScript and React, which I did not have the opportunity to fully explore in my previous project. To gather information on the characters featured in the app, I utilized the Comic Vine API as a valuable resource, and for obtaining a list of characters introduced in the Young Justice television series, I employed web scraping techniques using Beautiful Soup library on the Young Justice Fandom Wiki page. By cross-referencing this list of character names with a dictionary of all characters within the DC Universe, I was able to selectively gather information on the desired characters.
 It's important to note that, as the Comic Vine API is a community-built and supported resource, there are certain limitations to the number of requests that can be made in a given time frame. To adhere to these restrictions, I implemented a function that enforces a delay of 1 hour after 100 requests, ensuring compliance with the API's rules while still efficiently retrieving the necessary data.
 
+## What I've been learning:
+*under construction*
+Understanding basic React fundamentals and making API requests with Python
+
 ## Challenges
 
 I aimed to expand my proficiency in JavaScript and React, which I did not have the
@@ -28,7 +32,7 @@ All these factors greatly increased my appreciation for frontend development and
 
 _Into the DC Universe_ is not just a project I built to put on my resume. This is something that is very near and dear to my heart and also increases my own knowledge of intricacies of DC Comics. I hope to add new features along my journey as a software engineer, implementing the knowledge and experience I will have gained through my professional career. Some features that I look forward to adding include character appearances in other forms of media (film, television, graphic novels), user accounts (so users may bookmark characters or comics they would want to return to later), and an extremely interactive and complicated map that I can't even find the words for to explain. I hope to deploy it once the day comes.
 
-**under construction**
+<!-- **under construction**
 
 ### Working with comicvine API:
 
@@ -95,4 +99,4 @@ STEP 2: Get Character Information by Character ID
 
 URL = "https://comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name,real_name,deck,powers,movies,issues_died_in
 
-https://comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name,real_name,deck,powers,movies,issues_died_in
+https://comicvine.com/api/character/4005-1699/?api_key=6028f8ab23892d424a31b9845b1c36ed4f737523&format=json&field_list=name,real_name,deck,powers,movies,issues_died_in -->
