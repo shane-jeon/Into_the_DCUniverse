@@ -17,7 +17,7 @@ function Navbar() {
   )
 }
 
-
+// create search bar function
 
 
 function CharacterCard(props) {
@@ -30,7 +30,7 @@ function CharacterCard(props) {
   )
 }
 
-
+// to-do: for alias, display as list not dictionary. reformat "none available", if more than one limit characters and then finish rest with "..." will most likely need to use javascript for this
 function Homepage() {
   const [characters, setCharacters] = React.useState([]);
   React.useEffect(()=> {
