@@ -29,7 +29,7 @@ To fully comprehend my code, I revisited my notes and lectures on JavaScript and
 
 I am very much enjoying front-end development and am developing best study practices to increase quality of learning.
 
-## <a name="future"></a> Future Feature Implementations
+## <a name="future"></a> Future Features
 
 _Into the DC Universe_ is a project very near and dear to my heart, with the goal to introduce new generations of DC fans trickling in from viewerships of the DC animated universe to the fuller extent of the DC universe.
 
