@@ -1,9 +1,5 @@
 'use strict';
 
-// import { process_params } from "express/lib/router";
-
-// import Navbar from "components/Navbar";
-
 function Navbar() {
   return(
     <nav>
@@ -17,29 +13,50 @@ function Navbar() {
   )
 }
 
-// create search bar function
-
-
-function CharacterCard(props) {
+// to-do: created basic searchbar in homepage, working on actual functionality
+function SearchBar() {
+  // JS logic 
   return(
-    <div className="card">
-      <img className="card--img" src={props.image} />
-      <p className="card--name">{props.name} </p>
-      <p className="card--alias">{props.alias} </p>
+    <div>
+      <form className="search--form">
+        <input 
+          type="text"
+          placeholder="search the 'verse"
+          className="search--form_input"
+        />
+
+        <button
+          className="search--form_button"
+          ><img src="static/img/magnifying_glass.png" className="search--magnify" /></button>
+      </form>
     </div>
   )
 }
 
-// to-do: for alias, display as list not dictionary. reformat "none available", if more than one limit characters and then finish rest with "..." will most likely need to use javascript for this
+// display all character cards on homepage
+function CharacterCard(props) {
+  return(
+    <div className="card">
+      <img className="card--img" src={props.image}/>
+      <p className="card--name">Name: {props.name} </p>
+      <p className="card--alias">Alias: {props.alias} </p>
+    </div>
+  )
+}
+
+
 function Homepage() {
+  // get data from server.py endpoint 'characters/json' to display img, name, and alias in characterCard
   const [characters, setCharacters] = React.useState([]);
+  // "edgecases", a couple of cardCharacters are still displaying all aliases. Not overflowing but look into why
+  const [aliasLimit, setAliasLimit] = React.useState(7);
   React.useEffect(()=> {
     fetch('/characters.json')
     .then(response => {
-      console.log(response);
+      // console.log(response);
       return response.json();})
     .then(data => {
-      console.log(data);
+      // console.log(data);
       setCharacters(data.characters);
       })
       .catch(error => {
@@ -47,13 +64,16 @@ function Homepage() {
       });
     }, []);
 
-  const characterCards = characters.map(item => {
+  const characterCards = characters.map((item, index) => {
+    // prevent overflowing letter characters in character card
+    let limitedAlias = (index < aliasLimit) ? item.alias: item.alias.slice(0, aliasLimit) +'...';
+    if (limitedAlias === "none available") limitedAlias = "N/A";
     return(
     <CharacterCard
-      key={item.id}
+      key={item.char_id}
       image={item.image}
       name={item.name}
-      alias={item.alias}
+      alias={limitedAlias}
     />
     );
  });
@@ -61,6 +81,7 @@ function Homepage() {
  return (
     <div>
       <Navbar />
+      <SearchBar />
       <div className="card--grid">
       {characterCards}
       </div>

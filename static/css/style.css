@@ -19,6 +19,7 @@ nav {
   /* box-shadow: 0px 20px 18px rgba(0px 2.98256px 7.4564px); */
   box-shadow: 0px 10px 18px black;
   /* background-color: #D9D9D9; */
+  /* margin-bottom: 30px; */
 }
 
 .navbar--logo {
@@ -69,6 +70,7 @@ nav {
   /* /* margin: 90px 70px 70px 190px; */
   margin: 20px;
   border-radius: 8px;
+  box-shadow: 0px 10px 18px black;
 }
 
 .card--img {
@@ -79,6 +81,7 @@ nav {
   box-shadow: -10px 10px 18px black;
 }
 
+/* to-do: re-style to have name, alias aligned in center of character img */
 .card--name {
   font-weight: 400px;
   text-align: center;
@@ -94,3 +97,37 @@ nav {
   line-height: 16px;
   color: #FFFFFF;
 }
+
+/* scrapped search bar function, revisit when recreated */
+/* SEARCH BAR */
+
+.search--form  {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+.search--form_input {
+  font-family: 'Montserrat', sans-serif; 
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  margin-right: 10px;
+}
+
+.search--form_button {
+  grid-column: 1 /-1;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90.41deg, #0472EE 1.14%, #70ADFF 100%);
+    color: white;
+}
+
+/* magnifying glass png doesn't have background color, why is it displayed as a YT box? */
+.search--magnify {
+  height: 16px;
+  width: 16px;
+} 
