@@ -3,9 +3,9 @@
 "Dive into the DC Universe, a web application for fans of the DC Animated Universe who want to learn more about their favorite characters. The app currently features characters from _Young Justice_, but will soon expand to include _Justice League_, _Justice League Unlimited_, and _Harley Quinn_. The homepage will display a list of character cards (containing img, name, and aliases), each leading to a profile with basic information and a comprehensive list of comic book issues organized by publication era. The DC Universe can be overwhelming for new fans, and that's why this project was created- to offer a "primer" and simplify the research process. The creator of this project fell in love with the DC Animated Universe and eventually moved on to comics, but found the complexity of the multiverses and different publication eras intimidating. They wanted to create a one-stop-shop for new fans to ease their journey into the DC Universe, avoiding the time-consuming process of piecing information together from various sources."
 
 # TABLE OF CONTENTS
-* Tech Stack(#tech-stack)
-* Challenges(#challenges)
-* Future Plans(#future)
+* [Tech Stack](#tech-stack)
+* [Challenges](#challenges)
+* [Future Plans](#future)
 
 ## <a name="tech-stack"></a> Project Description (Tech Stack, Challenges, Ideas for Future Feature Implementations)
 
