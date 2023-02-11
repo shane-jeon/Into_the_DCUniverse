@@ -1,38 +1,42 @@
 # Into the DCUniverse
 
-"Dive into the DC Universe, a web application for fans of the DC Animated Universe who want to learn more about their favorite characters. The app currently features characters from _Young Justice_, but will soon expand to include _Justice League_, _Justice League Unlimited_, and _Harley Quinn_. The homepage displays a list of characters with their photos, each leading to a profile with basic information and a comprehensive list of comic issues organized by publication era. The DC Universe can be overwhelming for new fans, and that's why this project was created- to offer a "primer" and simplify the research process. The creator of this project fell in love with the DC Animated Universe and eventually moved on to comics, but found the complexity of the multiverses and different publication eras intimidating. They wanted to create a one-stop-shop for new fans to ease their journey into the DC Universe, avoiding the time-consuming process of piecing information together from various sources."
+"Dive into the DC Universe, a web application for fans of the DC Animated Universe who want to learn more about their favorite characters. The app currently features characters from _Young Justice_, but will soon expand to include _Justice League_, _Justice League Unlimited_, and _Harley Quinn_. The homepage will display a list of character cards (containing img, name, and aliases), each leading to a profile with basic information and a comprehensive list of comic book issues organized by publication era. The DC Universe can be overwhelming for new fans, and that's why this project was created- to offer a "primer" and simplify the research process. The creator of this project fell in love with the DC Animated Universe and eventually moved on to comics, but found the complexity of the multiverses and different publication eras intimidating. They wanted to create a one-stop-shop for new fans to ease their journey into the DC Universe, avoiding the time-consuming process of piecing information together from various sources."
 
-## Project Description (Tech Stack, Challenges, Ideas for Future Feature Implementations)
+# TABLE OF CONTENTS
+* Tech Stack(#tech-stack)
+* Challenges(#challenges)
+* Future Plans(#future)
 
-For the backend of this application, I have utilized the Python programming language, in conjunction with SQLAlchemy and PostgreSQL, for database management. The frontend is composed of HTML, CSS, JavaScript, and React for dynamic rendering. I chose to use this tech stack as it allowed me to build upon the skills and knowledge I acquired during my time at Hackbright Academy, where I created my first project. Specifically, I aimed to expand my proficiency in JavaScript and React, which I did not have the opportunity to fully explore in my previous project. To gather information on the characters featured in the app, I utilized the Comic Vine API as a valuable resource, and for obtaining a list of characters introduced in the Young Justice television series, I employed web scraping techniques using Beautiful Soup library on the Young Justice Fandom Wiki page. By cross-referencing this list of character names with a dictionary of all characters within the DC Universe, I was able to selectively gather information on the desired characters.
-It's important to note that, as the Comic Vine API is a community-built and supported resource, there are certain limitations to the number of requests that can be made in a given time frame. To adhere to these restrictions, I implemented a function that enforces a delay of 1 hour after 100 requests, ensuring compliance with the API's rules while still efficiently retrieving the necessary data.
+## <a name="tech-stack"></a> Project Description (Tech Stack, Challenges, Ideas for Future Feature Implementations)
 
-## What I've been learning:
-*under construction*
-Understanding basic React fundamentals and making API requests with Python
+For the backend of this application, I have utilized the Python programming language, in conjunction with SQLAlchemy and PostgreSQL, for database management. The frontend is composed of HTML, CSS, JavaScript, and React for dynamic rendering. I chose to use this tech stack as it allowed me to build upon the skills and knowledge I acquired during my time at Hackbright Academy, where I created my first project. Specifically, I aim to expand my proficiency in JavaScript and React, which I did not have the opportunity to fully explore in my previous project. To gather information on the characters featured in the app, I utilized the Comic Vine API as a valuable resource, and for obtaining a list of characters introduced in the Young Justice television series, I employed web scraping techniques using Beautiful Soup library on the Young Justice Fandom Wiki page. By cross-referencing this list of character names with a dictionary of all characters within the DC Universe, I was able to selectively gather information on the desired characters.
+It's important to note that, as the Comic Vine API is a community-built and supported resource, there are certain limitations to the number of requests that can be made in a given time frame. To adhere to these restrictions, I have created a function that enforces a delay of 1 hour after 100 requests, ensuring compliance with the API's rules while still efficiently retrieving the necessary data. 
 
-## Challenges
+
+## <a name="challenges"></a> Challenges
 
 I aimed to expand my proficiency in JavaScript and React, which I did not have the
-opportunity to fully explore in my previous project. This time around, I
+opportunity to fully explore in my coding bootcamp capstone project. This time around, I
 did not have the support of my instructors or peers to troubleshoot blockers or
-bugs in my code. This ultimately required me to conduct extensive
-research and self-study to hone my skillsets and improve my problem-solving and debugging skills to ensure
-the functionality of my project
+bugs in my code. This required in the conduction of extensive
+research and self-study to piece together solutions and hone my skillsets. Has greatly improved debugging skills in both frontend and backend.
 
-One of the challenges I faced was my limited experience with APIs. Especially since DC Comics currently does not have an API, I had to find my resources through my own means. The reliable and wonderful resources I did find included Comicvine's API, and helped me in improving my interpretation of API documentation. Though challenging at first, learning from my mistakes eventually allowed me to familiarze myself with making API GET requests, handling responses, and working with the methods used to incorporate data from JSON files to my database.
+One of the challenges I faced was my limited experience with REST APIs. Especially as DC Comics does not have an API (for the time being), I had to find resources through my own means. The reliable and wonderful resources I did find included Comicvine's API, whiched helped me in improving my interpretation of API documentation. Though challenging at first, learning from my mistakes eventually allowed me to familiarze myself with API GET requests (especially when it came to understanding the constraints of REST architecture), response handling, and creating functions to incorporate data from JSON files/web scraping to my database.
 
-Due to the limitation of time, I wasn't able to include as many interactive features as I would have liked. In this project, my primary focus went towards the frontend. My goal was to end up with a product more methodically styled and with more dynamic features. As a bonus, I gained a stronger knowledge of JavaScript as well as a foundational understanding of React. I also reviewed HTML and CSS through a Udemy course, which improved the logic of my CSS and improved my styling abilities, as opposed to relying on trial and error.
+Due to time limitations (with my capstone project), I wasn't able to include as many interactive features as I would have liked. In this project, my primary focus is towards establishing a better understanding of frontend development. My goal is to create a product with better styling and dynamic features. Currently working on increasing familiarity with JavaScript as well as React. 
 
-To fully understand the code I was writing, I revisited my notes and lectures on JavaScript and DOM manipulation from Hackbright Academy. For concepts I couldn't understand, I turned to books and documentation. For example, I felt I needed to break React down to its fundamental building blocks, thus I went back to square one and started studying React using React's beginner-friendly documentation and follow along tutorials. This experience greatly helped me in understanding components, props, states, rendering, and the integration of React into my web application's frontend. The fact that I was able to pace myself with my learning and in producing my project, allowed me to develop a MVP that integrated all that I've learned during and after my coding bootcamp.
+To fully comprehend my code, I revisited my notes and lectures on JavaScript and DOM manipulation from Hackbright Academy. For concepts I couldn't understand, I turned to books and documentation. For example, I felt I needed to break React down to its fundamental building blocks, thus I went back to square one and started studying React using React's beginner-friendly documentation and online scrimba course. This experience is greatly helping me in understanding components, props, state, hooks, rendering, and the integration of React into my web application's frontend. Because I am able to pace myself this time around me, I can actually incorporate all lessons from HB in developing MVP.
 
-All these factors greatly increased my appreciation for frontend development and helped me better understand the best study practices suited for me to increase my quality of learning.
+I am very much enjoying front-end development and am developing best study practices to increase quality of learning.
 
-## Future Feature Implementations
+## <a name="future"></a> Future Feature Implementations
 
-_Into the DC Universe_ is not just a project I built to put on my resume. This is something that is very near and dear to my heart and also increases my own knowledge of intricacies of DC Comics. I hope to add new features along my journey as a software engineer, implementing the knowledge and experience I will have gained through my professional career. Some features that I look forward to adding include character appearances in other forms of media (film, television, graphic novels), user accounts (so users may bookmark characters or comics they would want to return to later), and an extremely interactive and complicated map that I can't even find the words for to explain. I hope to deploy it once the day comes.
+_Into the DC Universe_ is a project very near and dear to my heart, with the goal to introduce new generations of DC fans trickling in from viewerships of the DC animated universe to the fuller extent of the DC universe.
 
-<!-- **under construction**
+I hope to add new features along my journey as a software engineer, implementing the knowledge and experience I will have gained through my professional career. Some features that I look forward to adding include character appearances in other forms of media (film, television, graphic novels), user accounts (so users may bookmark characters or comics they would want to return to later), and an extremely interactive and complicated map that I can't even find the words for to explain. I hope to deploy it once the day comes. This project will always be a work in progress and hopefully I can feel confident sharing my project with the users of the DC subreddit (their very critical nature is definitely a component in my motivation).
+
+
+<!-- **under construction, explanation of how to work with comicvine REST API. For future users and/or my future self**
 
 ### Working with comicvine API:
 
