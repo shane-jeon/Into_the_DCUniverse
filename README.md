@@ -6,6 +6,7 @@
 * [Tech Stack](#tech-stack)
 * [Challenges](#challenges)
 * [Future Plans](#future)
+* [Links](#links)
 
 ## <a name="tech-stack"></a> Project Description (Tech Stack, Challenges, Ideas for Future Feature Implementations)
 
@@ -35,7 +36,8 @@ _Into the DC Universe_ is a project very near and dear to my heart, with the goa
 
 I hope to add new features along my journey as a software engineer, implementing the knowledge and experience I will have gained through my professional career. Some features that I look forward to adding include character appearances in other forms of media (film, television, graphic novels), user accounts (so users may bookmark characters or comics they would want to return to later), and an extremely interactive and complicated map that I can't even find the words for to explain. I hope to deploy it once the day comes. This project will always be a work in progress and hopefully I can feel confident sharing my project with the users of the DC subreddit (their very critical nature is definitely a component in my motivation).
 
-
+### <a name="links"></a> Links
+- [Figma File](https://www.figma.com/file/oxz3PnOxaJLdreVew8hwNX/Untitled?node-id=0%3A1&t=g1zQbWfZfS9IwPJl-1)
 <!-- **under construction, explanation of how to work with comicvine REST API. For future users and/or my future self**
 
 ### Working with comicvine API:
