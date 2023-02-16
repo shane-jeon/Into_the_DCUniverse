@@ -78,9 +78,17 @@ def display_character_details():
   """Returns dictionary of names, aliases, and img links"""
   # char = Character.query.filter(Character.id == id).first()
   character_data = Character.query.all()
+  # sorted_character_data = sorted(character_data, key=lambda char_name: char_name['name'])
 
-  return [charData.convert_dict() for charData in character_data]
+  char_dict = [charData.convert_dict() for charData in character_data]
 
+  return sorted(char_dict, key=lambda c_name: c_name['name'])
+
+  # return [charData.convert_dict() for charData in character_data]
+
+# x = display_character_Details()
+# test = x[0:5]
+# pprint.pprint(sorted(test, key=lambda char: char['name']))
 
 if __name__ == '__main__':
   from depleted import app
